@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="coupled-system-opening">
+  <title>Interacting Concentrations</title>
+  
+  <exercise>
+    <statement>
+      <p>
+        So far, we have modeled one medication concentration at a time. But many
+        biological systems involve feedback. For example, one hormone level can
+        influence the production or suppression of another.
+      </p>
+
+      <p>
+        We now study a simplified two-variable model. Let <m>E(t)</m> represent
+        an estradiol-related concentration and let <m>T(t)</m> represent a
+        testosterone-related concentration.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Consider the system
+      </p>
+
+      <me>
+        \begin{aligned}
+        E' \amp = -aE + u,\\
+        T' \amp = b - cE - dT.
+        \end{aligned}
+      </me>
+
+      <p>
+        Here <m>a,b,c,d</m> are positive constants, and <m>u</m> represents a
+        steady external input.
+      </p>
+
+      <p>
+        Interpret each term in the model:
+      </p>
+
+      <ul>
+        <li><m>-aE</m></li>
+        <li><m>u</m></li>
+        <li><m>b</m></li>
+        <li><m>-cE</m></li>
+        <li><m>-dT</m></li>
+      </ul>
+    </statement>
+  </exercise>
+
+    <exercise xml:id="sage-interactive-hormone-system">
+    <statement>
+      <p>
+        Use the Sage cell below to explore how the solutions change when the
+        parameters change. The graph shows <m>E(t)</m> and <m>T(t)</m> over time
+        after treatment is interrupted.
+      </p>
+
+      <sage>
+        <input>
+# Interactive model for a simplified hormone feedback system
+# E' = -aE + u
+# T' = b - cE - dT
+
+@interact
+def hormone_model(
+    a=slider(0.05, 1.5, 0.05, default=0.4, label="estradiol decay rate a"),
+    b=slider(0.0, 3.0, 0.1, default=1.0, label="baseline testosterone production b"),
+    c=slider(0.0, 2.0, 0.1, default=0.6, label="suppression strength c"),
+    d=slider(0.05, 1.5, 0.05, default=0.5, label="testosterone decay rate d"),
+    u_before=slider(0.0, 3.0, 0.1, default=1.2, label="input before interruption"),
+    tmax=slider(5, 60, 1, default=30, label="days shown")
+):
+    t = var('t')
+
+    # Equilibrium before interruption
+    E0 = u_before/a
+    T0 = (b - c*E0)/d
+
+    # After interruption, u = 0
+    E = E0*exp(-a*t)
+
+    # Solve T' + dT = b - cE(t)
+    T = function('T')(t)
+    sol = desolve(diff(T,t) == b - c*E - d*T, T, ics=[0,T0])
+    T_expr = sol
+
+    p1 = plot(E, (t,0,tmax), legend_label="E(t)", thickness=2)
+    p2 = plot(T_expr, (t,0,tmax), legend_label="T(t)", thickness=2, color='orange', linestyle='--')
+
+    show(p1 + p2, axes_labels=["t", "concentration"])
+
+    print("Initial state at interruption:")
+    print("E(0) =", numerical_approx(E0, digits=4))
+    print("T(0) =", numerical_approx(T0, digits=4))
+
+    print("")
+    print("New equilibrium after interruption:")
+    print("E* = 0")
+    print("T* =", numerical_approx(b/d, digits=4))
+
+    print("")
+    print("Eigenvalues of the homogeneous matrix:")
+    print("-a =", numerical_approx(-a, digits=4))
+    print("-d =", numerical_approx(-d, digits=4))
+        </input>
+      </sage>
+
+      <p>
+        Try increasing and decreasing <m>a</m> and <m>d</m>. How do the graphs
+        change? How does this match the eigenvalues <m>-a</m> and <m>-d</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Rewrite the system
+      </p>
+
+      <me>
+        \begin{aligned}
+        E' &amp;= -aE + u,\\
+        T' &amp;= b - cE - dT
+        \end{aligned}
+      </me>
+
+      <p>
+        in matrix form as
+      </p>
+
+      <me>\mathbf{x}' = A\mathbf{x}+\mathbf{r}</me>
+
+      <p>
+        where
+      </p>
+
+      <me>
+        \mathbf{x}=
+        \begin{pmatrix}
+        E\\
+        T
+        \end{pmatrix}.
+      </me>
+
+      <p>
+        Identify the matrix <m>A</m> and the vector <m>\mathbf{r}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="coupled-system-equilibrium">
+    <statement>
+      <p>
+        An equilibrium occurs when <m>E'=0</m> and <m>T'=0</m>.
+      </p>
+
+      <p>
+        Solve the system
+      </p>
+
+      <me>
+        \begin{aligned}
+        0 \amp = -aE + u,\\
+        0 \amp = b - cE - dT
+        \end{aligned}
+      </me>
+
+      <p>
+        to find the equilibrium point <m>(E^\ast,T^\ast)</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose treatment is interrupted, so the external input changes from
+        <m>u &gt; 0</m> to <m>u=0</m>.
+      </p>
+
+      <p>
+        The new system is
+      </p>
+
+      <me>
+        \begin{aligned}
+        E' &amp;= -aE,\\
+        T' &amp;= b - cE - dT.
+        \end{aligned}
+      </me>
+
+      <p>
+        Find the new equilibrium point.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        To make the system concrete, suppose
+      </p>
+
+      <me>a=0.4,\quad b=1.0,\quad c=0.6,\quad d=0.5.</me>
+
+      <p>
+        First assume regular treatment with <m>u=1.2</m>. Find the equilibrium
+        <m>(E^\ast,T^\ast)</m>.
+      </p>
+
+      <p>
+        Then assume treatment is interrupted, so <m>u=0</m>. Find the new
+        equilibrium.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The matrix for the homogeneous part of the system is
+      </p>
+
+      <me>
+        A=
+        \begin{pmatrix}
+        -a &amp; 0\\
+        -c &amp; -d
+        \end{pmatrix}.
+      </me>
+
+      <p>
+        Because this matrix is triangular, its eigenvalues are visible on the
+        diagonal.
+      </p>
+
+      <p>
+        What are the eigenvalues of <m>A</m>? What do they tell us about whether
+        the system moves toward equilibrium or away from it?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The model in this part is simplified: it uses only two variables, assumes
+        constant parameters, and represents feedback with a linear term. Real
+        endocrine systems are more complex.
+      </p>
+
+      <p>
+        Still, the model shows that interrupting one input can affect more than
+        one quantity. Explain how this changes the interpretation of a phrase like
+        <q>the medication leaves the body after a few half-lives.</q>
+      </p>
+    </statement>
+  </exercise>
+</worksheet>

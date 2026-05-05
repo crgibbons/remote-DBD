@@ -1,0 +1,55 @@
+INFO    : Since no target was supplied, we will use "course".
+
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx by /root/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /root/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/Decisions-by-Design_v1/new-pretext-project/output/course.
+INFO    : discovering source file's directory name: /workspaces/Decisions-by-Design_v1/new-pretext-project/source
+INFO    : verifying and expanding input directory: /workspaces/Decisions-by-Design_v1/new-pretext-project/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Decisions-by-Design_v1/new-pretext-project/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Decisions-by-Design_v1/new-pretext-project/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Decisions-by-Design_v1/new-pretext-project/assets
+INFO    : XSL conversion of /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx by /root/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /root/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.13.5
+INFO    : Downloading Runestone Services, version 7.13.5
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx to HTML in /ptx-6uiocc2d
+INFO    : XSL conversion of /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx by /root/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "compare-maintenance-and-interruption" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "compare-maintenance-and-interruption" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "interruption-policy-reflection" should be unique, but is authored multiple times.
+INFO    : *              located within: "interruption-policy-reflection" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "last-dose-decay" should be unique, but is authored multiple times.
+INFO    : *              located within: "last-dose-decay" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "stopping-treatment-opening" should be unique, but is authored multiple times.
+INFO    : *              located within: "stopping-treatment-opening" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "threshold-crossing" should be unique, but is authored multiple times.
+INFO    : *              located within: "threshold-crossing" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "threshold-example" should be unique, but is authored multiple times.
+INFO    : *              located within: "threshold-example" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "threshold-interpretation" should be unique, but is authored multiple times.
+INFO    : *              located within: "threshold-interpretation" (xml:id)
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /root/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /ptx-6uiocc2d
+INFO    : Removing temporary directory /ptx-_mpn5ug4
+INFO    : 
+Finished build for target course. Run `pretext view course` to see the results.
+
+CRITICAL: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

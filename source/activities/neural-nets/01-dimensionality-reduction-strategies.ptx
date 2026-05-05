@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="pca-tsne-toy-examples">
+  <title>PCA and <m>t</m>-SNE by Hand: Two Toy Examples</title>
+
+    <exercise>
+      <statement>
+        <p>
+          Consider the dataset consisting of four points:
+        </p>
+        <me>
+          (0,-0.2), \quad (2,0.4), \quad (4,1.4), \quad (6,2.4).
+        </me>
+
+        <ol>
+          <li>
+            Plot the four points in the plane.
+          </li>
+
+          <li>
+            Describe the geometric relationship between <m>x</m> and <m>y</m>.
+          </li>
+
+          <li>
+            Do the points appear to lie approximately along a line?
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Compute the mean of each coordinate:
+        </p>
+        <me>
+          \bar{x}, \quad \bar{y}.
+        </me>
+
+        <p>
+          Then subtract the mean from each point to obtain a centered dataset.
+        </p>
+
+        <p>
+          Verify that the centered points are:
+          <me>
+            (-3,-1.2), \quad (-1,-0.6), \quad (1,0.4), \quad (3,1.4).
+          </me>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Form the centered data matrix <m>X</m>.
+          Then compute the covariance matrix.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Recall that the covariance matrix
+        <me>
+          \begin{pmatrix} \operatorname{Var}(x) \amp \operatorname{Cov}(x,y) \\ \operatorname{Cov}(x,y) \amp \operatorname{Var}(y) \end{pmatrix}
+        </me>
+      </p>
+
+        <p>
+          describes how the dataset spreads in different directions.
+        </p>
+
+        <ol>
+          <li>
+            What are the variances of <m>x</m> and <m>y</m>?
+          </li>
+
+          <li>
+            Which variable varies more?
+          </li>
+
+          <li>
+            Is the covariance positive or negative?
+          </li>
+
+          <li>
+            What does this tell you about how <m>x</m> and <m>y</m> change together?
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Based on the covariance matrix, predict the direction of the first principal component.
+          <ol>
+            <li>
+              Is the dominant direction closer to horizontal, vertical, or diagonal?
+            </li>
+
+            <li>
+              Explain your reasoning without computing eigenvectors.
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          PCA identifies directions in which the dataset varies the most.
+          <ol>
+            <li>
+              Plot the first principal component direction on the same graph as the data points.
+            </li>
+
+            <li>
+              Project the data points onto the first principal component direction and plot the projected points on a number line.
+            </li>
+
+            <li>
+              How much of the variance does the first principal component account for?
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Compare this dataset to the example in the notes in which the covariance matrix has equal diagonal entries.
+        </p>
+
+        <ol>
+          <li>
+            <p>
+              Which dataset has a stronger preferred direction of variation?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Why does PCA reduce this dataset effectively to one dimension?
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Consider the following six points in the plane:
+        </p>
+        <me>
+          A=(0,0), \quad B=(1,0), \quad C=(0,1),
+        </me>
+        <me>
+          D=(5,5), \quad E=(6,5), \quad F=(5,6).
+        </me>
+
+        <p>
+          Plot these six points.
+        </p>
+
+        <ol>
+          <li>
+            Which points appear close together?
+          </li>
+
+          <li>
+            Which points appear far apart?
+          </li>
+
+          <li>
+            How many clusters do you see?
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Compute the squared distances from point <m>A</m> to each of the other points.
+        </p>
+
+        <p>
+          That is, compute:
+        </p>
+        <me>
+          d(A,B)^2,\quad d(A,C)^2,\quad d(A,D)^2,\quad d(A,E)^2,\quad d(A,F)^2.
+        </me>
+
+        <p>
+          Which distances are small? Which are large?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          In <m>t</m>-SNE, similarities are converted into probabilities using
+        </p>
+        <me>
+          P(j\mid A) = \frac{e^{-d(A,j)^2}} {\sum_{k\neq A} e^{-d(A,k)^2}}.
+        </me>
+
+        <ol>
+          <li>
+            Explain why <m>P(B\mid A)</m> and <m>P(C\mid A)</m> should be large.
+          </li>
+
+          <li>
+            Explain why <m>P(D\mid A)</m>, <m>P(E\mid A)</m>, and <m>P(F\mid A)</m> should be very small.
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Repeat the same reasoning for point <m>D</m>.
+        </p>
+
+        <ol>
+          <li>
+            Which points are most likely neighbors of <m>D</m>?
+          </li>
+
+          <li>
+            Which points are unlikely to be neighbors of <m>D</m>?
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          A <m>t</m>-SNE embedding tries to preserve neighbor relationships rather than exact distances.
+        </p>
+
+        <ol>
+          <li>
+            Sketch a possible two-dimensional arrangement of the six points that preserves these neighbor relationships.
+          </li>
+
+          <li>
+            Should the distance between clusters be interpreted precisely?
+          </li>
+
+          <li>
+            Should distances within clusters be interpreted precisely?
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Compare how PCA and <m>t</m>-SNE would treat this dataset.
+      </p>
+
+      <ol>
+        <li>
+          Would PCA primarily detect a direction of variation or a clustering structure?
+        </li>
+
+        <li>
+          Why is this dataset better suited to <m>t</m>-SNE than PCA?
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+</worksheet>

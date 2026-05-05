@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mathematical Modeling and Google NotebookLM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Applied Math in Society">
+<meta property="book:author" content="Courtney R. Gibbons">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Applied Math in Society</span> <span class="subtitle">MATH 260</span></a></h1>
+<p class="byline">Courtney R. Gibbons</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="course-notes-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="notes-class-01.html" class="internal"><span class="title">Mathematical Modeling and Google NotebookLM</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-class-01.html#notes-class-01-4" class="internal"><span class="title">Mathematical Modeling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-class-01.html#notes-class-01-5" class="internal"><span class="title">Google NotebookLM</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="course-notes-4.html" class="internal"><span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#subsec-apportionment-terminology" class="internal"><span class="title">Apportionment Terminology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#course-notes-4-4" class="internal"><span class="title">Paradoxes</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-problem" class="internal"><span class="title">The Apportionment Problem, but Mathier</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-variables" class="internal"><span class="title">Formal Mathematical Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#exact-quota" class="internal"><span class="title">The Exact Quota</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-axioms" class="internal"><span class="title">Mathematical Constraints and Properties</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#error-minimization" class="internal"><span class="title">Error Minimization</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#course-notes-4-6" class="internal"><span class="title">More</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#course-notes-4-7" class="internal"><span class="title">That’s not fair!</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-problem-again" class="internal"><span class="title">The Apportionment Problem, but Mathier</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-variables-again" class="internal"><span class="title">Formal Mathematical Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#exact-quota-again" class="internal"><span class="title">The (Exact) Quota</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-polyhedra" class="internal"><span class="title">Apportionment Polyhedra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#polyhedron-geometry" class="internal"><span class="title">Geometric Representation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-axioms-again" class="internal"><span class="title">Mathematical Constraints and Properties</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#example-hamilton-method" class="internal"><span class="title">Hamilton’s Method as an Apportionment Function</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-polyhedra-again" class="internal"><span class="title">Apportionment Polyhedra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#polyhedron-geometry-again" class="internal"><span class="title">Geometric Representation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#polyhedron-function" class="internal"><span class="title">Function and Boundaries</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#polyhedra-fairness" class="internal"><span class="title">Using Apportionment Polyhedra to Assess Fairness</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#visualizing-rounding-error" class="internal"><span class="title">Visualizing Rounding and Error</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#comparing-methods" class="internal"><span class="title">Comparing Methodological Justness</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#paradoxes" class="internal"><span class="title">Identifying Paradoxes</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-districting.html" class="internal"><span class="title">Districting</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#what-is-gerrymandering" class="internal"><span class="title">What Is Gerrymandering?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#social-criteria" class="internal"><span class="title">Social and Legal Criteria for Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#mathematical-criteria" class="internal"><span class="title">Mathematical Criteria for Partisan Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#proportionality" class="internal"><span class="title">Proportionality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#convexity" class="internal"><span class="title">Convexity and Compactness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#efficiency-gap" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#sampling" class="internal"><span class="title">Sampling the Space of District Plans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#whos-who" class="internal"><span class="title">Who’s Who in Mathematical Districting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#closing" class="internal"><span class="title">Closing Question</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-background" class="internal"><span class="title">Understanding the Issue</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-big-problem" class="internal"><span class="title">Big Problem: Using Mathematics to Determine Fairness</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-districting.html#gerrymandering-math-topic-compactness" class="internal"><span class="title">Geometry and Compactness</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-math-topic-compactness-3" class="internal"><span class="title">Three Ways to Measure Compactness of a District</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-math-topic-compactness-4" class="internal"><span class="title">Compactness Criteria</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#subsec-districting-algorithms" class="internal"><span class="title">Districting Algorithms</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">LLMs and Dimensionality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Large Language Models and DimensionalityAI Ethics and the Global Data Supply Chain: A Consolidated Guide</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Principal Component Analysis (PCA) and <span class="process-math">\(t\)</span>-Stochastic Neighbor Embedding (<span class="process-math">\(t\)</span>-SNE)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="de-crash-course.html" class="internal"><span class="title">A Crash Course in Concentration Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#exponential-decay" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#equilibrium-and-forcing" class="internal"><span class="title">Equilibrium and Constant Input</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#discrete-dosing" class="internal"><span class="title">Repeated Dosing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#linear-systems" class="internal"><span class="title">Interacting Quantities and Linear Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#big-picture" class="internal"><span class="title">The Big Picture</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-hormone-halflife.html" class="internal"><span class="title">Hormone Half-Lives and Exponential Decay</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="repeated-dosing-opening.html" class="internal"><span class="title">Repeated Dosing</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="stopping-treatment-opening.html" class="internal"><span class="title">Interrupted Dosing</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="coupled-system-opening.html" class="internal"><span class="title">Interacting Concentrations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="training-language-models.html" class="internal"><span class="title">Human Data Workers</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="pca-tsne-toy-examples.html" class="internal"><span class="title">PCA and <span class="process-math">\(t\)</span>-SNE by Hand: Two Toy Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Apportionment Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 01</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="notes-class-01">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mathematical Modeling and Google NotebookLM</span>
+</h2>
+<div class="para" id="notes-class-01-2">We started with mathematical modeling using the SIAM M3 Challenge materials. We read about the six stages of mathematical modeling and then applied those stages to a real-world problem. We also got familiar with Google NotebookLM, which is a generative AI tool that can help us interact with documents and extract information from them.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="notes-class-01-3">
+<li id="notes-class-01-3-1">
+<div class="para" id="notes-class-01-3-1-1">Mathematical Modeling Activities 
+<details id="notes-class-01-3-1-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="notes-class-01-3-1-1-1-1">Instructor note: If you are planning this activity, you need a deck of cards that you can use to divide the class into six groups of four using one characteristic (suit) and then four groups of six using another characteristic (number) so that each group of six has a member from each group of four. You may have more than 24 students, in which case, adapt appropriately!<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details><div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#notes-class-01-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="notes-class-01-3-2">
+<div class="para" id="notes-class-01-3-2-1">Google NotebookLM<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#notes-class-01-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<section class="subsection" id="notes-class-01-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mathematical Modeling</span>
+</h3>
+<div class="para" id="notes-class-01-4-2">We started reading the M3 Mathematical Modeling Materials from the Society for Industrial and Applied Mathematics. You should have a list describing the six stages of making a model.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="notes-class-01-4-3">
+<li id="notes-class-01-4-3-1">
+<div class="para" id="notes-class-01-4-3-1-1">Defining the Problem Statement (Chapter 2)<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#notes-class-01-4-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="notes-class-01-4-3-2">
+<div class="para" id="notes-class-01-4-3-2-1">Making Assumptions (Chapter 3)<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#notes-class-01-4-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="notes-class-01-4-3-3">
+<div class="para" id="notes-class-01-4-3-3-1">Defining Variables (Chapter 4)<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#notes-class-01-4-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="notes-class-01-4-3-4">
+<div class="para" id="notes-class-01-4-3-4-1">Building Solutions (Chapter 5)<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#notes-class-01-4-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="notes-class-01-4-3-5">
+<div class="para" id="notes-class-01-4-3-5-1">Analysis and Model Assessment (Chapter 6)<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#notes-class-01-4-3-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="notes-class-01-4-3-6">
+<div class="para" id="notes-class-01-4-3-6-1">Putting it All Together (Chapter 7)<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#notes-class-01-4-3-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="notes-class-01-4-4">In groups, we read the M3 Challenge Problem and Solution, with each group focusing on a different stage of the modeling process. Then we mixed up into new groups to discuss how those processes fit together into a good overall solution to the challenge problem.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Mathematical Modeling"><a href="#notes-class-01-4" title="Copy heading and permalink for Subsection: Mathematical Modeling" aria-label="Copy heading and permalink for Subsection: Mathematical Modeling">🔗</a></div>
+</section>
+<section class="subsection" id="notes-class-01-5">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Google NotebookLM</span>
+</h3>
+<div class="para" id="notes-class-01-5-2">This is a generative AI tool useful for interacting with documents, especially long ones (we’re mathematicians; we read, but we also take productive shortcuts when it helps our learning goals).<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-class-01-5-3">We got used to the interface a little bit with the M3 handbook. The link to our notebook is on Blackboard.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="notes-class-01-5-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Query: What are the six steps involved in mathematical modeling?</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="notes-class-01-5-4-2-1">
+<div class="para">
+<em class="emphasis">Response</em>:  Mathematical modeling is described in the sources as an iterative process rather than a strictly sequential checklist, meaning that steps are often revisited multiple times as the model is refined. While the guidebook highlights several key components, the six primary steps involved in the process are as follows:</div>
+<ol class="decimal" id="notes-class-01-5-4-2-1-3">
+<li id="notes-class-01-5-4-2-1-3-1">
+<span class="heading li--heading"><span class="title li--heading-title">Defining the Problem Statement.</span></span>
+<div class="para" id="notes-class-01-5-4-2-1-3-1-2">Real-world problems are typically broad, complex, and open-ended. The first step involves researching and brainstorming to refine a conceptual idea into a concise problem statement that clearly indicates what the model will predict or measure.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-1-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1: Defining the Problem Statement"><a href="#notes-class-01-5-4-2-1-3-1" title="Copy heading and permalink for Item 1: Defining the Problem Statement" aria-label="Copy heading and permalink for Item 1: Defining the Problem Statement">🔗</a></div>
+</li>
+<li id="notes-class-01-5-4-2-1-3-2">
+<span class="heading li--heading"><span class="title li--heading-title">Making Assumptions.</span></span>
+<div class="para" id="notes-class-01-5-4-2-1-3-2-2">Because real-world situations often contain incomplete information, assumptions are necessary to simplify the problem and make it tractable. These assumptions help sharpen the focus by reducing the number of factors involved and establishing the specific conditions under which the model is considered valid.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-1-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2: Making Assumptions"><a href="#notes-class-01-5-4-2-1-3-2" title="Copy heading and permalink for Item 2: Making Assumptions" aria-label="Copy heading and permalink for Item 2: Making Assumptions">🔗</a></div>
+</li>
+<li id="notes-class-01-5-4-2-1-3-3">
+<span class="heading li--heading"><span class="title li--heading-title">Defining Variables.</span></span>
+<div class="para logical" id="notes-class-01-5-4-2-1-3-3-2">
+<div class="para">In this stage, the modeler identifies the primary factors influencing the phenomenon and defines them as quantifiable variables with specified units. This includes distinguishing between:</div>
+<ul class="disc" id="notes-class-01-5-4-2-1-3-3-2-1">
+<li id="notes-class-01-5-4-2-1-3-3-2-1-1">
+<div class="para" id="p-derived-notes-class-01-5-4-2-1-3-3-2-1-1">Independent variables: The model inputs.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-class-01-5-4-2-1-3-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-class-01-5-4-2-1-3-3-2-1-2">
+<div class="para" id="p-derived-notes-class-01-5-4-2-1-3-3-2-1-2">Dependent variables: The model outputs or predictions.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-class-01-5-4-2-1-3-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-class-01-5-4-2-1-3-3-2-1-3">
+<div class="para" id="p-derived-notes-class-01-5-4-2-1-3-3-2-1-3">Model parameters: Quantities that are held constant within the model</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-class-01-5-4-2-1-3-3-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-1-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3: Defining Variables"><a href="#notes-class-01-5-4-2-1-3-3" title="Copy heading and permalink for Item 3: Defining Variables" aria-label="Copy heading and permalink for Item 3: Defining Variables">🔗</a></div>
+</li>
+<li id="notes-class-01-5-4-2-1-3-4">
+<span class="heading li--heading"><span class="title li--heading-title">Building Solutions (Getting a Solution).</span></span>
+<div class="para" id="notes-class-01-5-4-2-1-3-4-2">This step involves using mathematical techniques to generate answers to the defined problem. Depending on the modeler’s background and the type of problem, solutions may be reached through hand calculations, algebraic manipulation, computer simulations, or software tools like Excel.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-1-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4: Building Solutions (Getting a Solution)"><a href="#notes-class-01-5-4-2-1-3-4" title="Copy heading and permalink for Item 4: Building Solutions (Getting a Solution)" aria-label="Copy heading and permalink for Item 4: Building Solutions (Getting a Solution)">🔗</a></div>
+</li>
+<li id="notes-class-01-5-4-2-1-3-5">
+<span class="heading li--heading"><span class="title li--heading-title">Analysis and Model Assessment.</span></span>
+<div class="para" id="notes-class-01-5-4-2-1-3-5-2">After obtaining a solution, the modeler must step back to assess its quality and determine if the results make sense. This involves identifying the model’s strengths and weaknesses, as well as performing a sensitivity analysis to see how changes in input values or parameters impact the final output. If the results are unrealistic, the modeler may return to previous steps to adjust assumptions.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-1-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5: Analysis and Model Assessment"><a href="#notes-class-01-5-4-2-1-3-5" title="Copy heading and permalink for Item 5: Analysis and Model Assessment" aria-label="Copy heading and permalink for Item 5: Analysis and Model Assessment">🔗</a></div>
+</li>
+<li id="notes-class-01-5-4-2-1-3-6">
+<span class="heading li--heading"><span class="title li--heading-title">Reporting the Results.</span></span>
+<div class="para" id="notes-class-01-5-4-2-1-3-6-2">The final step is to explain the model and its implementation clearly so others can use it. This is typically done through a technical report that includes an abstract or executive summary, a clear list of assumptions, defined variables, and an honest assessment of the model’s limitations.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-1-3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6: Reporting the Results"><a href="#notes-class-01-5-4-2-1-3-6" title="Copy heading and permalink for Item 6: Reporting the Results" aria-label="Copy heading and permalink for Item 6: Reporting the Results">🔗</a></div>
+</li>
+</ol>
+<div class="para">Throughout these steps, modelers are encouraged to take careful notes and maintain a bibliography to ensure the process is transparent and repeatable.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="notes-class-01-5-4-2-2">
+<em class="emphasis">Fact Check</em>: We decided this was consistent with the guidebook. We can check again by clicking the links to the source material.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 1: Query: What are the six steps involved in mathematical modeling?"><a href="#notes-class-01-5-4" title="Copy heading and permalink for Example 1: Query: What are the six steps involved in mathematical modeling?" aria-label="Copy heading and permalink for Example 1: Query: What are the six steps involved in mathematical modeling?">🔗</a></div>
+</article></details>
+<details id="notes-class-01-5-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Query: What is the winning paper about?</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="notes-class-01-5-5-2-1">
+<em class="emphasis">Response</em>: The winning paper, submitted by Team 1356 from Montgomery Blair High School for the 2013 Moody’s Mega Math (M3) Challenge, is titled "Analysis of Plastic Waste Production and Recycling Methods". The paper focuses on three main tasks requested by the Environmental Protection Agency (EPA) regarding plastic waste and recycling strategies.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="notes-class-01-5-5-2-2">
+<em class="emphasis">There is more to see in the Notebook, but that seemed like enough of the response to start with!</em><div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="notes-class-01-5-5-2-3">
+<em class="emphasis">Fact Check</em>: We agreed this was a good summary, and we can use the links to the source material to check.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2: Query: What is the winning paper about?"><a href="#notes-class-01-5-5" title="Copy heading and permalink for Example 2: Query: What is the winning paper about?" aria-label="Copy heading and permalink for Example 2: Query: What is the winning paper about?">🔗</a></div>
+</article></details>
+<details id="notes-class-01-5-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Query: Why is this a winning paper?</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="notes-class-01-5-6-2-1">This one is a bit trickier because it is a subjective matter, and we do not have the capacity to ask “How did you come to that conclusion?” and expect an “honest” answer because LLMs are not capable of self-reflection. All that it can do is give a plausible text response to your question, based on the training data relevant to the question. That is, at best, it’s parroting the words of self-reflection!<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="notes-class-01-5-6-2-2">For comparison, consider a phrase like, “That is a legitimately frustating experience, and I’m sorry you are feeling bad now.” We (people) often use a phrase like this to convey our internal empathy to a listener, who then responds to the perceived internal empathy of the speaker. But I say these words to my toddler all the time, and sometimes I am only <em class="emphasis">performing</em> empathy when I don’t actually feel it (like at 4 a.m. when he is mad that it’s not possible to have a nonconvex triangle in the plane).<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3: Query: Why is this a winning paper?"><a href="#notes-class-01-5-6" title="Copy heading and permalink for Example 3: Query: Why is this a winning paper?" aria-label="Copy heading and permalink for Example 3: Query: Why is this a winning paper?">🔗</a></div>
+</article></details>
+<details id="notes-class-01-5-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Investigate on your own..</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<ul class="disc" id="notes-class-01-5-7-2-1">
+<li id="notes-class-01-5-7-2-1-1">
+<div class="para" id="notes-class-01-5-7-2-1-1-1">Navigate to the shared notebook. You can ask questions via the chat!<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-class-01-5-7-2-1-1-2">Professor Gibbons created some Studio Output. What do you think of it?<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-7-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-class-01-5-7-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-class-01-5-7-2-1-2">
+<div class="para" id="notes-class-01-5-7-2-1-2-1">Check out the flash cards. Are they useful?<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-class-01-5-7-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-class-01-5-7-2-1-3">
+<div class="para" id="notes-class-01-5-7-2-1-3-1">Are there other outputs you would like the notebook to produce?<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-7-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-class-01-5-7-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-class-01-5-7-2-1-4">
+<div class="para" id="notes-class-01-5-7-2-1-4-1">Are there questions you would be unlikely to ask the notebook? Why or why not?<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-7-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-class-01-5-7-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Checkpoint 4: Investigate on your own."><a href="#notes-class-01-5-7" title="Copy heading and permalink for Checkpoint 4: Investigate on your own." aria-label="Copy heading and permalink for Checkpoint 4: Investigate on your own.">🔗</a></div>
+</article></details>
+<div class="para" id="notes-class-01-5-8">This is just our first foray into using a generative AI tool to enhance our learning. We will develop more skills to interact with NotebookLM throughout the course.<div class="autopermalink" data-description="Paragraph"><a href="#notes-class-01-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Google NotebookLM"><a href="#notes-class-01-5" title="Copy heading and permalink for Subsection: Google NotebookLM" aria-label="Copy heading and permalink for Subsection: Google NotebookLM">🔗</a></div>
+</section><div class="autopermalink" data-description="Section: Mathematical Modeling and Google NotebookLM"><a href="#notes-class-01" title="Copy heading and permalink for Section: Mathematical Modeling and Google NotebookLM" aria-label="Copy heading and permalink for Section: Mathematical Modeling and Google NotebookLM">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="course-notes-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

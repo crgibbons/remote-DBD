@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Districting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Applied Math in Society">
+<meta property="book:author" content="Courtney R. Gibbons">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Applied Math in Society</span> <span class="subtitle">MATH 260</span></a></h1>
+<p class="byline">Courtney R. Gibbons</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="course-notes-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-01.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-class-01.html" class="internal"><span class="title">Mathematical Modeling and Google NotebookLM</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-class-01.html#notes-class-01-4" class="internal"><span class="title">Mathematical Modeling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-class-01.html#notes-class-01-5" class="internal"><span class="title">Google NotebookLM</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="course-notes-4.html" class="internal"><span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#subsec-apportionment-terminology" class="internal"><span class="title">Apportionment Terminology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#course-notes-4-4" class="internal"><span class="title">Paradoxes</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-problem" class="internal"><span class="title">The Apportionment Problem, but Mathier</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-variables" class="internal"><span class="title">Formal Mathematical Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#exact-quota" class="internal"><span class="title">The Exact Quota</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-axioms" class="internal"><span class="title">Mathematical Constraints and Properties</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#error-minimization" class="internal"><span class="title">Error Minimization</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#course-notes-4-6" class="internal"><span class="title">More</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#course-notes-4-7" class="internal"><span class="title">That’s not fair!</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-problem-again" class="internal"><span class="title">The Apportionment Problem, but Mathier</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-variables-again" class="internal"><span class="title">Formal Mathematical Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#exact-quota-again" class="internal"><span class="title">The (Exact) Quota</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-polyhedra" class="internal"><span class="title">Apportionment Polyhedra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#polyhedron-geometry" class="internal"><span class="title">Geometric Representation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#apportionment-axioms-again" class="internal"><span class="title">Mathematical Constraints and Properties</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#example-hamilton-method" class="internal"><span class="title">Hamilton’s Method as an Apportionment Function</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#apportionment-polyhedra-again" class="internal"><span class="title">Apportionment Polyhedra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#polyhedron-geometry-again" class="internal"><span class="title">Geometric Representation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#polyhedron-function" class="internal"><span class="title">Function and Boundaries</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#polyhedra-fairness" class="internal"><span class="title">Using Apportionment Polyhedra to Assess Fairness</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#visualizing-rounding-error" class="internal"><span class="title">Visualizing Rounding and Error</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#comparing-methods" class="internal"><span class="title">Comparing Methodological Justness</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#paradoxes" class="internal"><span class="title">Identifying Paradoxes</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-districting.html" class="internal"><span class="title">Districting</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#what-is-gerrymandering" class="internal"><span class="title">What Is Gerrymandering?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#social-criteria" class="internal"><span class="title">Social and Legal Criteria for Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#mathematical-criteria" class="internal"><span class="title">Mathematical Criteria for Partisan Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#proportionality" class="internal"><span class="title">Proportionality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#convexity" class="internal"><span class="title">Convexity and Compactness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#efficiency-gap" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#sampling" class="internal"><span class="title">Sampling the Space of District Plans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#whos-who" class="internal"><span class="title">Who’s Who in Mathematical Districting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#closing" class="internal"><span class="title">Closing Question</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-background" class="internal"><span class="title">Understanding the Issue</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-big-problem" class="internal"><span class="title">Big Problem: Using Mathematics to Determine Fairness</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-districting.html#gerrymandering-math-topic-compactness" class="internal"><span class="title">Geometry and Compactness</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-math-topic-compactness-3" class="internal"><span class="title">Three Ways to Measure Compactness of a District</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-districting.html#gerrymandering-math-topic-compactness-4" class="internal"><span class="title">Compactness Criteria</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-districting.html#subsec-districting-algorithms" class="internal"><span class="title">Districting Algorithms</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">LLMs and Dimensionality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Large Language Models and DimensionalityAI Ethics and the Global Data Supply Chain: A Consolidated Guide</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Principal Component Analysis (PCA) and <span class="process-math">\(t\)</span>-Stochastic Neighbor Embedding (<span class="process-math">\(t\)</span>-SNE)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="de-crash-course.html" class="internal"><span class="title">A Crash Course in Concentration Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#exponential-decay" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#equilibrium-and-forcing" class="internal"><span class="title">Equilibrium and Constant Input</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#discrete-dosing" class="internal"><span class="title">Repeated Dosing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#linear-systems" class="internal"><span class="title">Interacting Quantities and Linear Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="de-crash-course.html#big-picture" class="internal"><span class="title">The Big Picture</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-hormone-halflife.html" class="internal"><span class="title">Hormone Half-Lives and Exponential Decay</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="repeated-dosing-opening.html" class="internal"><span class="title">Repeated Dosing</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="stopping-treatment-opening.html" class="internal"><span class="title">Interrupted Dosing</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="coupled-system-opening.html" class="internal"><span class="title">Interacting Concentrations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="training-language-models.html" class="internal"><span class="title">Human Data Workers</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="pca-tsne-toy-examples.html" class="internal"><span class="title">PCA and <span class="process-math">\(t\)</span>-SNE by Hand: Two Toy Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Apportionment Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 01</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-districting">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Districting</span>
+</h2>
+<section class="introduction" id="sec-districting-2">
+<div class="para" id="sec-districting-2-1">In this section, we will apply the tools of Part 1 to analyze a real-world problem: how to draw voting districts. The mathematical tools that we will use include graph theory and linear algebra.<div class="autopermalink" data-description="Paragraph"><a href="#sec-districting-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="what-is-gerrymandering">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What Is Gerrymandering?</span>
+</h3>
+<article class="definition definition-like" id="what-is-gerrymandering-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<dfn class="terminology">Gerrymander (verb)</dfn>
+<div class="para" id="what-is-gerrymandering-2-2-1">To manipulate the boundaries of an electoral constituency so as to favor one party or class.<div class="autopermalink" data-description="Paragraph"><a href="#what-is-gerrymandering-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 33"><a href="#what-is-gerrymandering-2" title="Copy heading and permalink for Definition 33" aria-label="Copy heading and permalink for Definition 33">🔗</a></div>
+</article>
+<div class="para logical" id="what-is-gerrymandering-3">
+<div class="para">Why is a mathematician talking about this? The American Mathematical Society (AMS) and the American Statistical Association (ASA) have issued statements noting:</div>
+<ul class="disc" id="what-is-gerrymandering-3-1">
+<li id="what-is-gerrymandering-3-1-1">
+<div class="para" id="p-derived-what-is-gerrymandering-3-1-1">Existing districting requirements do not prevent partisan gerrymandering.</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="what-is-gerrymandering-3-1-2">
+<div class="para" id="p-derived-what-is-gerrymandering-3-1-2">Modern data and computing make partisan manipulation easier.</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="what-is-gerrymandering-3-1-3">
+<div class="para" id="p-derived-what-is-gerrymandering-3-1-3">Mathematical and statistical tools can detect unfair advantage.</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#what-is-gerrymandering-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="what-is-gerrymandering-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Tiny State Example.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="what-is-gerrymandering-4-2-1">Suppose a state has 50 voters and 5 districts.<div class="autopermalink" data-description="Paragraph"><a href="#what-is-gerrymandering-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="what-is-gerrymandering-4-2-2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/what-is-gerrymandering-4-2-2-2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>
+<div class="para" id="what-is-gerrymandering-4-2-2-1-1">Tiny State<div class="autopermalink" data-description="Paragraph"><a href="#what-is-gerrymandering-4-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Figure 35"><a href="#what-is-gerrymandering-4-2-2" title="Copy heading and permalink for Figure 35" aria-label="Copy heading and permalink for Figure 35">🔗</a></div></figcaption>
+</figure> 
+<div class="para logical" id="what-is-gerrymandering-4-2-3">
+<ul class="disc" id="what-is-gerrymandering-4-2-3-1">
+<li id="what-is-gerrymandering-4-2-3-1-1">
+<div class="para" id="p-derived-what-is-gerrymandering-4-2-3-1-1">30 voters (60%) prefer Blue.</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-4-2-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="what-is-gerrymandering-4-2-3-1-2">
+<div class="para" id="p-derived-what-is-gerrymandering-4-2-3-1-2">20 voters (40%) prefer Red.</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-4-2-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#what-is-gerrymandering-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="what-is-gerrymandering-4-2-4">
+<div class="para">Depending on how we draw district lines, we can get very different outcomes:</div>
+<ul class="disc" id="what-is-gerrymandering-4-2-4-1">
+<li id="what-is-gerrymandering-4-2-4-1-1">
+<div class="para" id="p-derived-what-is-gerrymandering-4-2-4-1-1">1 Blue, 4 Red (“Anything Goes”)</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-4-2-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="what-is-gerrymandering-4-2-4-1-2">
+<div class="para" id="p-derived-what-is-gerrymandering-4-2-4-1-2">3 Blue, 2 Red (Proportional Representation)</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-4-2-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="what-is-gerrymandering-4-2-4-1-3">
+<div class="para" id="p-derived-what-is-gerrymandering-4-2-4-1-3">5 Blue, 0 Red (Blue Gerrymander)</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-4-2-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="what-is-gerrymandering-4-2-4-1-4">
+<div class="para" id="p-derived-what-is-gerrymandering-4-2-4-1-4">2 Blue, 3 Red (Red Gerrymander)</div>
+<div class="autopermalink" data-description="Item"><a href="#what-is-gerrymandering-4-2-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Same voters. Same preferences. Different district lines lead to different outcomes.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#what-is-gerrymandering-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="what-is-gerrymandering-4-2-5">Question: what should “fair” mean here?<div class="autopermalink" data-description="Paragraph"><a href="#what-is-gerrymandering-4-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 34: A Tiny State Example"><a href="#what-is-gerrymandering-4" title="Copy heading and permalink for Example 34: A Tiny State Example" aria-label="Copy heading and permalink for Example 34: A Tiny State Example">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection: What Is Gerrymandering?"><a href="#what-is-gerrymandering" title="Copy heading and permalink for Subsection: What Is Gerrymandering?" aria-label="Copy heading and permalink for Subsection: What Is Gerrymandering?">🔗</a></div>
+</section>
+<section class="subsection" id="social-criteria">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Social and Legal Criteria for Fairness</span>
+</h3>
+<div class="para" id="social-criteria-2">Federal requirement (Reynolds v. Sims, 1964):<div class="autopermalink" data-description="Paragraph"><a href="#social-criteria-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<blockquote class="blockquote" id="social-criteria-3">
+<div class="autopermalink" data-description="Quotation"><a href="#social-criteria-3" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
+</blockquote>
+<div class="para" id="social-criteria-4">In practice: districts must have roughly equal population (often within 10%).<div class="autopermalink" data-description="Paragraph"><a href="#social-criteria-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="social-criteria-5">Common state-level criteria:<div class="autopermalink" data-description="Paragraph"><a href="#social-criteria-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="social-criteria-6">
+<li id="social-criteria-6-1">
+<div class="para" id="p-derived-social-criteria-6-1">Contiguity (districts must be connected).</div>
+<div class="autopermalink" data-description="Item"><a href="#social-criteria-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="social-criteria-6-2">
+<div class="para" id="p-derived-social-criteria-6-2">Compactness (residents should live reasonably close together).</div>
+<div class="autopermalink" data-description="Item"><a href="#social-criteria-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="social-criteria-6-3">
+<div class="para" id="p-derived-social-criteria-6-3">Communities of interest.</div>
+<div class="autopermalink" data-description="Item"><a href="#social-criteria-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="social-criteria-6-4">
+<div class="para" id="p-derived-social-criteria-6-4">Respect for political boundaries (don’t split towns/counties).</div>
+<div class="autopermalink" data-description="Item"><a href="#social-criteria-6-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="social-criteria-7">Notice: none of these directly prevent partisan bias.<div class="autopermalink" data-description="Paragraph"><a href="#social-criteria-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Social and Legal Criteria for Fairness"><a href="#social-criteria" title="Copy heading and permalink for Subsection: Social and Legal Criteria for Fairness" aria-label="Copy heading and permalink for Subsection: Social and Legal Criteria for Fairness">🔗</a></div>
+</section>
+<section class="subsection" id="mathematical-criteria">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mathematical Criteria for Partisan Fairness</span>
+</h3>
+<ul class="disc" id="mathematical-criteria-2">
+<li id="mathematical-criteria-2-1">
+<div class="para" id="p-derived-mathematical-criteria-2-1">Proportionality</div>
+<div class="autopermalink" data-description="Item"><a href="#mathematical-criteria-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="mathematical-criteria-2-2">
+<div class="para" id="p-derived-mathematical-criteria-2-2">Convexity and Compactness</div>
+<div class="autopermalink" data-description="Item"><a href="#mathematical-criteria-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="mathematical-criteria-2-3">
+<div class="para" id="p-derived-mathematical-criteria-2-3">Efficiency Gap</div>
+<div class="autopermalink" data-description="Item"><a href="#mathematical-criteria-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="mathematical-criteria-2-4">
+<div class="para" id="p-derived-mathematical-criteria-2-4">Sampling Methods</div>
+<div class="autopermalink" data-description="Item"><a href="#mathematical-criteria-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Mathematical Criteria for Partisan Fairness"><a href="#mathematical-criteria" title="Copy heading and permalink for Subsection: Mathematical Criteria for Partisan Fairness" aria-label="Copy heading and permalink for Subsection: Mathematical Criteria for Partisan Fairness">🔗</a></div>
+</section>
+<section class="subsection" id="proportionality">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Proportionality</span>
+</h3>
+<div class="para" id="proportionality-2">If 67% of voters prefer Party X, then roughly 67% of seats should go to Party X.<div class="autopermalink" data-description="Paragraph"><a href="#proportionality-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="proportionality-3">In the tiny state example:<div class="autopermalink" data-description="Paragraph"><a href="#proportionality-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="proportionality-4">
+<li id="proportionality-4-1">
+<div class="para" id="p-derived-proportionality-4-1">60% Blue → 3 out of 5 seats seems reasonable.</div>
+<div class="autopermalink" data-description="Item"><a href="#proportionality-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="proportionality-5">But proportionality is not guaranteed in single-member districts.<div class="autopermalink" data-description="Paragraph"><a href="#proportionality-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Proportionality"><a href="#proportionality" title="Copy heading and permalink for Subsection: Proportionality" aria-label="Copy heading and permalink for Subsection: Proportionality">🔗</a></div>
+</section>
+<section class="subsection" id="convexity">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Convexity and Compactness</span>
+</h3>
+<div class="para" id="convexity-2">Hope: Convex, compact maps are harder to gerrymander.<div class="autopermalink" data-description="Paragraph"><a href="#convexity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="convexity-3">Reality: You can gerrymander using convex districts.<div class="autopermalink" data-description="Paragraph"><a href="#convexity-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="ham-sandwich"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ham Sandwich Theorem (Planar Version).</span>
+</h4>Given two finite sets of points in the plane (blue and red), each with an even number of points and no three collinear, there exists a line that simultaneously bisects both sets.<div class="autopermalink" data-description="Theorem 36: Ham Sandwich Theorem (Planar Version)"><a href="#ham-sandwich" title="Copy heading and permalink for Theorem 36: Ham Sandwich Theorem (Planar Version)" aria-label="Copy heading and permalink for Theorem 36: Ham Sandwich Theorem (Planar Version)">🔗</a></div>
+</article>
+<div class="para" id="convexity-5">This theorem implies that even convex cuts can be used strategically. Compactness alone does not guarantee fairness.<div class="autopermalink" data-description="Paragraph"><a href="#convexity-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Convexity and Compactness"><a href="#convexity" title="Copy heading and permalink for Subsection: Convexity and Compactness" aria-label="Copy heading and permalink for Subsection: Convexity and Compactness">🔗</a></div>
+</section>
+<section class="subsection" id="efficiency-gap">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Efficiency Gap</span>
+</h3>
+<div class="para" id="efficiency-gap-2">The Efficiency Gap measures wasted votes.<div class="autopermalink" data-description="Paragraph"><a href="#efficiency-gap-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="efficiency-gap-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<dfn class="terminology">Wasted Votes</dfn>
+<ul class="disc" id="efficiency-gap-3-2-1">
+<li id="efficiency-gap-3-2-1-1">
+<div class="para" id="p-derived-efficiency-gap-3-2-1-1">All votes for the losing candidate.</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="efficiency-gap-3-2-1-2">
+<div class="para" id="p-derived-efficiency-gap-3-2-1-2">All votes beyond 50% for the winning candidate.</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Definition 37"><a href="#efficiency-gap-3" title="Copy heading and permalink for Definition 37" aria-label="Copy heading and permalink for Definition 37">🔗</a></div>
+</article>
+<div class="para" id="efficiency-gap-4">Efficiency Gap:<div class="autopermalink" data-description="Paragraph"><a href="#efficiency-gap-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="efficiency-gap-5">
+\begin{equation*}
+\operatorname{EG}(P) = \frac{\text{Wasted Votes}_A - \text{Wasted Votes}_B}{\text{Total Votes}}
+\end{equation*}
+</div>
+<div class="para" id="efficiency-gap-6">Rough guideline: an absolute value of 8% or lower is considered the acceptable range.<div class="autopermalink" data-description="Paragraph"><a href="#efficiency-gap-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="efficiency-gap-7">In our tiny state:<div class="autopermalink" data-description="Paragraph"><a href="#efficiency-gap-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="efficiency-gap-8">
+<li id="efficiency-gap-8-1">
+<div class="para" id="p-derived-efficiency-gap-8-1">Proportional plan with small efficiency gap (around 8%).</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="efficiency-gap-8-2">
+<div class="para" id="p-derived-efficiency-gap-8-2">Blue gerrymander leads to a large positive efficiency gap (~40%).</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="efficiency-gap-8-3">
+<div class="para" id="p-derived-efficiency-gap-8-3">Red gerrymander leads to a large negative efficiency gap (~32%).</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-8-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="efficiency-gap-9">Drawbacks:<div class="autopermalink" data-description="Paragraph"><a href="#efficiency-gap-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="efficiency-gap-10">
+<li id="efficiency-gap-10-1">
+<div class="para" id="p-derived-efficiency-gap-10-1">Only measures partisan bias.</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-10-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="efficiency-gap-10-2">
+<div class="para" id="p-derived-efficiency-gap-10-2">False positives/negatives possible.</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-10-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="efficiency-gap-10-3">
+<div class="para" id="p-derived-efficiency-gap-10-3">Not fully compatible with proportionality.</div>
+<div class="autopermalink" data-description="Item"><a href="#efficiency-gap-10-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: The Efficiency Gap"><a href="#efficiency-gap" title="Copy heading and permalink for Subsection: The Efficiency Gap" aria-label="Copy heading and permalink for Subsection: The Efficiency Gap">🔗</a></div>
+</section>
+<section class="subsection" id="sampling">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sampling the Space of District Plans</span>
+</h3>
+<div class="para" id="sampling-2">Instead of scoring a single map, we:<div class="autopermalink" data-description="Paragraph"><a href="#sampling-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="sampling-3">
+<li id="sampling-3-1">
+<div class="para" id="p-derived-sampling-3-1">Generate many valid district plans (subject to constraints).</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sampling-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sampling-3-2">
+<div class="para" id="p-derived-sampling-3-2">Compute election outcomes for each plan.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sampling-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sampling-3-3">
+<div class="para" id="p-derived-sampling-3-3">Compare the proposed plan to the distribution.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sampling-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="sampling-4">By the Central Limit Theorem, outcomes across many plans tend to form a normal distribution.<div class="autopermalink" data-description="Paragraph"><a href="#sampling-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sampling-5">A plan that lies far in the tail is statistically suspicious.<div class="autopermalink" data-description="Paragraph"><a href="#sampling-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sampling-6">This approach can test racial, socioeconomic, and partisan hypotheses.<div class="autopermalink" data-description="Paragraph"><a href="#sampling-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Sampling the Space of District Plans"><a href="#sampling" title="Copy heading and permalink for Subsection: Sampling the Space of District Plans" aria-label="Copy heading and permalink for Subsection: Sampling the Space of District Plans">🔗</a></div>
+</section>
+<section class="subsection" id="whos-who">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Who’s Who in Mathematical Districting</span>
+</h3>
+<ul class="disc" id="whos-who-2">
+<li id="whos-who-2-1">
+<div class="para" id="p-derived-whos-who-2-1">Mira Bernstein &amp; Moon Duchin (Tufts) — convex geometry and districting.</div>
+<div class="autopermalink" data-description="Item"><a href="#whos-who-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="whos-who-2-2">
+<div class="para" id="p-derived-whos-who-2-2">Jonathan Mattingly (Duke) — quantifying gerrymandering.</div>
+<div class="autopermalink" data-description="Item"><a href="#whos-who-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="whos-who-2-3">
+<div class="para" id="p-derived-whos-who-2-3">Princeton Gerrymandering Project — sampling software.</div>
+<div class="autopermalink" data-description="Item"><a href="#whos-who-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="whos-who-2-4">
+<div class="para" id="p-derived-whos-who-2-4">AMS Capital Currents Blog (Karen Saxe).</div>
+<div class="autopermalink" data-description="Item"><a href="#whos-who-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Who’s Who in Mathematical Districting"><a href="#whos-who" title="Copy heading and permalink for Subsection: Who’s Who in Mathematical Districting" aria-label="Copy heading and permalink for Subsection: Who’s Who in Mathematical Districting">🔗</a></div>
+</section>
+<section class="subsection" id="closing">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Closing Question</span>
+</h3>
+<div class="para" id="closing-2">What should “fairness” mean in representative democracy?<div class="autopermalink" data-description="Paragraph"><a href="#closing-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="closing-3">Mathematics cannot answer that question, but it can reveal when something is statistically extreme.<div class="autopermalink" data-description="Paragraph"><a href="#closing-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Closing Question"><a href="#closing" title="Copy heading and permalink for Subsection: Closing Question" aria-label="Copy heading and permalink for Subsection: Closing Question">🔗</a></div>
+</section>
+<section class="subsection" id="gerrymandering-background">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Issue</span>
+</h3>
+<div class="para" id="gerrymandering-background-2">
+<em class="emphasis">Redistricting</em> (in the United States) is the process of drawing new political districts (maps), usually every 10 years, following a U.S. Census. Each district corresponds to (at least one) representative in government, decided by elections among voters living in that district.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-background-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="gerrymandering-background-3">
+<div class="para">There are a few rules that all states must abide by when drawing their districts:</div>
+<ul class="disc" id="gerrymandering-background-3-1">
+<li id="gerrymandering-background-3-1-1">
+<div class="para" id="p-derived-gerrymandering-background-3-1-1">Districts must be roughly equal in population (“one person, one vote”).</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-background-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gerrymandering-background-3-1-2">
+<div class="para" id="p-derived-gerrymandering-background-3-1-2">Districts must be contiguous (one connected shape).</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-background-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gerrymandering-background-3-1-3">
+<div class="para" id="p-derived-gerrymandering-background-3-1-3">Districts must comply with racial fairness via the Voting Rights Act of 1965.</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-background-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Redistricting can be controversial due to who draws the lines in each state. While some states have independent redistricting commissions comprised of citizens or politicians equally representing the two main political parties, sometimes a state process is controlled by the political party in power of the state government. The manipulation of drawing districts to benefit one group is called <dfn class="terminology">gerrymandering</dfn>. <dfn class="terminology">Partisan gerrymandering</dfn> is the practice of drawing district lines to maximize a political party’s advantage in elected representatives. In this type of gerrymandering, voters and representatives of the party in power benefit as an increased delegation directly impacts the laws and policies that are able to pass in government, both on the state and national levels. Meanwhile, voters and representatives of the party not in power suffer from being underrepresented in government and may be victims of a cycle where the opposing party maintains their power through the redistricting process.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-background-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-background-4">
+<dfn class="terminology">Racial gerrymandering</dfn> is the practice of drawing district lines to reduce the impact of racial minority voters by limiting their ability to elect candidates of their choice. This practice is illegal in the United States. Historically, in this type of gerrymandering, White people benefit from the drawing of districts that systematically stifle voters of color. Conversely, members of racial minority groups continue to be oppressed and are in a more difficult position to elect representatives to government that may fight for policies on their behalf.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-background-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="gerrymandering-background-5">
+<div class="para">The Supreme Court of the United States has ruled that partisan gerrymandering is a political question that is not justiciable, meaning that it is not within the jurisdiction of the courts to decide. However, the Court has ruled that racial gerrymandering is unconstitutional and has struck down district plans that were found to be racially gerrymandered. The test for racial gerrymandering established by the Supreme Court is called the <dfn class="terminology">Gingles test</dfn>, which has three prongs:</div>
+<ol class="decimal" id="gerrymandering-background-5-2">
+<li id="gerrymandering-background-5-2-1">
+<div class="para" id="gerrymandering-background-5-2-1-1">The racial minority group must be sufficiently large and geographically compact to constitute a majority in a single-member district.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-background-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#gerrymandering-background-5-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="gerrymandering-background-5-2-2">
+<div class="para" id="gerrymandering-background-5-2-2-1">The racial minority group must be politically cohesive, meaning that its members tend to vote similarly.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-background-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#gerrymandering-background-5-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="gerrymandering-background-5-2-3">
+<div class="para" id="gerrymandering-background-5-2-3-1">The majority group must vote sufficiently as a bloc to usually defeat the minority’s preferred candidate.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-background-5-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#gerrymandering-background-5-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-background-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Understanding the Issue"><a href="#gerrymandering-background" title="Copy heading and permalink for Subsection: Understanding the Issue" aria-label="Copy heading and permalink for Subsection: Understanding the Issue">🔗</a></div>
+</section>
+<section class="subsection" id="gerrymandering-big-problem">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Big Problem: Using Mathematics to Determine Fairness</span>
+</h3>
+<div class="para" id="gerrymandering-big-problem-2">What is a “fair” district map?<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-big-problem-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-big-problem-3">Even without partisan or racial bias, the notion of a “fair” district map may take on different meanings depending on your state and point of view. Perhaps a fair map is one that reliably produces representatives which are proportional to the state’s political party populations. Maybe a map with a high number of competitive districts keeps democracy flourishing. Or possibly a state’s geography prioritizes compactness of district shapes.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-big-problem-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-big-problem-4">Historically, math has been used to try to define and quantify forms of “fairness” as well as measures for detecting partisan or racial gerrymandering. Much like in other social applications, fairness is a mathematically impossible reality to achieve. Eventually, mathematicians and statisticians turned to outlier analysis to show that some district plans were outliers in the space of district plans.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-big-problem-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Big Problem: Using Mathematics to Determine Fairness"><a href="#gerrymandering-big-problem" title="Copy heading and permalink for Subsection: Big Problem: Using Mathematics to Determine Fairness" aria-label="Copy heading and permalink for Subsection: Big Problem: Using Mathematics to Determine Fairness">🔗</a></div>
+</section>
+<section class="subsection" id="gerrymandering-math-topic-compactness">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometry and Compactness</span>
+</h3>
+<section class="introduction" id="gerrymandering-math-topic-compactness-2">
+<div class="para" id="gerrymandering-math-topic-compactness-2-1">Many discussions about manipulation of district boundaries have focused on the shapes of the districts.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsubsection" id="gerrymandering-math-topic-compactness-3">
+<h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Three Ways to Measure Compactness of a District</span>
+</h4>
+<article class="remark remark-like" id="gerrymandering-math-topic-compactness-3-2"><h5 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="autopermalink" data-description="Remark 38"><a href="#gerrymandering-math-topic-compactness-3-2" title="Copy heading and permalink for Remark 38" aria-label="Copy heading and permalink for Remark 38">🔗</a></div>
+</article>
+<div class="para" id="gerrymandering-math-topic-compactness-3-3">To allow for more straighforward computations, we work in <em class="emphasis">square</em> grids in this section, noting that this is a simplification from real-life applications. We start with our square grid and a district plan drawn on the grid: <div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-math-topic-compactness-3-4">We defined <dfn class="terminology">compactness</dfn> above as a measure of how tightly packed a district is. The most compact district, then, is one that is as tightly packed as possible. If we are constructing our districts from squares in the grid, what shape would be as tightly packed as possible? We would want smooth edges, without any parts sticking out, so we might try to arrange our squares into a rectangular region. But a long, skinny rectangle would not be considered as tightly packed as possible: we could tighten it up even more by getting the side lengths to all be the same. Our most compact shape, then, is a square.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-math-topic-compactness-3-5">The first measure of compactness we discuss, the <dfn class="terminology">Polsy-Popper</dfn> measure, is found by comparing the shape of a given district to the “ideal” shape, a square - more specifically, a square that has the same perimeter as our district.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="gerrymandering-PPdef"><h5 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<dfn class="terminology">Polsby-Popper score</dfn><div class="displaymath process-math" id="gerrymandering-PPdef-2">
+\begin{equation*}
+PP =\displaystyle\frac{\text{Area of district}}{\text{Area of a square with the same perimeter as the district}}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 39"><a href="#gerrymandering-PPdef" title="Copy heading and permalink for Definition 39" aria-label="Copy heading and permalink for Definition 39">🔗</a></div>
+</article>
+<div class="para" id="gerrymandering-math-topic-compactness-3-7">In the following example, we calculate the Polsby-Popper score for the district above.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="gerrymandering-math-topic-compactness-3-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<details id="gerrymandering-math-topic-compactness-3-8-1" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="autopermalink" data-description="Hint 40.1"><a href="#gerrymandering-math-topic-compactness-3-8-1" title="Copy heading and permalink for Hint 40.1" aria-label="Copy heading and permalink for Hint 40.1">🔗</a></div>
+</div></details>
+<details id="gerrymandering-math-topic-compactness-3-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<span class="process-math">\(PP = \frac{72}{169} \approx 0.426.\)</span><div class="autopermalink" data-description="Answer 40.1"><a href="#gerrymandering-math-topic-compactness-3-8-2" title="Copy heading and permalink for Answer 40.1" aria-label="Copy heading and permalink for Answer 40.1">🔗</a></div>
+</div></details>
+<details id="gerrymandering-math-topic-compactness-3-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="gerrymandering-math-topic-compactness-3-8-3-1">Omitting units and simply counting, we note the area of the district is <span class="process-math">\(18\)</span> and its perimeter is <span class="process-math">\(26\text{.}\)</span> Since all sides must be equal in length in a square, any square that has perimeter <span class="process-math">\(26\)</span> must have sides of length <span class="process-math">\(\frac{26}{4}\)</span> or <span class="process-math">\(\frac{13}{2} \text{.}\)</span> Therefore the area of this square would be <span class="process-math">\(\left ( \frac{13}{2} \right )^2 = \frac{169}{4}\text{.}\)</span> Now we find the ratio: <span class="process-math">\(PP = \frac{18}{(169/4)}=\frac{72}{169} \approx 0.426.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 40.1"><a href="#gerrymandering-math-topic-compactness-3-8-3" title="Copy heading and permalink for Solution 40.1" aria-label="Copy heading and permalink for Solution 40.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 40"><a href="#gerrymandering-math-topic-compactness-3-8" title="Copy heading and permalink for Example 40" aria-label="Copy heading and permalink for Example 40">🔗</a></div>
+</article></details>
+<div class="para" id="gerrymandering-math-topic-compactness-3-9">Our second measure of compactness, the <dfn class="terminology">Reock score</dfn>, again compares the given district shape to a square. However, instead of using a square with the same perimeter as the district, the Reock score compares to a <em class="emphasis">minimum-bounding square</em>, which is the smallest square that fully contains the district.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="gerrymandering-Rdef"><h5 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<dfn class="terminology">Reock score</dfn><div class="displaymath process-math" id="gerrymandering-Rdef-2">
+\begin{equation*}
+R =\displaystyle\frac{\text{Area of district}}{\text{Area of the smallest square containing the district}}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 41"><a href="#gerrymandering-Rdef" title="Copy heading and permalink for Definition 41" aria-label="Copy heading and permalink for Definition 41">🔗</a></div>
+</article>
+<div class="para" id="gerrymandering-math-topic-compactness-3-11">In the image below, we show the district plan together with the smallest square containing the district. <div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-math-topic-compactness-3-12">In the next example, we calculate the Reock score for the district above.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="gerrymandering-math-topic-compactness-3-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<details id="gerrymandering-math-topic-compactness-3-13-1" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="autopermalink" data-description="Hint 42.1"><a href="#gerrymandering-math-topic-compactness-3-13-1" title="Copy heading and permalink for Hint 42.1" aria-label="Copy heading and permalink for Hint 42.1">🔗</a></div>
+</div></details>
+<details id="gerrymandering-math-topic-compactness-3-13-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<span class="process-math">\(R = 0.5 \)</span><div class="autopermalink" data-description="Answer 42.1"><a href="#gerrymandering-math-topic-compactness-3-13-2" title="Copy heading and permalink for Answer 42.1" aria-label="Copy heading and permalink for Answer 42.1">🔗</a></div>
+</div></details>
+<details id="gerrymandering-math-topic-compactness-3-13-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="gerrymandering-math-topic-compactness-3-13-3-1">Omitting units and simply counting, we note the area of the district is <span class="process-math">\(18\)</span> and area of the smallest square that contains the district is <span class="process-math">\(36\text{.}\)</span> In this case, we have <span class="process-math">\(R = \frac{18}{36}=\frac{1}{2}=0.5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-13-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 42.1"><a href="#gerrymandering-math-topic-compactness-3-13-3" title="Copy heading and permalink for Solution 42.1" aria-label="Copy heading and permalink for Solution 42.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 42"><a href="#gerrymandering-math-topic-compactness-3-13" title="Copy heading and permalink for Example 42" aria-label="Copy heading and permalink for Example 42">🔗</a></div>
+</article></details>
+<div class="para" id="gerrymandering-math-topic-compactness-3-14">Finally, the <dfn class="terminology">Convex Hull score</dfn> is a ratio that measures how “convex” a district shape is. In geometry, a <em class="emphasis">convex</em> shape is one in which any two points in the interior of the shape can be connected by a straight line that stays inside the shape. If there is any pair of interior points connected by a straight line that partially falls outside of the shape, then the shape is known as <em class="emphasis">concave</em>. The picture below shows an example of a convex shape (image a) versus concave shape (image b): <div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-math-topic-compactness-3-15">The <em class="emphasis">convex hull</em> of a shape is the original shape together with the minimum additional area needed to make it convex. To visualize the convex hull, imagine placing a rubber band tightly around the perimeter of the shape. If the shape is a square, or a rectangle, the rubber band will fit exactly along the edges of the shape. If the shape is not rectangular, the rubber band will stretch across any gaps created between corners of the shape. This region enclosed by the rubber band is the convex hull. The picture below shows our district together with its convex hull: <div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="gerrymandering-CHdef"><h5 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<dfn class="terminology">Convex Hull score</dfn><div class="displaymath process-math" id="gerrymandering-CHdef-2">
+\begin{equation*}
+CH =\displaystyle\frac{\textnormal{Area of district}}{\textnormal{Area of convex hull of district}}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 43"><a href="#gerrymandering-CHdef" title="Copy heading and permalink for Definition 43" aria-label="Copy heading and permalink for Definition 43">🔗</a></div>
+</article>
+<div class="para" id="gerrymandering-math-topic-compactness-3-17">In the following example, we compute the Convex Hull score for the given district.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="gerrymandering-math-topic-compactness-3-18" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<details id="gerrymandering-math-topic-compactness-3-18-1" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="autopermalink" data-description="Hint 44.1"><a href="#gerrymandering-math-topic-compactness-3-18-1" title="Copy heading and permalink for Hint 44.1" aria-label="Copy heading and permalink for Hint 44.1">🔗</a></div>
+</div></details>
+<details id="gerrymandering-math-topic-compactness-3-18-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<span class="process-math">\(CH \approx 0.74 \text{.}\)</span><div class="autopermalink" data-description="Answer 44.1"><a href="#gerrymandering-math-topic-compactness-3-18-2" title="Copy heading and permalink for Answer 44.1" aria-label="Copy heading and permalink for Answer 44.1">🔗</a></div>
+</div></details>
+<details id="gerrymandering-math-topic-compactness-3-18-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="gerrymandering-math-topic-compactness-3-18-3-1">Omitting units and simply counting, we note the area of the district is <span class="process-math">\(18\text{.}\)</span> The area of the convex hull that contains the district is found in pieces, combining the area of the squares with the areas of the triangular regions formed. For area of the convex hull we get <span class="process-math">\(20 + 4 + 0.5\text{.}\)</span> This yields <span class="process-math">\(CH = \frac{18}{24.5} \approx  0.74 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-3-18-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 44.1"><a href="#gerrymandering-math-topic-compactness-3-18-3" title="Copy heading and permalink for Solution 44.1" aria-label="Copy heading and permalink for Solution 44.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 44"><a href="#gerrymandering-math-topic-compactness-3-18" title="Copy heading and permalink for Example 44" aria-label="Copy heading and permalink for Example 44">🔗</a></div>
+</article></details>
+<article class="remark remark-like" id="gerrymandering-math-topic-compactness-3-19"><h5 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>“ideal”<em class="emphasis">consistent</em><div class="autopermalink" data-description="Remark 45"><a href="#gerrymandering-math-topic-compactness-3-19" title="Copy heading and permalink for Remark 45" aria-label="Copy heading and permalink for Remark 45">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsubsection: Three Ways to Measure Compactness of a District"><a href="#gerrymandering-math-topic-compactness-3" title="Copy heading and permalink for Subsubsection: Three Ways to Measure Compactness of a District" aria-label="Copy heading and permalink for Subsubsection: Three Ways to Measure Compactness of a District">🔗</a></div>
+</section>
+<section class="subsubsection" id="gerrymandering-math-topic-compactness-4">
+<h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Compactness Criteria</span>
+</h4>
+<div class="para" id="gerrymandering-math-topic-compactness-4-2">In these three measures, compactness is a geometric measure that compares the area of a district to some “ideal” compact shape. In each case we consider, the compactness score is a number between 0 and 1 that measures the compactness of the shape relative to the ideal. Districts close in shape to the ideal shape (more compact) have scores closer to 1, while those less compact (farther from the ideal) score closer to 0. When a district has much greater perimeter than we would expect for the region’s area (as happens when the shape has long, skinny pieces branching off or strung together), we may suspect gerrymandering. At this time, 37 states include a compactness requirement for state legislative districts, and 18 establish similar requirements for congressional districts. However, there is no universal measure, and different states have different laws that regulate compactness. In Idaho the redistricting commission is expected to “avoid drawing distorted boundaries”, while in other states with extensive coastlines (such as Maryland) this is impossible. In fact, most states do not provide details on compactness measures but adopt a  “you know it when you see it” approach in determinations.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gerrymandering-math-topic-compactness-4-3">Compactness in the Courts: Pennsylvania’s 7th congressional district adopted in 2011 (shown below) has been widely cited as an example of a district that is far from compact as a result of gerrymandering. In 2018, the state’s Supreme Court ruled this (and the rest of the district plan) to be an unconstitutional gerrymander, and required the state to create a new map.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="gerrymandering-math-topic-compactness-4-4">
+<div class="para">Among mathematicians and political scientists, the debate about best measures of compactness continues, but consensus has arisen around a few guiding principles:</div>
+<ul class="disc" id="gerrymandering-math-topic-compactness-4-4-1">
+<li id="gerrymandering-math-topic-compactness-4-4-1-1">
+<div class="para" id="p-derived-gerrymandering-math-topic-compactness-4-4-1-1">There is no number threshold for a district being deemed “compact” - the numbers are used in comparison, not for their standalone values.</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-math-topic-compactness-4-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gerrymandering-math-topic-compactness-4-4-1-2">
+<div class="para" id="p-derived-gerrymandering-math-topic-compactness-4-4-1-2">Compactness measures should be used across an entire districting plan, not just a single district.</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-math-topic-compactness-4-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gerrymandering-math-topic-compactness-4-4-1-3">
+<div class="para" id="p-derived-gerrymandering-math-topic-compactness-4-4-1-3">Comparisons should be made between districts and plans within the same state, and not across different states as each state’s geography is unique.</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-math-topic-compactness-4-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gerrymandering-math-topic-compactness-4-4-1-4">
+<div class="para" id="p-derived-gerrymandering-math-topic-compactness-4-4-1-4">Compactness tests should measure the shape and not the size of the district.</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-math-topic-compactness-4-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gerrymandering-math-topic-compactness-4-4-1-5">
+<div class="para" id="p-derived-gerrymandering-math-topic-compactness-4-4-1-5">Multiple compactness tests should be used whenever possible.</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-math-topic-compactness-4-4-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gerrymandering-math-topic-compactness-4-4-1-6">
+<div class="para" id="p-derived-gerrymandering-math-topic-compactness-4-4-1-6">Compactness tests should not be the sole factor used to judge district plans.</div>
+<div class="autopermalink" data-description="Item"><a href="#gerrymandering-math-topic-compactness-4-4-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Compactness Criteria"><a href="#gerrymandering-math-topic-compactness-4" title="Copy heading and permalink for Subsubsection: Compactness Criteria" aria-label="Copy heading and permalink for Subsubsection: Compactness Criteria">🔗</a></div>
+</section>
+<div class="para" id="gerrymandering-math-topic-compactness-5">Ultimately, it’s a bit of a moot point. The Brennan Center has gathered several examples of situations like these in this useful analysis: <a class="external" href="https://www.brennancenter.org/our-work/analysis-opinion/dont-judge-district-its-shape" target="_blank">Don’t judge a district by its shape (opens new tab)</a>. In fact, as the article points out, it is possible for a compact shape to be the result of a gerrymander too! In the following sections, we explore issues of fairness that go beyond geometry.<div class="autopermalink" data-description="Paragraph"><a href="#gerrymandering-math-topic-compactness-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Geometry and Compactness"><a href="#gerrymandering-math-topic-compactness" title="Copy heading and permalink for Subsection: Geometry and Compactness" aria-label="Copy heading and permalink for Subsection: Geometry and Compactness">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-districting-algorithms">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Districting Algorithms</span>
+</h3>
+<article class="definition definition-like" id="subsec-districting-algorithms-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-districting-algorithms-2-1">A <dfn class="terminology">graph</dfn> <span class="process-math">\(G\)</span> is pair of sets: <span class="process-math">\(V = \{v_1,\dots,v_n\}\)</span> (the <dfn class="terminology">vertex set</dfn>) and <span class="process-math">\(E \subseteq \{\{v_i,v_j\} \, \colon \, 1 \leq i,j \leq n\}\)</span> (the <dfn class="terminology">edge set</dfn>). A <dfn class="terminology">weighted graph</dfn> has a numerical value associated to each vertex.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-districting-algorithms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 46"><a href="#subsec-districting-algorithms-2" title="Copy heading and permalink for Definition 46" aria-label="Copy heading and permalink for Definition 46">🔗</a></div>
+</article>
+<details id="subsec-districting-algorithms-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-districting-algorithms-3-1">an example of a graph goes here<div class="autopermalink" data-description="Paragraph"><a href="#subsec-districting-algorithms-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 47"><a href="#subsec-districting-algorithms-3" title="Copy heading and permalink for Example 47" aria-label="Copy heading and permalink for Example 47">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-districting-algorithms-4">Notice that the way we draw the graph is not part of the graph itself!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-districting-algorithms-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-districting-algorithms-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-districting-algorithms-5-1">an example of the same graph drawn differently goes here<div class="autopermalink" data-description="Paragraph"><a href="#subsec-districting-algorithms-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 48"><a href="#subsec-districting-algorithms-5" title="Copy heading and permalink for Example 48" aria-label="Copy heading and permalink for Example 48">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="subsec-districting-algorithms-6"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-districting-algorithms-6-1">If <span class="process-math">\(e = \{v,w\} \in E\text{,}\)</span> we say <span class="process-math">\(e\)</span> is <dfn class="terminology">incident</dfn> to <span class="process-math">\(v\)</span> and <span class="process-math">\(w\)</span> and that <span class="process-math">\(v\)</span> and <span class="process-math">\(w\)</span> are <dfn class="terminology">adjacent</dfn>. The <dfn class="terminology">degree</dfn> of a vertex is the number of edges incident to it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-districting-algorithms-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 49"><a href="#subsec-districting-algorithms-6" title="Copy heading and permalink for Definition 49" aria-label="Copy heading and permalink for Definition 49">🔗</a></div>
+</article>
+<article class="definition definition-like" id="subsec-districting-algorithms-7"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-districting-algorithms-7-1">A <dfn class="terminology">cycle</dfn> is a... , a <dfn class="terminology">tree</dfn> is a graph without cycles; a vertex of degree one in a tree is called a <dfn class="terminology">leaf</dfn>, a path is a tree with only two leaves.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-districting-algorithms-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 50"><a href="#subsec-districting-algorithms-7" title="Copy heading and permalink for Definition 50" aria-label="Copy heading and permalink for Definition 50">🔗</a></div>
+</article>
+<div class="para" id="subsec-districting-algorithms-8">Given a graph <span class="process-math">\(G\text{,}\)</span> a <dfn class="terminology">minimal spanning tree</dfn> is a tree that reaches all the vertices of <span class="process-math">\(G\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-districting-algorithms-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Districting Algorithms"><a href="#subsec-districting-algorithms" title="Copy heading and permalink for Subsection: Districting Algorithms" aria-label="Copy heading and permalink for Subsection: Districting Algorithms">🔗</a></div>
+</section><div class="autopermalink" data-description="Section: Districting"><a href="#sec-districting" title="Copy heading and permalink for Section: Districting" aria-label="Copy heading and permalink for Section: Districting">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="course-notes-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-01.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,377 @@
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx by /root/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /root/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/Decisions-by-Design_v1/new-pretext-project/output/course.
+INFO    : discovering source file's directory name: /workspaces/Decisions-by-Design_v1/new-pretext-project/source
+INFO    : verifying and expanding input directory: /workspaces/Decisions-by-Design_v1/new-pretext-project/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Decisions-by-Design_v1/new-pretext-project/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Decisions-by-Design_v1/new-pretext-project/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Decisions-by-Design_v1/new-pretext-project/assets
+INFO    : discovering source file's directory name: /workspaces/Decisions-by-Design_v1/new-pretext-project/source
+INFO    : XSL conversion of /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx by /root/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /root/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.13.5
+INFO    : Downloading Runestone Services, version 7.13.5
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx to HTML in /ptx-aq07zjyo
+INFO    : XSL conversion of /workspaces/Decisions-by-Design_v1/new-pretext-project/source/main.ptx by /root/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "notes-class-01" (xml:id), "Mathematical Modeling and Google NotebookLM" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "de-crash-course" (xml:id), "A Crash Course in Concentration Models" (title)
+INFO    : * PTX:INFO:   checking all deprecated elements.
+WARNING : * PTX:DEPRECATE: (2016-05-23) <br> can no longer be used to create multiline output; you may use <line> elements in select situations (4 times)
+INFO    : *              located within: "Query: What are the six steps involved in mathematical modeling? " (title)
+INFO    : *              located within: "Query: What is the winning paper about?" (title)
+INFO    : *              located within: "Standard Divisor D and Standard Quota Q_s, Lower QuotaL_s, Upper Quota U_s" (title)
+INFO    : *              located within: "Standard Divisor D and Standard Quota Q_s, Lower QuotaL_s, Upper Quota U_s" (title)
+INFO    : * --------------
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Professors and Enrollments, with 45 boxes of coffee." (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Professors and Enrollments, with 45 boxes of coffee." (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Professors and Enrollments, with 45 boxes of coffee." (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Professors and Enrollments, with 45 boxes of coffee." (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a serial number, search output for "[NUM]"
+INFO    : *              located within: "Apportionment Computations" (title)
+ERROR   : * PTX:ERROR:   An object (cell) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Apportionment Computations" (title)
+INFO    : successful application of /root/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /ptx-aq07zjyo
+INFO    : Removing temporary directory /ptx-60tx06e3
+INFO    : 
+Finished build for target course. Run `pretext view course` to see the results.
+
+CRITICAL: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

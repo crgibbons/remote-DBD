@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="training-language-models">
+  <title>Human Data Workers</title>
+
+      <exercise>
+      <title>Fact Check Challenge</title>
+
+      <statement>
+        <p>
+          Students have exactly 101 seconds to verify each of the following claims:
+          <ol>
+            <li>
+              <p>
+                Meta and Appen publicly announced a joint initiative to ensure all Brazilian fact-checkers are paid a fair living wage of at least $15 USD per hour for combating disaster-related misinformation.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The house that the Hamilton College President resides in is called the Kirkland House.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The matrix <m>\begin{matrix} 2.5 \amp 2 \\ 2 \amp 2.5 \end{matrix}</m> has eigenvalues <m>\frac{5}{2}</m> and <m>\frac{1}{2}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The SMOL language model was trained on a corpus of 100 billion tokens.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+</worksheet>
