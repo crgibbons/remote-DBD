@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -118,15 +119,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -152,7 +153,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-class-01.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-districting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-background-math.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-districting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -171,10 +172,11 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-class-01.html" class="internal"><span class="title">Mathematical Modeling and Google NotebookLM</span></a></div>
+<div class="toc-title-box"><a href="notes-background-math.html" class="internal"><span class="title">Mathematical and Statistical Ideas - a Reference</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-class-01.html#notes-class-01-4" class="internal"><span class="title">Mathematical Modeling</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-class-01.html#notes-class-01-5" class="internal"><span class="title">Google NotebookLM</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-background-math.html#subsec-statistics-review" class="internal"><span class="title">Statistics Ideas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-background-math.html#subsec-calculus-review" class="internal"><span class="title">Calculus Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-background-math.html#subsec-Linear-algebra-review" class="internal"><span class="title">Linear Algebra Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
@@ -221,6 +223,24 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#visualizing-rounding-error" class="internal"><span class="title">Visualizing Rounding and Error</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#comparing-methods" class="internal"><span class="title">Comparing Methodological Justness</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#paradoxes" class="internal"><span class="title">Identifying Paradoxes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#affine-simplices-barycentric" class="internal"><span class="title">Affine Sets, Simplices, and Barycentric Coordinates</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#course-notes-4-13" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="course-notes-4.html#affine-simplex-exercises" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#barycentric-compatible-functions" class="internal"><span class="title">Barycentric-Compatible Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#solving-linear-functionals" class="internal"><span class="title">A Practical Guide to Solving Systems of Linear Functionals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#functionals-dot-products" class="internal"><span class="title">Writing Functionals as Dot Products</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-notes-4.html#allocation-strategy" class="internal"><span class="title">Strategy for Allocation Problems</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="course-notes-4.html#workflow" class="internal"><span class="title">Practical Workflow</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#workflow-affine" class="internal"><span class="title">Step A: Solve the Affine Constraints</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#workflow-slabs" class="internal"><span class="title">Step B: Add Interval Constraints</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="course-notes-4.html#workflow-remainders" class="internal"><span class="title">Step C: Add Remainder Comparisons</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="course-notes-4.html#linear-functional-exercises" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -297,16 +317,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="course-notes-4-2-1">One of the first topics we’ll study is <dfn class="terminology">apportionment</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#course-notes-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="course-notes-4-2-2"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportionment.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportionment.</span>
 </h3>
 <div class="para" id="course-notes-4-2-2-2-1">The term <dfn class="terminology">apportionment</dfn> refers to the mathematical process of distributing a fixed number of indistinguishable assets among different entities.<div class="autopermalink" data-description="Paragraph"><a href="#course-notes-4-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <div class="para" id="course-notes-4-2-2-2-2">Each asset is indistinguishable from any other asset, and no asset can be subdivided.<div class="autopermalink" data-description="Paragraph"><a href="#course-notes-4-2-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5: Apportionment"><a href="#course-notes-4-2-2" title="Copy heading and permalink for Definition 5: Apportionment" aria-label="Copy heading and permalink for Definition 5: Apportionment">🔗</a></div>
+<div class="autopermalink" data-description="Definition 15: Apportionment"><a href="#course-notes-4-2-2" title="Copy heading and permalink for Definition 15: Apportionment" aria-label="Copy heading and permalink for Definition 15: Apportionment">🔗</a></div>
 </article>
 <details id="course-notes-4-2-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Is it apportionment?</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Is it apportionment?</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="course-notes-4-2-3-2-1">For example, suppose Courtney buys 45 boxes of coffee (from the orange and pink doughnut shop down the hill) for the math department to bring to their classes. The department has to come up with a way to decide how many boxes each professor gets, perhaps using the number of students each professor is teaching as the main relevant piece of data to make this decision.<div class="autopermalink" data-description="Paragraph"><a href="#course-notes-4-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -315,7 +335,7 @@ eBookConfig.enable_chatcodes =  false;
 </div> 
 <div class="para" id="course-notes-4-2-3-2-3">Based on the following table of data, determine how to divvy up the boxes of coffee in different ways. Each box serves 10. Assume every student (and professor) drinks coffee.<div class="autopermalink" data-description="Paragraph"><a href="#course-notes-4-2-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<figure class="table table-like" id="course-notes-4-2-3-2-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Professors and Enrollments, with <span class="process-math">\(45\)</span> boxes of coffee.<div class="autopermalink" data-description="Table 7: Professors and Enrollments, with 45 boxes of coffee."><a href="#course-notes-4-2-3-2-4" title="Copy heading and permalink for Table 7: Professors and Enrollments, with 45 boxes of coffee." aria-label="Copy heading and permalink for Table 7: Professors and Enrollments, with 45 boxes of coffee.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="course-notes-4-2-3-2-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Professors and Enrollments, with <span class="process-math">\(45\)</span> boxes of coffee.<div class="autopermalink" data-description="Table 17: Professors and Enrollments, with 45 boxes of coffee."><a href="#course-notes-4-2-3-2-4" title="Copy heading and permalink for Table 17: Professors and Enrollments, with 45 boxes of coffee." aria-label="Copy heading and permalink for Table 17: Professors and Enrollments, with 45 boxes of coffee.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b0 r0 l0 t0 lines">Prof</th>
 <th scope="col" class="l m b0 r0 l0 t0 lines">Total Students (plus one)</th>
@@ -373,7 +393,7 @@ eBookConfig.enable_chatcodes =  false;
 </figure> 
 <div class="para" id="course-notes-4-2-3-2-5">Which method or methods seem “fair”? Why?<div class="autopermalink" data-description="Paragraph"><a href="#course-notes-4-2-3-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 6: Is it apportionment?"><a href="#course-notes-4-2-3" title="Copy heading and permalink for Example 6: Is it apportionment?" aria-label="Copy heading and permalink for Example 6: Is it apportionment?">🔗</a></div>
+<div class="autopermalink" data-description="Example 16: Is it apportionment?"><a href="#course-notes-4-2-3" title="Copy heading and permalink for Example 16: Is it apportionment?" aria-label="Copy heading and permalink for Example 16: Is it apportionment?">🔗</a></div>
 </article></details></section>
 <section class="subsection" id="subsec-apportionment-terminology">
 <h3 class="heading hide-type">
@@ -382,7 +402,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-apportionment-terminology-2">One of the most famous apportionment problems is the apportionment of seats in the U.S. House of Representatives among the U.S. states. In fact, the terminology for apportionment problems comes from this application.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="subsec-apportionment-terminology-3"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportionment Terms.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportionment Terms.</span>
 </h4>
 <div class="para logical" id="subsec-apportionment-terminology-3-2">
 <dl class="description-list">
@@ -442,15 +462,15 @@ eBookConfig.enable_chatcodes =  false;
 </dl>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 8: Apportionment Terms"><a href="#subsec-apportionment-terminology-3" title="Copy heading and permalink for Definition 8: Apportionment Terms" aria-label="Copy heading and permalink for Definition 8: Apportionment Terms">🔗</a></div>
+<div class="autopermalink" data-description="Definition 18: Apportionment Terms"><a href="#subsec-apportionment-terminology-3" title="Copy heading and permalink for Definition 18: Apportionment Terms" aria-label="Copy heading and permalink for Definition 18: Apportionment Terms">🔗</a></div>
 </article>
 <details id="subsec-apportionment-terminology-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Revisiting Coffee.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Revisiting Coffee.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="subsec-apportionment-terminology-4-2-1">Taking each professor to be a state and each box of coffee to be a seat, we use the number of students each professor is teaching as the population (plus the professors themselves!). The standard divisor is <span class="process-math">\(D = \frac{485}{45} = 10 + \frac{35}{485} = 10.\overline{7}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<figure class="table table-like" id="subsec-apportionment-terminology-4-2-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Apportionment Computations<div class="autopermalink" data-description="Table 10: Apportionment Computations"><a href="#subsec-apportionment-terminology-4-2-2" title="Copy heading and permalink for Table 10: Apportionment Computations" aria-label="Copy heading and permalink for Table 10: Apportionment Computations">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-apportionment-terminology-4-2-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Apportionment Computations<div class="autopermalink" data-description="Table 20: Apportionment Computations"><a href="#subsec-apportionment-terminology-4-2-2" title="Copy heading and permalink for Table 20: Apportionment Computations" aria-label="Copy heading and permalink for Table 20: Apportionment Computations">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Name</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Number of Students (plus one)</th>
@@ -713,7 +733,7 @@ eBookConfig.enable_chatcodes =  false;
 </figure><div class="solutions">
 <details id="subsec-apportionment-terminology-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<figure class="table table-like" id="subsec-apportionment-terminology-4-3-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Standard Quotas<div class="autopermalink" data-description="Table 11: Standard Quotas"><a href="#subsec-apportionment-terminology-4-3-1" title="Copy heading and permalink for Table 11: Standard Quotas" aria-label="Copy heading and permalink for Table 11: Standard Quotas">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-apportionment-terminology-4-3-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Standard Quotas<div class="autopermalink" data-description="Table 21: Standard Quotas"><a href="#subsec-apportionment-terminology-4-3-1" title="Copy heading and permalink for Table 21: Standard Quotas" aria-label="Copy heading and permalink for Table 21: Standard Quotas">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Name</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Number of Students (plus one)</th>
@@ -823,22 +843,22 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines">N/A</td>
 </tr>
 </table></div>
-</figure><div class="autopermalink" data-description="Solution 9.1"><a href="#subsec-apportionment-terminology-4-3" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+</figure><div class="autopermalink" data-description="Solution 19.1"><a href="#subsec-apportionment-terminology-4-3" title="Copy heading and permalink for Solution 19.1" aria-label="Copy heading and permalink for Solution 19.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 9: Revisiting Coffee"><a href="#subsec-apportionment-terminology-4" title="Copy heading and permalink for Example 9: Revisiting Coffee" aria-label="Copy heading and permalink for Example 9: Revisiting Coffee">🔗</a></div>
+<div class="autopermalink" data-description="Example 19: Revisiting Coffee"><a href="#subsec-apportionment-terminology-4" title="Copy heading and permalink for Example 19: Revisiting Coffee" aria-label="Copy heading and permalink for Example 19: Revisiting Coffee">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-apportionment-terminology-5">The first apportionment method we’ll study is due to none other than Alexander Hamilton!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="subsec-apportionment-terminology-6"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hamilton’s Method.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hamilton’s Method.</span>
 </h4>
 <div class="para" id="subsec-apportionment-terminology-6-2">Start by giving each state its lower quota. Then, in order of largest fractional part, distribute the remaining seats.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 12: Hamilton’s Method"><a href="#subsec-apportionment-terminology-6" title="Copy heading and permalink for Definition 12: Hamilton’s Method" aria-label="Copy heading and permalink for Definition 12: Hamilton’s Method">🔗</a></div>
+<div class="autopermalink" data-description="Definition 22: Hamilton’s Method"><a href="#subsec-apportionment-terminology-6" title="Copy heading and permalink for Definition 22: Hamilton’s Method" aria-label="Copy heading and permalink for Definition 22: Hamilton’s Method">🔗</a></div>
 </article>
 <details id="subsec-apportionment-terminology-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The winners are....</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The winners are....</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-apportionment-terminology-7-2-1">Determine which professors get their upper quota of boxes of coffee thanks to Alexander Hamilton.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -847,7 +867,7 @@ eBookConfig.enable_chatcodes =  false;
 <details id="subsec-apportionment-terminology-7-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="answer solution-like knowl__content">
 <div class="para" id="subsec-apportionment-terminology-7-3-1">The professors with fractional rank one through four. 
-<figure class="table table-like" id="subsec-apportionment-terminology-7-3-1-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hamilton Apportionment<div class="autopermalink" data-description="Table 14: Hamilton Apportionment"><a href="#subsec-apportionment-terminology-7-3-1-1" title="Copy heading and permalink for Table 14: Hamilton Apportionment" aria-label="Copy heading and permalink for Table 14: Hamilton Apportionment">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-apportionment-terminology-7-3-1-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hamilton Apportionment<div class="autopermalink" data-description="Table 24: Hamilton Apportionment"><a href="#subsec-apportionment-terminology-7-3-1-1" title="Copy heading and permalink for Table 24: Hamilton Apportionment" aria-label="Copy heading and permalink for Table 24: Hamilton Apportionment">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b1 r0 l0 t0 lines"> </th>
 <th scope="col" class="l m b1 r0 l0 t0 lines">A</th>
@@ -878,57 +898,57 @@ eBookConfig.enable_chatcodes =  false;
 </table></div>
 </figure><div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 13.1"><a href="#subsec-apportionment-terminology-7-3" title="Copy heading and permalink for Answer 13.1" aria-label="Copy heading and permalink for Answer 13.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 23.1"><a href="#subsec-apportionment-terminology-7-3" title="Copy heading and permalink for Answer 23.1" aria-label="Copy heading and permalink for Answer 23.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 13: The winners are..."><a href="#subsec-apportionment-terminology-7" title="Copy heading and permalink for Checkpoint 13: The winners are..." aria-label="Copy heading and permalink for Checkpoint 13: The winners are...">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 23: The winners are..."><a href="#subsec-apportionment-terminology-7" title="Copy heading and permalink for Checkpoint 23: The winners are..." aria-label="Copy heading and permalink for Checkpoint 23: The winners are...">🔗</a></div>
 </article></details>
 <details id="subsec-apportionment-terminology-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A small tweak.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A small tweak.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-apportionment-terminology-8-2-1">What happens if Courtney only buys <span class="process-math">\(44\)</span> boxes of coffee?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Checkpoint 15: A small tweak"><a href="#subsec-apportionment-terminology-8" title="Copy heading and permalink for Checkpoint 15: A small tweak" aria-label="Copy heading and permalink for Checkpoint 15: A small tweak">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 25: A small tweak"><a href="#subsec-apportionment-terminology-8" title="Copy heading and permalink for Checkpoint 25: A small tweak" aria-label="Copy heading and permalink for Checkpoint 25: A small tweak">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-apportionment-terminology-9">Three additional methods involve changing the value of <span class="process-math">\(D\)</span> to come up with a modified divisor <span class="process-math">\(d\)</span> where some method (rounding conventionally, using the upper quota, or using the lower quota for each state) adds up to the number of seats. Respectively, these are Webster’s method, Adams’ Method, and Jefferson’s Method.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-apportionment-terminology-10">But what if there were a different way to decide how to round up or down that always added up to the number of seats?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="subsec-apportionment-terminology-11"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Geometric Mean.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Geometric Mean.</span>
 </h4>
 <div class="para" id="subsec-apportionment-terminology-11-2">The <dfn class="terminology">geometric mean</dfn> of two distinct numbers <span class="process-math">\(L\)</span> and <span class="process-math">\(U\)</span> is given by <span class="process-math">\(c = \sqrt{LU}\text{.}\)</span> If <span class="process-math">\(q \gt c\text{,}\)</span> round up. If <span class="process-math">\(q \lt c\text{,}\)</span> round down.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 16: The Geometric Mean"><a href="#subsec-apportionment-terminology-11" title="Copy heading and permalink for Definition 16: The Geometric Mean" aria-label="Copy heading and permalink for Definition 16: The Geometric Mean">🔗</a></div>
+<div class="autopermalink" data-description="Definition 26: The Geometric Mean"><a href="#subsec-apportionment-terminology-11" title="Copy heading and permalink for Definition 26: The Geometric Mean" aria-label="Copy heading and permalink for Definition 26: The Geometric Mean">🔗</a></div>
 </article>
 <details id="subsec-apportionment-terminology-12" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating the Geometric Mean.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating the Geometric Mean.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="subsec-apportionment-terminology-12-2-1">The geometric mean of 3 and 4 is <span class="process-math">\(\sqrt{3\cdot 4} = 2\sqrt{3} \approx 3.464\text{,}\)</span> while the arithmetic mean is <span class="process-math">\(\frac{3 + 4}{2} = 3.5\text{.}\)</span> The geometric mean of 5 and 6 is <span class="process-math">\(\sqrt{5\cdot 6} = \sqrt{30} \approx 5.477\text{,}\)</span> while the arithmetic mean is <span class="process-math">\(\frac{5+6}{2} = 5.5\text{.}\)</span> The geometric mean of 10 and 11 is <span class="process-math">\(\sqrt{10\cdot 11} = \sqrt{110} \approx 10.488\text{,}\)</span> while the arithmetic mean is <span class="process-math">\(\frac{10 + 11}{2} = 10.5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 17: Calculating the Geometric Mean"><a href="#subsec-apportionment-terminology-12" title="Copy heading and permalink for Example 17: Calculating the Geometric Mean" aria-label="Copy heading and permalink for Example 17: Calculating the Geometric Mean">🔗</a></div>
+<div class="autopermalink" data-description="Example 27: Calculating the Geometric Mean"><a href="#subsec-apportionment-terminology-12" title="Copy heading and permalink for Example 27: Calculating the Geometric Mean" aria-label="Copy heading and permalink for Example 27: Calculating the Geometric Mean">🔗</a></div>
 </article></details>
 <details id="subsec-apportionment-terminology-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-apportionment-terminology-13-1-1">Prove that the geometric mean of two distinct positive numbers is always less than the arithmetic mean of those numbers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Checkpoint 18"><a href="#subsec-apportionment-terminology-13" title="Copy heading and permalink for Checkpoint 18" aria-label="Copy heading and permalink for Checkpoint 18">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 28"><a href="#subsec-apportionment-terminology-13" title="Copy heading and permalink for Checkpoint 28" aria-label="Copy heading and permalink for Checkpoint 28">🔗</a></div>
 </article></details>
 <article class="definition definition-like" id="subsec-apportionment-terminology-14"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Huntington–Hill Method (Equal Proportions).</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Huntington–Hill Method (Equal Proportions).</span>
 </h4>
 <div class="para" id="subsec-apportionment-terminology-14-2">The <dfn class="terminology">Huntington–Hill method</dfn> is an apportionment method that assigns seats one at a time using <dfn class="terminology">priority values</dfn> based on population and the geometric mean of consecutive seat numbers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-apportionment-terminology-14-3">After each state receives one initial seat, additional seats are awarded sequentially to the state with the largest priority value <span class="process-math">\(\frac{P}{\sqrt{n(n+1)}}\text{,}\)</span> where <span class="process-math">\(P\)</span> is the state’s population and <span class="process-math">\(n\)</span> is the number of seats the state currently holds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-14-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 19: Huntington–Hill Method (Equal Proportions)"><a href="#subsec-apportionment-terminology-14" title="Copy heading and permalink for Definition 19: Huntington–Hill Method (Equal Proportions)" aria-label="Copy heading and permalink for Definition 19: Huntington–Hill Method (Equal Proportions)">🔗</a></div>
+<div class="autopermalink" data-description="Definition 29: Huntington–Hill Method (Equal Proportions)"><a href="#subsec-apportionment-terminology-14" title="Copy heading and permalink for Definition 29: Huntington–Hill Method (Equal Proportions)" aria-label="Copy heading and permalink for Definition 29: Huntington–Hill Method (Equal Proportions)">🔗</a></div>
 </article>
 <article class="remark remark-like" id="subsec-apportionment-terminology-15"><h4 class="heading">
-<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="subsec-apportionment-terminology-15-1">The Huntington-Hill method is sometimes described using different <dfn class="terminology">divisors</dfn>, which can be confusing at first. This happens because the method has two equivalent formulations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-15-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -938,9 +958,9 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-apportionment-terminology-15-4">Although the divisors look different in these descriptions, both approaches implement the same rule: rounding is determined by the geometric mean, which balances relative over- and under-representation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-apportionment-terminology-15-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 20"><a href="#subsec-apportionment-terminology-15" title="Copy heading and permalink for Remark 20" aria-label="Copy heading and permalink for Remark 20">🔗</a></div>
+<div class="autopermalink" data-description="Remark 30"><a href="#subsec-apportionment-terminology-15" title="Copy heading and permalink for Remark 30" aria-label="Copy heading and permalink for Remark 30">🔗</a></div>
 </article>
-<figure class="table table-like" id="subsec-apportionment-terminology-16"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Cutoff points for Huntington-Hill rounding of quotas between 1 and 10<div class="autopermalink" data-description="Table 21: Cutoff points for Huntington-Hill rounding of quotas between 1 and 10"><a href="#subsec-apportionment-terminology-16" title="Copy heading and permalink for Table 21: Cutoff points for Huntington-Hill rounding of quotas between 1 and 10" aria-label="Copy heading and permalink for Table 21: Cutoff points for Huntington-Hill rounding of quotas between 1 and 10">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-apportionment-terminology-16"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">31<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Cutoff points for Huntington-Hill rounding of quotas between 1 and 10<div class="autopermalink" data-description="Table 31: Cutoff points for Huntington-Hill rounding of quotas between 1 and 10"><a href="#subsec-apportionment-terminology-16" title="Copy heading and permalink for Table 31: Cutoff points for Huntington-Hill rounding of quotas between 1 and 10" aria-label="Copy heading and permalink for Table 31: Cutoff points for Huntington-Hill rounding of quotas between 1 and 10">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">Quota is between</td>
 <td class="l m b0 r0 l0 t0 lines">Cutoff point</td>
@@ -984,10 +1004,10 @@ eBookConfig.enable_chatcodes =  false;
 </table></div>
 </figure>
 <details id="subsec-apportionment-terminology-17" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Huntington-Hill and Paradoxes.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Huntington-Hill and Paradoxes.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<figure class="table table-like" id="subsec-apportionment-terminology-17-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Huntington-Hill method: Calculations standard divisor <span class="process-math">\(D = 10,000\)</span><div class="autopermalink" data-description="Table 23: Huntington-Hill method: Calculations standard divisor D = 10,000"><a href="#subsec-apportionment-terminology-17-2-1" title="Copy heading and permalink for Table 23: Huntington-Hill method: Calculations standard divisor D = 10,000" aria-label="Copy heading and permalink for Table 23: Huntington-Hill method: Calculations standard divisor D = 10,000">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-apportionment-terminology-17-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">33<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Huntington-Hill method: Calculations standard divisor <span class="process-math">\(D = 10,000\)</span><div class="autopermalink" data-description="Table 33: Huntington-Hill method: Calculations standard divisor D = 10,000"><a href="#subsec-apportionment-terminology-17-2-1" title="Copy heading and permalink for Table 33: Huntington-Hill method: Calculations standard divisor D = 10,000" aria-label="Copy heading and permalink for Table 33: Huntington-Hill method: Calculations standard divisor D = 10,000">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">State</td>
 <td class="l m b0 r0 l0 t0 lines">Population</td>
@@ -1039,7 +1059,7 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div>
 </figure> 
-<figure class="table table-like" id="subsec-apportionment-terminology-17-2-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Huntington-Hill method: Calculations for with standard divisor <span class="process-math">\(D = 10,000\)</span> and modified divisor <span class="process-math">\(d = 10,030\)</span><div class="autopermalink" data-description="Table 24: Huntington-Hill method: Calculations for with standard divisor D = 10,000 and modified divisor d = 10,030"><a href="#subsec-apportionment-terminology-17-2-2" title="Copy heading and permalink for Table 24: Huntington-Hill method: Calculations for with standard divisor D = 10,000 and modified divisor d = 10,030" aria-label="Copy heading and permalink for Table 24: Huntington-Hill method: Calculations for with standard divisor D = 10,000 and modified divisor d = 10,030">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-apportionment-terminology-17-2-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Huntington-Hill method: Calculations for with standard divisor <span class="process-math">\(D = 10,000\)</span> and modified divisor <span class="process-math">\(d = 10,030\)</span><div class="autopermalink" data-description="Table 34: Huntington-Hill method: Calculations for with standard divisor D = 10,000 and modified divisor d = 10,030"><a href="#subsec-apportionment-terminology-17-2-2" title="Copy heading and permalink for Table 34: Huntington-Hill method: Calculations for with standard divisor D = 10,000 and modified divisor d = 10,030" aria-label="Copy heading and permalink for Table 34: Huntington-Hill method: Calculations for with standard divisor D = 10,000 and modified divisor d = 10,030">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">State</td>
 <td class="l m b0 r0 l0 t0 lines">Population</td>
@@ -1098,7 +1118,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="l m b0 r0 l0 t0 lines">40</td>
 </tr>
 </table></div>
-</figure><div class="autopermalink" data-description="Example 22: Huntington-Hill and Paradoxes"><a href="#subsec-apportionment-terminology-17" title="Copy heading and permalink for Example 22: Huntington-Hill and Paradoxes" aria-label="Copy heading and permalink for Example 22: Huntington-Hill and Paradoxes">🔗</a></div>
+</figure><div class="autopermalink" data-description="Example 32: Huntington-Hill and Paradoxes"><a href="#subsec-apportionment-terminology-17" title="Copy heading and permalink for Example 32: Huntington-Hill and Paradoxes" aria-label="Copy heading and permalink for Example 32: Huntington-Hill and Paradoxes">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Subsection: Apportionment Terminology"><a href="#subsec-apportionment-terminology" title="Copy heading and permalink for Subsection: Apportionment Terminology" aria-label="Copy heading and permalink for Subsection: Apportionment Terminology">🔗</a></div>
 </section>
 <section class="subsection" id="course-notes-4-4">
@@ -1223,11 +1243,11 @@ q_j = \frac{a_j}{A} M.
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">That’s not fair!</span>
 </h3>
 <details id="course-notes-4-7-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="course-notes-4-7-2-1">In our CJ Coffee Distribution Scheme, there were some possibilities we didn’t consider. 
-<figure class="table table-like" id="course-notes-4-7-2-1-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hamilton Apportionment<div class="autopermalink" data-description="Table 27: Hamilton Apportionment"><a href="#course-notes-4-7-2-1-1" title="Copy heading and permalink for Table 27: Hamilton Apportionment" aria-label="Copy heading and permalink for Table 27: Hamilton Apportionment">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="course-notes-4-7-2-1-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hamilton Apportionment<div class="autopermalink" data-description="Table 37: Hamilton Apportionment"><a href="#course-notes-4-7-2-1-1" title="Copy heading and permalink for Table 37: Hamilton Apportionment" aria-label="Copy heading and permalink for Table 37: Hamilton Apportionment">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b1 r0 l0 t0 lines">Prof.</th>
 <th scope="col" class="l m b1 r0 l0 t0 lines">A</th>
@@ -1302,7 +1322,7 @@ q_j = \frac{a_j}{A} M.
 </table></div>
 </figure><div class="autopermalink" data-description="Paragraph"><a href="#course-notes-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 26"><a href="#course-notes-4-7-2" title="Copy heading and permalink for Example 26" aria-label="Copy heading and permalink for Example 26">🔗</a></div>
+<div class="autopermalink" data-description="Example 36"><a href="#course-notes-4-7-2" title="Copy heading and permalink for Example 36" aria-label="Copy heading and permalink for Example 36">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Subsection: That’s not fair!"><a href="#course-notes-4-7" title="Copy heading and permalink for Subsection: That’s not fair!" aria-label="Copy heading and permalink for Subsection: That’s not fair!">🔗</a></div>
 </section>
 <section class="subsection" id="apportionment-problem-again">
@@ -1334,7 +1354,7 @@ q_s = \frac{p_s}{P} M.
 <div class="autopermalink" data-description="Subsubsection: The (Exact) Quota"><a href="#exact-quota-again" title="Copy heading and permalink for Subsubsection: The (Exact) Quota" aria-label="Copy heading and permalink for Subsubsection: The (Exact) Quota">🔗</a></div>
 </section>
 <article class="definition definition-like" id="definition-apportionment-method"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportionment Method: a function!</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportionment Method: a function!</span>
 </h4>
 <div class="para" id="definition-apportionment-method-2">Fix a positive integer <span class="process-math">\(M\)</span> and an integer <span class="process-math">\(n \ge 2\text{.}\)</span> Let <span class="process-math">\(\mathcal{Q} = \{\mathbf{q} \in \mathbb{R}_{\ge 0}^n : \sum_{s=1}^n q_s = M\}\)</span> denote the space of exact quota vectors, and let <span class="process-math">\(\mathcal{M} = \{\mathbf{m} \in \mathbb{Z}_{\ge 0}^n : \sum_{s=1}^n m_s = M\}\)</span> denote the set of feasible integer allocations.<div class="autopermalink" data-description="Paragraph"><a href="#definition-apportionment-method-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1356,12 +1376,12 @@ P(\mathbf{m}) = \{\mathbf{q} \in Q : F(\mathbf{q}) = \mathbf{m}\},
 </div>
 <div class="para" id="definition-apportionment-method-8">called the <dfn class="terminology">apportionment polyhedra</dfn>. Each polyhedron consists of all exact quota vectors that are mapped to the same integer allocation.<div class="autopermalink" data-description="Paragraph"><a href="#definition-apportionment-method-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 28: Apportionment Method: a function!"><a href="#definition-apportionment-method" title="Copy heading and permalink for Definition 28: Apportionment Method: a function!" aria-label="Copy heading and permalink for Definition 28: Apportionment Method: a function!">🔗</a></div>
+<div class="autopermalink" data-description="Definition 38: Apportionment Method: a function!"><a href="#definition-apportionment-method" title="Copy heading and permalink for Definition 38: Apportionment Method: a function!" aria-label="Copy heading and permalink for Definition 38: Apportionment Method: a function!">🔗</a></div>
 </article>
 <figure class="figure figure-like" id="apportionment-problem-again-5"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/apportionment-problem-again-5-2.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>
 <div class="para" id="apportionment-problem-again-5-1-1">The positive orthant, <span class="process-math">\(\mathcal{Q}\text{,}\)</span> and <span class="process-math">\(\mathcal{M}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#apportionment-problem-again-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> with three states and five seats.<div class="autopermalink" data-description="Figure 29"><a href="#apportionment-problem-again-5" title="Copy heading and permalink for Figure 29" aria-label="Copy heading and permalink for Figure 29">🔗</a></div></figcaption>
+</div> with three states and five seats.<div class="autopermalink" data-description="Figure 39"><a href="#apportionment-problem-again-5" title="Copy heading and permalink for Figure 39" aria-label="Copy heading and permalink for Figure 39">🔗</a></div></figcaption>
 </figure><div class="autopermalink" data-description="Subsection: The Apportionment Problem, but Mathier"><a href="#apportionment-problem-again" title="Copy heading and permalink for Subsection: The Apportionment Problem, but Mathier" aria-label="Copy heading and permalink for Subsection: The Apportionment Problem, but Mathier">🔗</a></div>
 </section>
 <section class="subsection" id="apportionment-polyhedra">
@@ -1412,10 +1432,10 @@ P(\mathbf{m}) = \{\mathbf{q} \in Q : F(\mathbf{q}) = \mathbf{m}\},
 <div class="para" id="polyhedron-geometry-6">To find apportionment polyhedra given an apportionment function, it is useful to introduce <dfn class="terminology">barycentric coordinates</dfn>. Given a value <span class="process-math">\(M\text{,}\)</span> a barycentric <span class="process-math">\(n\)</span>-tuple <span class="process-math">\((q_1,q_2,\cdots,q_m)\)</span> satisfies the property that <span class="process-math">\(q_i \geq 0\)</span> for each coordinate and <span class="process-math">\(\sum_{i = 1}^n q_i = M\text{.}\)</span> We can imagine each tuple with an <span class="process-math">\(M\)</span> in one spot and zeros elsewhere to be sitting at the corner of an <span class="process-math">\(n\)</span>-dimensional simplex, which results from treating the tuple like the end of a vector with tail at the original in <span class="process-math">\(\mathbb{R}_{\geq 0}^n\text{.}\)</span> Given a coordinate <span class="process-math">\(q_i\text{,}\)</span> the face opposite its is the set of all barycentric coordinates with a zero in position <span class="process-math">\(i\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#polyhedron-geometry-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="polyhedron-geometry-7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/polyhedron-geometry-7-2.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>
 <div class="para" id="polyhedron-geometry-7-1-1">Moving around the triangle where the barycentric coordinates sum to five. The barycentric tuple <span class="process-math">\(P = (2,2,1)\)</span> lies on the line <span class="process-math">\(q_2 = 2\)</span> (and the line <span class="process-math">\(q_1 = 2\text{,}\)</span> and the line <span class="process-math">\(q_3 = 1\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#polyhedron-geometry-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Figure 30"><a href="#polyhedron-geometry-7" title="Copy heading and permalink for Figure 30" aria-label="Copy heading and permalink for Figure 30">🔗</a></div></figcaption>
+<div class="autopermalink" data-description="Figure 40"><a href="#polyhedron-geometry-7" title="Copy heading and permalink for Figure 40" aria-label="Copy heading and permalink for Figure 40">🔗</a></div></figcaption>
 </figure><div class="autopermalink" data-description="Subsubsection: Geometric Representation"><a href="#polyhedron-geometry" title="Copy heading and permalink for Subsubsection: Geometric Representation" aria-label="Copy heading and permalink for Subsubsection: Geometric Representation">🔗</a></div>
 </section>
 <section class="subsubsection" id="apportionment-axioms-again">
@@ -1476,14 +1496,14 @@ P(\mathbf{m}) = \{\mathbf{q} \in Q : F(\mathbf{q}) = \mathbf{m}\},
 <div class="para" id="example-hamilton-method-6">Because these boundaries depend on global comparisons of remainders, the resulting polyhedra need not arise from minimizing a single global error function. This explains why Hamilton’s method can satisfy the Quota Rule while still exhibiting paradoxes such as the Alabama Paradox.<div class="autopermalink" data-description="Paragraph"><a href="#example-hamilton-method-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="example-hamilton-polyhedron-coffee-3-6-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Hamilton Polyhedron for an example..</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Hamilton Polyhedron for an example..</span>
 </h5></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="example-hamilton-polyhedron-coffee-3-6-6-2">Suppose we have <span class="process-math">\(M=15\)</span> boxes of coffee to distribute among three people (Ahmed, Gibbons, and Tripp) in proportion to their “need scores” <span class="process-math">\(\mathbf{a}=(35,55,58)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-hamilton-polyhedron-coffee-3-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="example-hamilton-polyhedron-coffee-3-6-6-3">The total is <span class="process-math">\(A = 35+55+58 = 148\text{,}\)</span> so the exact quotas are <span class="process-math">\(q_j = \dfrac{a_j}{A}M\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-hamilton-polyhedron-coffee-3-6-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="table-coffee-quotas"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">32<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Exact quotas and remainders for 15 boxes<div class="autopermalink" data-description="Table 32: Exact quotas and remainders for 15 boxes"><a href="#table-coffee-quotas" title="Copy heading and permalink for Table 32: Exact quotas and remainders for 15 boxes" aria-label="Copy heading and permalink for Table 32: Exact quotas and remainders for 15 boxes">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="table-coffee-quotas"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Exact quotas and remainders for 15 boxes<div class="autopermalink" data-description="Table 42: Exact quotas and remainders for 15 boxes"><a href="#table-coffee-quotas" title="Copy heading and permalink for Table 42: Exact quotas and remainders for 15 boxes" aria-label="Copy heading and permalink for Table 42: Exact quotas and remainders for 15 boxes">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b0 r0 l0 t0 lines">Person</th>
 <th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a_j\)</span></th>
@@ -1552,8 +1572,7 @@ P(\mathbf{m}) = \{\mathbf{q} \in Q : F(\mathbf{q}) = \mathbf{m}\},
 </div>
 <div class="displaymath process-math" id="example-hamilton-polyhedron-coffee-3-6-6-10">
 \begin{equation*}
-3 \le q_A &lt; 4,\qquad 5 \le q_G &lt; 6,\qquad 5 \le q_T &lt; 6,
-\qquad q_A+q_G+q_T=15.
+3 \le q_A &lt; 4,\qquad 5 \le q_G &lt; 6,\qquad 5 \le q_T &lt; 6, \qquad q_A+q_G+q_T=15.
 \end{equation*}
 </div>
 <div class="para" id="example-hamilton-polyhedron-coffee-3-6-6-11">Write the remainders as <span class="process-math">\(r_A=q_A-3\text{,}\)</span> <span class="process-math">\(r_G=q_G-5\text{,}\)</span> and <span class="process-math">\(r_T=q_T-5\text{.}\)</span> To award the two remaining seats to Gibbons and Tripp (and not to Ahmed), we need the two inequalities<div class="autopermalink" data-description="Paragraph"><a href="#example-hamilton-polyhedron-coffee-3-6-6-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1574,19 +1593,12 @@ q_G - q_A &gt; 2,\qquad q_T - q_A &gt; 2.
 </div>
 <div class="displaymath process-math" id="example-hamilton-polyhedron-coffee-3-6-6-16">
 \begin{equation*}
-P(3,6,6) \supseteq
-\left\{
-(q_A,q_G,q_T)\in Q:
-\begin{array}{l}
-3 \le q_A &lt; 4,\ 5 \le q_G &lt; 6,\ 5 \le q_T &lt; 6,\\
-q_G-q_A &gt; 2,\ q_T-q_A &gt; 2
-\end{array}
-\right\}.
+P(3,6,6) \supseteq \left\{ (q_A,q_G,q_T)\in Q: \begin{array}{l} 3 \le q_A &lt; 4,\ 5 \le q_G &lt; 6,\ 5 \le q_T &lt; 6,\\ q_G-q_A &gt; 2,\ q_T-q_A &gt; 2 \end{array} \right\}.
 \end{equation*}
 </div>
 <div class="para" id="example-hamilton-polyhedron-coffee-3-6-6-17">The boundary of this region consists of tie situations, such as <span class="process-math">\(r_G=r_A\)</span> or <span class="process-math">\(r_T=r_A\text{,}\)</span> together with the grid oundaries where a quota crosses an integer and a lower quota changes (for example, <span class="process-math">\(q_G=6\)</span>). A complete closed polyhedron requires a specified tie-breaking rule on these boundary sets.<div class="autopermalink" data-description="Paragraph"><a href="#example-hamilton-polyhedron-coffee-3-6-6-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 31: The Hamilton Polyhedron for an example."><a href="#example-hamilton-polyhedron-coffee-3-6-6" title="Copy heading and permalink for Example 31: The Hamilton Polyhedron for an example." aria-label="Copy heading and permalink for Example 31: The Hamilton Polyhedron for an example.">🔗</a></div>
+<div class="autopermalink" data-description="Example 41: The Hamilton Polyhedron for an example."><a href="#example-hamilton-polyhedron-coffee-3-6-6" title="Copy heading and permalink for Example 41: The Hamilton Polyhedron for an example." aria-label="Copy heading and permalink for Example 41: The Hamilton Polyhedron for an example.">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Subsubsection: Hamilton’s Method as an Apportionment Function"><a href="#example-hamilton-method" title="Copy heading and permalink for Subsubsection: Hamilton’s Method as an Apportionment Function" aria-label="Copy heading and permalink for Subsubsection: Hamilton’s Method as an Apportionment Function">🔗</a></div>
 </section><div class="autopermalink" data-description="Subsection: Apportionment Polyhedra"><a href="#apportionment-polyhedra" title="Copy heading and permalink for Subsection: Apportionment Polyhedra" aria-label="Copy heading and permalink for Subsection: Apportionment Polyhedra">🔗</a></div>
 </section>
@@ -1718,11 +1730,1010 @@ q_G-q_A &gt; 2,\ q_T-q_A &gt; 2
 </div>
 <div class="autopermalink" data-description="Subsubsection: Identifying Paradoxes"><a href="#paradoxes" title="Copy heading and permalink for Subsubsection: Identifying Paradoxes" aria-label="Copy heading and permalink for Subsubsection: Identifying Paradoxes">🔗</a></div>
 </section><div class="autopermalink" data-description="Subsection: Using Apportionment Polyhedra to Assess Fairness"><a href="#polyhedra-fairness" title="Copy heading and permalink for Subsection: Using Apportionment Polyhedra to Assess Fairness" aria-label="Copy heading and permalink for Subsection: Using Apportionment Polyhedra to Assess Fairness">🔗</a></div>
+</section>
+<section class="subsection" id="affine-simplices-barycentric">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Affine Sets, Simplices, and Barycentric Coordinates</span>
+</h3>
+<div class="para" id="affine-simplices-barycentric-2">These notes assume familiarity with vectors, matrices, linear independence, and basic multivariable geometry.<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="affine-simplices-barycentric-3">In linear algebra, a subspace must contain the origin and be closed under linear combinations. Many geometric objects we care about are shifted versions of subspaces.<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="affine-simplices-barycentric-4">This leads to the idea of an <dfn class="terminology">affine set</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="affine-combination"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Affine Combination.</span>
+</h4>
+<div class="para" id="affine-combination-2">A vector of the form<div class="autopermalink" data-description="Paragraph"><a href="#affine-combination-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="affine-combination-3">
+\begin{equation*}
+\lambda_1 v_1 + \lambda_2 v_2 + \cdots + \lambda_k v_k
+\end{equation*}
+</div>
+<div class="para" id="affine-combination-4">is called an <dfn class="terminology">affine combination</dfn> of <span class="process-math">\(v_1,\dots,v_k\)</span> if<div class="autopermalink" data-description="Paragraph"><a href="#affine-combination-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="affine-combination-5">
+\begin{equation*}
+\lambda_1+\lambda_2+\cdots+\lambda_k = 1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 43: Affine Combination"><a href="#affine-combination" title="Copy heading and permalink for Definition 43: Affine Combination" aria-label="Copy heading and permalink for Definition 43: Affine Combination">🔗</a></div>
+</article>
+<article class="definition definition-like" id="affine-hull"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Affine Hull.</span>
+</h4>
+<div class="para" id="affine-hull-2">The <dfn class="terminology">affine hull</dfn> of points <span class="process-math">\(v_1,\dots,v_k\)</span> is the set<div class="autopermalink" data-description="Paragraph"><a href="#affine-hull-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="affine-hull-3">
+\begin{equation*}
+\operatorname{aff}(v_1,\dots,v_k) = \left\{ \sum_{i=1}^k \lambda_i v_i : \sum_{i=1}^k \lambda_i = 1 \right\}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 44: Affine Hull"><a href="#affine-hull" title="Copy heading and permalink for Definition 44: Affine Hull" aria-label="Copy heading and permalink for Definition 44: Affine Hull">🔗</a></div>
+</article>
+<details id="affine-hull-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="affine-hull-example-1">Two distinct points determine a line, three noncollinear points determine a plane, and four noncoplanar points determine a three-dimensional affine space.<div class="autopermalink" data-description="Paragraph"><a href="#affine-hull-example-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 45"><a href="#affine-hull-example" title="Copy heading and permalink for Example 45" aria-label="Copy heading and permalink for Example 45">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="affine-independence"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Affine Independence.</span>
+</h4>
+<div class="para logical" id="affine-independence-2">
+<div class="para">Points <span class="process-math">\(v_0,\dots,v_n\)</span> are <dfn class="terminology">affinely independent</dfn> if the vectors</div>
+<div class="displaymath process-math" id="affine-independence-2-3">
+\begin{equation*}
+v_1-v_0,\; v_2-v_0,\; \dots,\; v_n-v_0
+\end{equation*}
+</div>
+<div class="para">are linearly independent.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#affine-independence-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 46: Affine Independence"><a href="#affine-independence" title="Copy heading and permalink for Definition 46: Affine Independence" aria-label="Copy heading and permalink for Definition 46: Affine Independence">🔗</a></div>
+</article>
+<article class="definition definition-like" id="convex-set"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Convex Set.</span>
+</h4>
+<div class="para" id="convex-set-2">A set <span class="process-math">\(C \subseteq \mathbb{R}^n\)</span> is <dfn class="terminology">convex</dfn> if for any <span class="process-math">\(x,y \in C\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#convex-set-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="convex-set-3">
+\begin{equation*}
+(1-t)x+ty \in C \quad\text{for all }0\le t\le 1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 47: Convex Set"><a href="#convex-set" title="Copy heading and permalink for Definition 47: Convex Set" aria-label="Copy heading and permalink for Definition 47: Convex Set">🔗</a></div>
+</article>
+<article class="definition definition-like" id="convex-combination"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Convex Combination.</span>
+</h4>
+<div class="para" id="convex-combination-2">A <dfn class="terminology">convex combination</dfn> is an affine combination where all coefficients are nonnegative:<div class="autopermalink" data-description="Paragraph"><a href="#convex-combination-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="convex-combination-3">
+\begin{equation*}
+\lambda_i \ge 0, \qquad \sum_{i=1}^k \lambda_i = 1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 48: Convex Combination"><a href="#convex-combination" title="Copy heading and permalink for Definition 48: Convex Combination" aria-label="Copy heading and permalink for Definition 48: Convex Combination">🔗</a></div>
+</article>
+<div class="para" id="affine-simplices-barycentric-11">A simplex is the higher-dimensional analogue of a triangle or tetrahedron.<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="simplex-definition"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Simplex.</span>
+</h4>
+<div class="para" id="simplex-definition-2">If <span class="process-math">\(v_0,\dots,v_n\)</span> are affinely independent points in <span class="process-math">\(\mathbb{R}^m\text{,}\)</span> then the simplex they determine is<div class="autopermalink" data-description="Paragraph"><a href="#simplex-definition-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="simplex-definition-3">
+\begin{equation*}
+\operatorname{conv}(v_0,\dots,v_n) = \left\{ \sum_{i=0}^n \lambda_i v_i : \lambda_i \ge 0, \; \sum_{i=0}^n \lambda_i = 1 \right\}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 49: Simplex"><a href="#simplex-definition" title="Copy heading and permalink for Definition 49: Simplex" aria-label="Copy heading and permalink for Definition 49: Simplex">🔗</a></div>
+</article>
+<details id="simplex-examples" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<ol class="decimal ol-marker-1" id="simplex-examples-1">
+<li id="simplex-examples-1-1">
+<div class="para" id="simplex-examples-1-1-1">A line segment is a <span class="process-math">\(1\)</span>-simplex.<div class="autopermalink" data-description="Paragraph"><a href="#simplex-examples-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#simplex-examples-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="simplex-examples-1-2">
+<div class="para" id="simplex-examples-1-2-1">A triangle is a <span class="process-math">\(2\)</span>-simplex.<div class="autopermalink" data-description="Paragraph"><a href="#simplex-examples-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#simplex-examples-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="simplex-examples-1-3">
+<div class="para" id="simplex-examples-1-3-1">A tetrahedron is a <span class="process-math">\(3\)</span>-simplex.<div class="autopermalink" data-description="Paragraph"><a href="#simplex-examples-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#simplex-examples-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Example 50"><a href="#simplex-examples" title="Copy heading and permalink for Example 50" aria-label="Copy heading and permalink for Example 50">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="standard-simplex"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard Simplex.</span>
+</h4>
+<div class="para" id="standard-simplex-2">The <dfn class="terminology">standard <span class="process-math">\(n\)</span>-simplex</dfn> is<div class="autopermalink" data-description="Paragraph"><a href="#standard-simplex-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-simplex-3">
+\begin{equation*}
+\Delta_n = \left\{ (x_0,\dots,x_n)\in\mathbb{R}^{n+1} : x_i\ge0, \; \sum_{i=0}^n x_i = 1 \right\}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 51: Standard Simplex"><a href="#standard-simplex" title="Copy heading and permalink for Definition 51: Standard Simplex" aria-label="Copy heading and permalink for Definition 51: Standard Simplex">🔗</a></div>
+</article>
+<div class="para" id="affine-simplices-barycentric-15">Barycentric coordinates express a point relative to the vertices of a simplex.<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="barycentric-definition"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Barycentric Coordinates.</span>
+</h4>
+<div class="para" id="barycentric-definition-2">Suppose <span class="process-math">\(v_0,\dots,v_n\)</span> are affinely independent. Every point <span class="process-math">\(p\)</span> in the affine hull can be written uniquely as<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-definition-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-definition-3">
+\begin{equation*}
+p = \lambda_0 v_0 + \lambda_1 v_1 + \cdots + \lambda_n v_n
+\end{equation*}
+</div>
+<div class="para" id="barycentric-definition-4">with<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-definition-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-definition-5">
+\begin{equation*}
+\lambda_0+\cdots+\lambda_n=1.
+\end{equation*}
+</div>
+<div class="para" id="barycentric-definition-6">The numbers <span class="process-math">\(\lambda_0,\dots,\lambda_n\)</span> are called the barycentric coordinates of <span class="process-math">\(p\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#barycentric-definition-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 52: Barycentric Coordinates"><a href="#barycentric-definition" title="Copy heading and permalink for Definition 52: Barycentric Coordinates" aria-label="Copy heading and permalink for Definition 52: Barycentric Coordinates">🔗</a></div>
+</article>
+<div class="para" id="affine-simplices-barycentric-17">If all barycentric coordinates are positive, then the point lies in the interior of the simplex. If some coordinate is zero, then the point lies on a face of the simplex.<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="barycentric-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="barycentric-example-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-example-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-example-2">
+\begin{equation*}
+v_0=(0,0), \qquad v_1=(1,0), \qquad v_2=(0,1).
+\end{equation*}
+</div>
+<div class="para" id="barycentric-example-3">Suppose<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-example-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-example-4">
+\begin{equation*}
+p=(0.2,0.3).
+\end{equation*}
+</div>
+<div class="para" id="barycentric-example-5">Then<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-example-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-example-6">
+\begin{equation*}
+p = 0.5v_0 + 0.2v_1 + 0.3v_2.
+\end{equation*}
+</div>
+<div class="para" id="barycentric-example-7">Since the coefficients are nonnegative and sum to <span class="process-math">\(1\text{,}\)</span> the point lies inside the triangle.<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-example-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 53"><a href="#barycentric-example" title="Copy heading and permalink for Example 53" aria-label="Copy heading and permalink for Example 53">🔗</a></div>
+</article></details>
+<div class="para" id="affine-simplices-barycentric-19">To compute barycentric coordinates, solve the system<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="affine-simplices-barycentric-20">
+\begin{equation*}
+p = \sum_{i=0}^n \lambda_i v_i
+\end{equation*}
+</div>
+<div class="para" id="affine-simplices-barycentric-21">together with<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="affine-simplices-barycentric-22">
+\begin{equation*}
+\lambda_0+\cdots+\lambda_n=1.
+\end{equation*}
+</div>
+<div class="para" id="affine-simplices-barycentric-23">A convenient matrix form is<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="affine-simplices-barycentric-24">
+\begin{equation*}
+\begin{bmatrix} &amp; &amp; \\ v_0 &amp; v_1 &amp; \cdots v_n \\ &amp; &amp; \\ 1 &amp; 1 &amp; \cdots 1 \end{bmatrix} \begin{bmatrix} \lambda_0\\ \lambda_1\\ \vdots\\ \lambda_n \end{bmatrix} = \begin{bmatrix} p\\ 1 \end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="affine-simplices-barycentric-25">Affine independence guarantees a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#affine-simplices-barycentric-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Affine Sets, Simplices, and Barycentric Coordinates"><a href="#affine-simplices-barycentric" title="Copy heading and permalink for Subsection: Affine Sets, Simplices, and Barycentric Coordinates" aria-label="Copy heading and permalink for Subsection: Affine Sets, Simplices, and Barycentric Coordinates">🔗</a></div>
+</section>
+<section class="subsection" id="course-notes-4-13">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"></span>
+</h3>
+<section class="exercises" id="affine-simplex-exercises">
+<h4 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h4>
+<article class="exercise exercise-like" id="affine-combination-check"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="affine-combination-check-1-1">Determine whether each expression is an affine combination of the given vectors.<div class="autopermalink" data-description="Paragraph"><a href="#affine-combination-check-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha ol-marker-2" id="affine-combination-check-1-2">
+<li id="affine-combination-check-1-2-1">
+<div class="para" id="p-derived-affine-combination-check-1-2-1"><div class="displaymath process-math" id="affine-combination-check-1-2-1-1">
+\begin{equation*}
+2v_1 - v_2
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#affine-combination-check-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="affine-combination-check-1-2-2">
+<div class="para" id="p-derived-affine-combination-check-1-2-2"><div class="displaymath process-math" id="affine-combination-check-1-2-2-1">
+\begin{equation*}
+\frac12 v_1 + \frac12 v_2
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#affine-combination-check-1-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="affine-combination-check-1-2-3">
+<div class="para" id="p-derived-affine-combination-check-1-2-3"><div class="displaymath process-math" id="affine-combination-check-1-2-3-1">
+\begin{equation*}
+3v_1 + 2v_2 - 4v_3
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#affine-combination-check-1-2-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Exercise 1"><a href="#affine-combination-check" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="convex-combination-check"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="convex-combination-check-1-1">Determine whether each expression is a convex combination.<div class="autopermalink" data-description="Paragraph"><a href="#convex-combination-check-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha ol-marker-2" id="convex-combination-check-1-2">
+<li id="convex-combination-check-1-2-1">
+<div class="para" id="p-derived-convex-combination-check-1-2-1"><div class="displaymath process-math" id="convex-combination-check-1-2-1-1">
+\begin{equation*}
+\frac14 v_1 + \frac34 v_2
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#convex-combination-check-1-2-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="convex-combination-check-1-2-2">
+<div class="para" id="p-derived-convex-combination-check-1-2-2"><div class="displaymath process-math" id="convex-combination-check-1-2-2-1">
+\begin{equation*}
+2v_1 - v_2
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#convex-combination-check-1-2-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="convex-combination-check-1-2-3">
+<div class="para" id="p-derived-convex-combination-check-1-2-3"><div class="displaymath process-math" id="convex-combination-check-1-2-3-1">
+\begin{equation*}
+\frac13 v_1 + \frac13 v_2 + \frac13 v_3
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#convex-combination-check-1-2-3" title="Copy heading and permalink for Item 2.c" aria-label="Copy heading and permalink for Item 2.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Exercise 2"><a href="#convex-combination-check" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="affine-independence-check"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="affine-independence-check-1-1">Determine whether the following points are affinely independent:<div class="autopermalink" data-description="Paragraph"><a href="#affine-independence-check-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="affine-independence-check-1-2">
+\begin{equation*}
+(0,0),\quad (1,2),\quad (3,1).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Exercise 3"><a href="#affine-independence-check" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="triangle-barycentric"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="triangle-barycentric-1-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#triangle-barycentric-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="triangle-barycentric-1-2">
+\begin{equation*}
+v_0=(0,0), \qquad v_1=(2,0), \qquad v_2=(0,2).
+\end{equation*}
+</div>
+<div class="para" id="triangle-barycentric-1-3">Find barycentric coordinates for the point<div class="autopermalink" data-description="Paragraph"><a href="#triangle-barycentric-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="triangle-barycentric-1-4">
+\begin{equation*}
+p=(1,0.5).
+\end{equation*}
+</div>
+<div class="para" id="triangle-barycentric-1-5">Is the point inside the simplex?<div class="autopermalink" data-description="Paragraph"><a href="#triangle-barycentric-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4"><a href="#triangle-barycentric" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="standard-simplex-exercise"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="standard-simplex-exercise-1-1">Describe geometrically the standard simplices <span class="process-math">\(\Delta_1\text{,}\)</span> <span class="process-math">\(\Delta_2\text{,}\)</span> and <span class="process-math">\(\Delta_3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#standard-simplex-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 5"><a href="#standard-simplex-exercise" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="matrix-barycentric"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="matrix-barycentric-1-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#matrix-barycentric-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-barycentric-1-2">
+\begin{equation*}
+v_0=(1,0), \qquad v_1=(3,1), \qquad v_2=(2,4).
+\end{equation*}
+</div>
+<div class="para" id="matrix-barycentric-1-3">Find barycentric coordinates for<div class="autopermalink" data-description="Paragraph"><a href="#matrix-barycentric-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-barycentric-1-4">
+\begin{equation*}
+p=(2,2).
+\end{equation*}
+</div>
+<div class="para" id="matrix-barycentric-1-5">Write the corresponding augmented matrix system.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-barycentric-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6"><a href="#matrix-barycentric" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises: Exercises"><a href="#affine-simplex-exercises" title="Copy heading and permalink for Exercises: Exercises" aria-label="Copy heading and permalink for Exercises: Exercises">🔗</a></div>
+</section><div class="autopermalink" data-description="Subsection"><a href="#course-notes-4-13" title="Copy heading and permalink for Subsection" aria-label="Copy heading and permalink for Subsection">🔗</a></div>
+</section>
+<section class="subsection" id="barycentric-compatible-functions">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Barycentric-Compatible Functions</span>
+</h3>
+<div class="para" id="barycentric-compatible-functions-2">Barycentric coordinates are especially useful because they allow us to interpolate between objects. In many applications, we have two functions that assign points in a simplex, and we would like to move continuously between them.<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="barycentric-compatible-functions-3">Suppose<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-compatible-functions-4">
+\begin{equation*}
+f,g : X \to \mathbb{R}^n
+\end{equation*}
+</div>
+<div class="para" id="barycentric-compatible-functions-5">are functions whose outputs lie in a convex set, such as a simplex. For any parameter <span class="process-math">\(0 \le t \le 1\text{,}\)</span> define a new function<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-compatible-functions-6">
+\begin{equation*}
+h_t(x) = (1-t)f(x) + tg(x).
+\end{equation*}
+</div>
+<div class="para" id="barycentric-compatible-functions-7">Since the coefficients <span class="process-math">\(1-t\)</span> and <span class="process-math">\(t\)</span> are nonnegative and sum to <span class="process-math">\(1\text{,}\)</span> the point <span class="process-math">\(h_t(x)\)</span> is a convex combination of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="barycentric-compatible-functions-8">Geometrically, for each fixed <span class="process-math">\(x\text{,}\)</span> the point <span class="process-math">\(h_t(x)\)</span> travels along the line segment joining <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="barycentric-compatible-functions-def"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Barycentric-Compatible Functions.</span>
+</h4>
+<div class="para" id="barycentric-compatible-functions-def-2">Two functions<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-def-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-compatible-functions-def-3">
+\begin{equation*}
+f,g : X \to \Delta_n
+\end{equation*}
+</div>
+<div class="para" id="barycentric-compatible-functions-def-4">are called <dfn class="terminology">barycentrically compatible</dfn> if for every <span class="process-math">\(x \in X\)</span> and every <span class="process-math">\(0 \le t \le 1\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-def-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-compatible-functions-def-5">
+\begin{equation*}
+(1-t)f(x) + tg(x)
+\end{equation*}
+</div>
+<div class="para" id="barycentric-compatible-functions-def-6">also lies in <span class="process-math">\(\Delta_n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-def-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="barycentric-compatible-functions-def-7">Equivalently, the line segment joining <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> remains entirely inside the simplex.<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-compatible-functions-def-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 54: Barycentric-Compatible Functions"><a href="#barycentric-compatible-functions-def" title="Copy heading and permalink for Definition 54: Barycentric-Compatible Functions" aria-label="Copy heading and permalink for Definition 54: Barycentric-Compatible Functions">🔗</a></div>
+</article>
+<article class="remark remark-like" id="convexity-remark"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="convexity-remark-1">Because simplices are convex sets, any two functions whose values lie in the same simplex are automatically barycentrically compatible.<div class="autopermalink" data-description="Paragraph"><a href="#convexity-remark-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 55"><a href="#convexity-remark" title="Copy heading and permalink for Remark 55" aria-label="Copy heading and permalink for Remark 55">🔗</a></div>
+</article>
+<details id="probability-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">56</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability Distribution Example.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="probability-example-2">Let<div class="autopermalink" data-description="Paragraph"><a href="#probability-example-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="probability-example-3">
+\begin{equation*}
+\Delta_2 = \left\{ (x,y,z)\in\mathbb{R}^3 : x+y+z=1,\; x,y,z \ge 0 \right\}.
+\end{equation*}
+</div>
+<div class="para" id="probability-example-4">A point in <span class="process-math">\(\Delta_2\)</span> can be interpreted as a probability distribution on three outcomes.<div class="autopermalink" data-description="Paragraph"><a href="#probability-example-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="probability-example-5">Suppose<div class="autopermalink" data-description="Paragraph"><a href="#probability-example-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="probability-example-6">
+\begin{equation*}
+f(x) = (0.7,0.2,0.1), \qquad g(x) = (0.1,0.3,0.6).
+\end{equation*}
+</div>
+<div class="para" id="probability-example-7">Then<div class="autopermalink" data-description="Paragraph"><a href="#probability-example-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="probability-example-8">
+\begin{equation*}
+h_{1/2}(x) = \frac12 f(x) + \frac12 g(x) = (0.4,0.25,0.35).
+\end{equation*}
+</div>
+<div class="para" id="probability-example-9">This point is still in the simplex because its coordinates remain nonnegative and sum to <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#probability-example-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 56: Probability Distribution Example"><a href="#probability-example" title="Copy heading and permalink for Example 56: Probability Distribution Example" aria-label="Copy heading and permalink for Example 56: Probability Distribution Example">🔗</a></div>
+</article></details>
+<details id="geometric-simplex-path" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Paths Inside a Simplex.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="geometric-simplex-path-2">Let <span class="process-math">\(f,g : [0,1]\to\Delta_2\text{.}\)</span> For each input value <span class="process-math">\(x\text{,}\)</span> the interpolation<div class="autopermalink" data-description="Paragraph"><a href="#geometric-simplex-path-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="geometric-simplex-path-3">
+\begin{equation*}
+h_t(x) = (1-t)f(x)+tg(x)
+\end{equation*}
+</div>
+<div class="para" id="geometric-simplex-path-4">determines a path inside the simplex connecting the two images.<div class="autopermalink" data-description="Paragraph"><a href="#geometric-simplex-path-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="geometric-simplex-path-5">As <span class="process-math">\(t\)</span> varies from <span class="process-math">\(0\)</span> to <span class="process-math">\(1\text{,}\)</span> the point moves continuously from <span class="process-math">\(f(x)\)</span> to <span class="process-math">\(g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#geometric-simplex-path-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 57: Paths Inside a Simplex"><a href="#geometric-simplex-path" title="Copy heading and permalink for Example 57: Paths Inside a Simplex" aria-label="Copy heading and permalink for Example 57: Paths Inside a Simplex">🔗</a></div>
+</article></details>
+<details id="barycentric-interpolation-exercise" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="barycentric-interpolation-exercise-1-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-interpolation-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-interpolation-exercise-1-2">
+\begin{equation*}
+f(x) = (0.2,0.5,0.3), \qquad g(x) = (0.6,0.1,0.3).
+\end{equation*}
+</div>
+<div class="para" id="barycentric-interpolation-exercise-1-3">Compute<div class="autopermalink" data-description="Paragraph"><a href="#barycentric-interpolation-exercise-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="barycentric-interpolation-exercise-1-4">
+\begin{equation*}
+h_{1/4}(x) = \frac34 f(x) + \frac14 g(x).
+\end{equation*}
+</div>
+<div class="para" id="barycentric-interpolation-exercise-1-5">Verify that the result lies in <span class="process-math">\(\Delta_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#barycentric-interpolation-exercise-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 58"><a href="#barycentric-interpolation-exercise" title="Copy heading and permalink for Checkpoint 58" aria-label="Copy heading and permalink for Checkpoint 58">🔗</a></div>
+</article></details>
+<details id="simplex-line-segment" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="simplex-line-segment-1-1">Explain why the line segment between any two points in a simplex remains entirely inside the simplex.<div class="autopermalink" data-description="Paragraph"><a href="#simplex-line-segment-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 59"><a href="#simplex-line-segment" title="Copy heading and permalink for Checkpoint 59" aria-label="Copy heading and permalink for Checkpoint 59">🔗</a></div>
+</article></details>
+<details id="probability-interpolation" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="probability-interpolation-1-1">Suppose two probability distributions are given by<div class="autopermalink" data-description="Paragraph"><a href="#probability-interpolation-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="probability-interpolation-1-2">
+\begin{equation*}
+p=(0.8,0.1,0.1), \qquad q=(0.2,0.5,0.3).
+\end{equation*}
+</div>
+<div class="para" id="probability-interpolation-1-3">Compute the halfway distribution<div class="autopermalink" data-description="Paragraph"><a href="#probability-interpolation-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="probability-interpolation-1-4">
+\begin{equation*}
+\frac12 p + \frac12 q.
+\end{equation*}
+</div>
+<div class="para" id="probability-interpolation-1-5">Interpret the result geometrically inside the simplex.<div class="autopermalink" data-description="Paragraph"><a href="#probability-interpolation-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 60"><a href="#probability-interpolation" title="Copy heading and permalink for Checkpoint 60" aria-label="Copy heading and permalink for Checkpoint 60">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection: Barycentric-Compatible Functions"><a href="#barycentric-compatible-functions" title="Copy heading and permalink for Subsection: Barycentric-Compatible Functions" aria-label="Copy heading and permalink for Subsection: Barycentric-Compatible Functions">🔗</a></div>
+</section>
+<section class="subsection" id="solving-linear-functionals">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Practical Guide to Solving Systems of Linear Functionals</span>
+</h3>
+<div class="para" id="solving-linear-functionals-2">Suppose we have several linear functionals<div class="autopermalink" data-description="Paragraph"><a href="#solving-linear-functionals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="solving-linear-functionals-3">
+\begin{equation*}
+\varphi_1,\varphi_2,\dots,\varphi_m : \mathbb{R}^n \to \mathbb{R}.
+\end{equation*}
+</div>
+<div class="para" id="solving-linear-functionals-4">A system of linear functionals asks us to find all vectors satisfying equations or inequalities involving these maps.<div class="autopermalink" data-description="Paragraph"><a href="#solving-linear-functionals-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="solving-linear-functionals-5">Geometrically, such systems describe intersections of hyperplanes and half-spaces.<div class="autopermalink" data-description="Paragraph"><a href="#solving-linear-functionals-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: A Practical Guide to Solving Systems of Linear Functionals"><a href="#solving-linear-functionals" title="Copy heading and permalink for Subsection: A Practical Guide to Solving Systems of Linear Functionals" aria-label="Copy heading and permalink for Subsection: A Practical Guide to Solving Systems of Linear Functionals">🔗</a></div>
+</section>
+<section class="subsection" id="functionals-dot-products">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Writing Functionals as Dot Products</span>
+</h3>
+<div class="para" id="functionals-dot-products-2">Every linear functional on <span class="process-math">\(\mathbb{R}^n\)</span> can be written as a dot product<div class="autopermalink" data-description="Paragraph"><a href="#functionals-dot-products-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="functionals-dot-products-3">
+\begin{equation*}
+\varphi(x)=a\cdot x
+\end{equation*}
+</div>
+<div class="para" id="functionals-dot-products-4">for some vector <span class="process-math">\(a\in\mathbb{R}^n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#functionals-dot-products-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="dot-product-functional-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="dot-product-functional-example-1">The functional<div class="autopermalink" data-description="Paragraph"><a href="#dot-product-functional-example-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dot-product-functional-example-2">
+\begin{equation*}
+\varphi(x,y,z)=2x-y+3z
+\end{equation*}
+</div>
+<div class="para" id="dot-product-functional-example-3">corresponds to the coefficient vector<div class="autopermalink" data-description="Paragraph"><a href="#dot-product-functional-example-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dot-product-functional-example-4">
+\begin{equation*}
+(2,-1,3).
+\end{equation*}
+</div>
+<div class="para" id="dot-product-functional-example-5">In matrix form,<div class="autopermalink" data-description="Paragraph"><a href="#dot-product-functional-example-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dot-product-functional-example-6">
+\begin{equation*}
+\varphi(x,y,z) = \begin{bmatrix} 2 &amp; -1 &amp; 3 \end{bmatrix} \begin{bmatrix} x\\ y\\ z \end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 61"><a href="#dot-product-functional-example" title="Copy heading and permalink for Example 61" aria-label="Copy heading and permalink for Example 61">🔗</a></div>
+</article></details><dl class="description-list">
+<dt id="matrix-form-step-1">Step 1: Convert to Matrix Form<div class="autopermalink" data-description="Item: Step 1: Convert to Matrix Form"><a href="#matrix-form-step-1" title="Copy heading and permalink for Item: Step 1: Convert to Matrix Form" aria-label="Copy heading and permalink for Item: Step 1: Convert to Matrix Form">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="matrix-form-step-1-2">Suppose we want to solve<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-1-3">
+\begin{equation*}
+\varphi_1(x,y,z)=1,
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="matrix-form-step-1-4">
+\begin{equation*}
+\varphi_2(x,y,z)=4,
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-1-5">where<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-1-6">
+\begin{equation*}
+\varphi_1(x,y,z)=x+y+z,
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="matrix-form-step-1-7">
+\begin{equation*}
+\varphi_2(x,y,z)=2x-y+z.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-1-8">Place the coefficient vectors into a matrix:<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-1-9">
+\begin{equation*}
+A= \begin{bmatrix} 1 &amp; 1 &amp; 1\\ 2 &amp; -1 &amp; 1 \end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-1-10">Then solve the matrix equation<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-1-11">
+\begin{equation*}
+A\mathbf{x}=\mathbf{b},
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-1-12">where<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-1-13">
+\begin{equation*}
+\mathbf{x}= \begin{bmatrix} x\\ y\\ z \end{bmatrix}, \qquad \mathbf{b}= \begin{bmatrix} 1\\ 4 \end{bmatrix}.
+\end{equation*}
+</div>
+</dd>
+<dt id="matrix-form-step-2">Step 2: Row Reduce<div class="autopermalink" data-description="Item: Step 2: Row Reduce"><a href="#matrix-form-step-2" title="Copy heading and permalink for Item: Step 2: Row Reduce" aria-label="Copy heading and permalink for Item: Step 2: Row Reduce">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="matrix-form-step-2-2">Form the augmented matrix<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-3">
+\begin{equation*}
+\left[ \begin{array}{ccc|c} 1 &amp; 1 &amp; 1 &amp; 1\\ 2 &amp; -1 &amp; 1 &amp; 4 \end{array} \right].
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-2-4">Perform the row operation<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-5">
+\begin{equation*}
+R_2 \to R_2 - 2R_1.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-2-6">This gives<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-7">
+\begin{equation*}
+\left[ \begin{array}{ccc|c} 1 &amp; 1 &amp; 1 &amp; 1\\ 0 &amp; -3 &amp; -1 &amp; 2 \end{array} \right].
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-2-8">The second equation becomes<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-9">
+\begin{equation*}
+-3y-z=2.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-2-10">Let <span class="process-math">\(z=t\text{.}\)</span> Then<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-11">
+\begin{equation*}
+y=-\frac{2+t}{3}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-2-12">Substitute into the first equation:<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-13">
+\begin{equation*}
+x+y+z=1.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-2-14">Solving for <span class="process-math">\(x\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-15">
+\begin{equation*}
+x=\frac{5-2t}{3}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-2-16">The solution set is<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-2-17">
+\begin{equation*}
+\left( \frac{5-2t}{3}, -\frac{2+t}{3}, t \right).
+\end{equation*}
+</div>
+</dd>
+<dt id="matrix-form-step-3">Geometric Interpretation<div class="autopermalink" data-description="Item: Geometric Interpretation"><a href="#matrix-form-step-3" title="Copy heading and permalink for Item: Geometric Interpretation" aria-label="Copy heading and permalink for Item: Geometric Interpretation">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="matrix-form-step-3-2">Each equation<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-3-3">
+\begin{equation*}
+\varphi(x)=b
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-3-4">defines a hyperplane.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="matrix-form-step-3-5">
+<li id="matrix-form-step-3-5-1">
+<div class="para" id="matrix-form-step-3-5-1-1">One equation in <span class="process-math">\(\mathbb{R}^3\)</span> defines a plane.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-form-step-3-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matrix-form-step-3-5-2">
+<div class="para" id="matrix-form-step-3-5-2-1">Two independent equations typically intersect in a line.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-form-step-3-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matrix-form-step-3-5-3">
+<div class="para" id="matrix-form-step-3-5-3-1">Three independent equations typically intersect in a point.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-3-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-form-step-3-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+</dd>
+<dt id="matrix-form-step-4">Inequalities and Half-Spaces<div class="autopermalink" data-description="Item: Inequalities and Half-Spaces"><a href="#matrix-form-step-4" title="Copy heading and permalink for Item: Inequalities and Half-Spaces" aria-label="Copy heading and permalink for Item: Inequalities and Half-Spaces">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="matrix-form-step-4-2">Conditions such as<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-4-3">
+\begin{equation*}
+\varphi(x)\ge c
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-4-4">describe half-spaces.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="half-space-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="half-space-example-1">The inequality<div class="autopermalink" data-description="Paragraph"><a href="#half-space-example-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="half-space-example-2">
+\begin{equation*}
+x+y+z \le 1
+\end{equation*}
+</div>
+<div class="para" id="half-space-example-3">cuts space into two regions separated by the plane<div class="autopermalink" data-description="Paragraph"><a href="#half-space-example-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="half-space-example-4">
+\begin{equation*}
+x+y+z=1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 62"><a href="#half-space-example" title="Copy heading and permalink for Example 62" aria-label="Copy heading and permalink for Example 62">🔗</a></div>
+</article></details>
+<div class="para" id="matrix-form-step-4-6">Systems of inequalities therefore describe convex regions.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="matrix-form-step-5">Systems Inside a Simplex<div class="autopermalink" data-description="Item: Systems Inside a Simplex"><a href="#matrix-form-step-5" title="Copy heading and permalink for Item: Systems Inside a Simplex" aria-label="Copy heading and permalink for Item: Systems Inside a Simplex">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="matrix-form-step-5-2">Suppose we work in the standard simplex<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-5-3">
+\begin{equation*}
+\Delta_2 = \left\{ (x,y,z): x+y+z=1, \; x,y,z\ge0 \right\}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-5-4">Now add the inequalities<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-5-5">
+\begin{equation*}
+4x\ge1, \qquad 4y&lt;2.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-5-6">Dividing by <span class="process-math">\(4\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-form-step-5-7">
+\begin{equation*}
+x\ge\frac14, \qquad y&lt;\frac12.
+\end{equation*}
+</div>
+<div class="para" id="matrix-form-step-5-8">These inequalities carve out a smaller region inside the simplex.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-form-step-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Subsection: Writing Functionals as Dot Products"><a href="#functionals-dot-products" title="Copy heading and permalink for Subsection: Writing Functionals as Dot Products" aria-label="Copy heading and permalink for Subsection: Writing Functionals as Dot Products">🔗</a></div>
+</section>
+<section class="subsection" id="allocation-strategy">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Strategy for Allocation Problems</span>
+</h3>
+<div class="para" id="allocation-strategy-2">In allocation problems, systems often involve:<div class="autopermalink" data-description="Paragraph"><a href="#allocation-strategy-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal ol-marker-1" id="allocation-strategy-3">
+<li id="allocation-strategy-3-1">
+<div class="para" id="allocation-strategy-3-1-1">The simplex equation<div class="autopermalink" data-description="Paragraph"><a href="#allocation-strategy-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="allocation-strategy-3-1-2">
+\begin{equation*}
+x_1+\cdots+x_n=1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#allocation-strategy-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="allocation-strategy-3-2">
+<div class="para" id="allocation-strategy-3-2-1">Nonnegativity conditions<div class="autopermalink" data-description="Paragraph"><a href="#allocation-strategy-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="allocation-strategy-3-2-2">
+\begin{equation*}
+x_i\ge0.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#allocation-strategy-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="allocation-strategy-3-3">
+<div class="para" id="allocation-strategy-3-3-1">Floor constraints<div class="autopermalink" data-description="Paragraph"><a href="#allocation-strategy-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="allocation-strategy-3-3-2">
+\begin{equation*}
+m_i \le Mx_i &lt; m_i+1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#allocation-strategy-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="allocation-strategy-3-4">
+<div class="para" id="allocation-strategy-3-4-1">Remainder comparisons<div class="autopermalink" data-description="Paragraph"><a href="#allocation-strategy-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="allocation-strategy-3-4-2">
+\begin{equation*}
+Mx_i-\lfloor Mx_i\rfloor \ge Mx_j-\lfloor Mx_j\rfloor.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#allocation-strategy-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: Strategy for Allocation Problems"><a href="#allocation-strategy" title="Copy heading and permalink for Subsection: Strategy for Allocation Problems" aria-label="Copy heading and permalink for Subsection: Strategy for Allocation Problems">🔗</a></div>
+</section>
+<section class="subsection" id="workflow">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practical Workflow</span>
+</h3>
+<section class="subsubsection" id="workflow-affine">
+<h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step A: Solve the Affine Constraints</span>
+</h4>
+<div class="para" id="workflow-affine-2">Usually begin with the equation<div class="autopermalink" data-description="Paragraph"><a href="#workflow-affine-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="workflow-affine-3">
+\begin{equation*}
+x_1+\cdots+x_n=1.
+\end{equation*}
+</div>
+<div class="para" id="workflow-affine-4">This reduces the dimension by one.<div class="autopermalink" data-description="Paragraph"><a href="#workflow-affine-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Step A: Solve the Affine Constraints"><a href="#workflow-affine" title="Copy heading and permalink for Subsubsection: Step A: Solve the Affine Constraints" aria-label="Copy heading and permalink for Subsubsection: Step A: Solve the Affine Constraints">🔗</a></div>
+</section>
+<section class="subsubsection" id="workflow-slabs">
+<h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step B: Add Interval Constraints</span>
+</h4>
+<div class="para" id="workflow-slabs-2">Suppose an allocation requires<div class="autopermalink" data-description="Paragraph"><a href="#workflow-slabs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="workflow-slabs-3">
+\begin{equation*}
+m_i \le Mx_i &lt; m_i+1.
+\end{equation*}
+</div>
+<div class="para" id="workflow-slabs-4">Dividing by <span class="process-math">\(M\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#workflow-slabs-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="workflow-slabs-5">
+\begin{equation*}
+\frac{m_i}{M} \le x_i &lt; \frac{m_i+1}{M}.
+\end{equation*}
+</div>
+<div class="para" id="workflow-slabs-6">These inequalities define slabs bounded by parallel hyperplanes.<div class="autopermalink" data-description="Paragraph"><a href="#workflow-slabs-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Step B: Add Interval Constraints"><a href="#workflow-slabs" title="Copy heading and permalink for Subsubsection: Step B: Add Interval Constraints" aria-label="Copy heading and permalink for Subsubsection: Step B: Add Interval Constraints">🔗</a></div>
+</section>
+<section class="subsubsection" id="workflow-remainders">
+<h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step C: Add Remainder Comparisons</span>
+</h4>
+<div class="para" id="workflow-remainders-2">Compare the fractional parts of the quota coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#workflow-remainders-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="remainder-linearization" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">63</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="remainder-linearization-1">Suppose<div class="autopermalink" data-description="Paragraph"><a href="#remainder-linearization-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="remainder-linearization-2">
+\begin{equation*}
+\lfloor4x\rfloor=1, \qquad \lfloor4y\rfloor=0.
+\end{equation*}
+</div>
+<div class="para" id="remainder-linearization-3">Then the inequality<div class="autopermalink" data-description="Paragraph"><a href="#remainder-linearization-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="remainder-linearization-4">
+\begin{equation*}
+4x-\lfloor4x\rfloor \ge 4y-\lfloor4y\rfloor
+\end{equation*}
+</div>
+<div class="para" id="remainder-linearization-5">becomes<div class="autopermalink" data-description="Paragraph"><a href="#remainder-linearization-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="remainder-linearization-6">
+\begin{equation*}
+4x-1 \ge 4y.
+\end{equation*}
+</div>
+<div class="para" id="remainder-linearization-7">Rearranging gives<div class="autopermalink" data-description="Paragraph"><a href="#remainder-linearization-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="remainder-linearization-8">
+\begin{equation*}
+x-y\ge\frac14.
+\end{equation*}
+</div>
+<div class="para" id="remainder-linearization-9">Inside a fixed slab region, the floor functions become constants, so the boundaries become linear.<div class="autopermalink" data-description="Paragraph"><a href="#remainder-linearization-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 63"><a href="#remainder-linearization" title="Copy heading and permalink for Example 63" aria-label="Copy heading and permalink for Example 63">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsubsection: Step C: Add Remainder Comparisons"><a href="#workflow-remainders" title="Copy heading and permalink for Subsubsection: Step C: Add Remainder Comparisons" aria-label="Copy heading and permalink for Subsubsection: Step C: Add Remainder Comparisons">🔗</a></div>
+</section>
+<div class="para" id="workflow-5">Systems of linear functionals partition space into regions bounded by hyperplanes.<div class="autopermalink" data-description="Paragraph"><a href="#workflow-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="workflow-6">Inside each region:<div class="autopermalink" data-description="Paragraph"><a href="#workflow-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="workflow-7">
+<li id="workflow-7-1">
+<div class="para" id="workflow-7-1-1">the inequalities are consistent,<div class="autopermalink" data-description="Paragraph"><a href="#workflow-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#workflow-7-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workflow-7-2">
+<div class="para" id="workflow-7-2-1">the allocation rule is constant,<div class="autopermalink" data-description="Paragraph"><a href="#workflow-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#workflow-7-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workflow-7-3">
+<div class="para" id="workflow-7-3-1">and the geometry is convex.<div class="autopermalink" data-description="Paragraph"><a href="#workflow-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#workflow-7-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="workflow-8">This viewpoint turns allocation methods into geometric partitions of simplices.<div class="autopermalink" data-description="Paragraph"><a href="#workflow-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="exercises" id="linear-functional-exercises">
+<h4 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h4>
+<article class="exercise exercise-like" id="convert-functional-exercise"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="convert-functional-exercise-1-1">Write each linear functional as a row vector.<div class="autopermalink" data-description="Paragraph"><a href="#convert-functional-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha ol-marker-2" id="convert-functional-exercise-1-2">
+<li id="convert-functional-exercise-1-2-1">
+<div class="para" id="p-derived-convert-functional-exercise-1-2-1"><div class="displaymath process-math" id="convert-functional-exercise-1-2-1-1">
+\begin{equation*}
+\varphi(x,y)=3x-2y
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#convert-functional-exercise-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="convert-functional-exercise-1-2-2">
+<div class="para" id="p-derived-convert-functional-exercise-1-2-2"><div class="displaymath process-math" id="convert-functional-exercise-1-2-2-1">
+\begin{equation*}
+\psi(x,y,z)=x+4y-z
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#convert-functional-exercise-1-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Exercise 1"><a href="#convert-functional-exercise" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="solve-functional-system"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="solve-functional-system-1-1">Solve the system<div class="autopermalink" data-description="Paragraph"><a href="#solve-functional-system-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="solve-functional-system-1-2">
+\begin{equation*}
+x+y+z=2,
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="solve-functional-system-1-3">
+\begin{equation*}
+2x-y+z=1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Exercise 2"><a href="#solve-functional-system" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="simplex-region-exercise"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="simplex-region-exercise-1-1">Describe geometrically the set of points in <span class="process-math">\(\Delta_2\)</span> satisfying<div class="autopermalink" data-description="Paragraph"><a href="#simplex-region-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="simplex-region-exercise-1-2">
+\begin{equation*}
+x\ge\frac13.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Exercise 3"><a href="#simplex-region-exercise" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="allocation-slabs-exercise"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="allocation-slabs-exercise-1-1">Let <span class="process-math">\(M=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#allocation-slabs-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="allocation-slabs-exercise-1-2">Rewrite the constraints<div class="autopermalink" data-description="Paragraph"><a href="#allocation-slabs-exercise-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="allocation-slabs-exercise-1-3">
+\begin{equation*}
+2 \le 5x &lt; 3
+\end{equation*}
+</div>
+<div class="para" id="allocation-slabs-exercise-1-4">as inequalities involving only <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#allocation-slabs-exercise-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4"><a href="#allocation-slabs-exercise" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="remainder-comparison-exercise"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="remainder-comparison-exercise-1-1">Suppose<div class="autopermalink" data-description="Paragraph"><a href="#remainder-comparison-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="remainder-comparison-exercise-1-2">
+\begin{equation*}
+\lfloor6x\rfloor=2, \qquad \lfloor6y\rfloor=1.
+\end{equation*}
+</div>
+<div class="para" id="remainder-comparison-exercise-1-3">Simplify the inequality<div class="autopermalink" data-description="Paragraph"><a href="#remainder-comparison-exercise-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="remainder-comparison-exercise-1-4">
+\begin{equation*}
+6x-\lfloor6x\rfloor \ge 6y-\lfloor6y\rfloor.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Exercise 5"><a href="#remainder-comparison-exercise" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises: Exercises"><a href="#linear-functional-exercises" title="Copy heading and permalink for Exercises: Exercises" aria-label="Copy heading and permalink for Exercises: Exercises">🔗</a></div>
+</section><div class="autopermalink" data-description="Subsection: Practical Workflow"><a href="#workflow" title="Copy heading and permalink for Subsection: Practical Workflow" aria-label="Copy heading and permalink for Subsection: Practical Workflow">🔗</a></div>
 </section><div class="autopermalink" data-description="Section: Apportionment"><a href="#course-notes-4" title="Copy heading and permalink for Section: Apportionment" aria-label="Copy heading and permalink for Section: Apportionment">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="notes-class-01.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-districting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="notes-background-math.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-districting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

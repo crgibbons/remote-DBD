@@ -10,49 +10,139 @@ var ptx_lunr_docs = [
   "body": " Course Documents     "
 },
 {
-  "id": "notes-class-01",
+  "id": "notes-background-math",
   "level": "1",
-  "url": "notes-class-01.html",
+  "url": "notes-background-math.html",
   "type": "Section",
   "number": "",
-  "title": "Mathematical Modeling and Google NotebookLM",
-  "body": " Mathematical Modeling and Google NotebookLM  We started with mathematical modeling using the SIAM M3 Challenge materials. We read about the six stages of mathematical modeling and then applied those stages to a real-world problem. We also got familiar with Google NotebookLM, which is a generative AI tool that can help us interact with documents and extract information from them.    Mathematical Modeling Activities   Instructor note: If you are planning this activity, you need a deck of cards that you can use to divide the class into six groups of four using one characteristic (suit) and then four groups of six using another characteristic (number) so that each group of six has a member from each group of four. You may have more than 24 students, in which case, adapt appropriately!      Google NotebookLM     Mathematical Modeling  We started reading the M3 Mathematical Modeling Materials from the Society for Industrial and Applied Mathematics. You should have a list describing the six stages of making a model.    Defining the Problem Statement (Chapter 2)    Making Assumptions (Chapter 3)    Defining Variables (Chapter 4)    Building Solutions (Chapter 5)    Analysis and Model Assessment (Chapter 6)    Putting it All Together (Chapter 7)    In groups, we read the M3 Challenge Problem and Solution, with each group focusing on a different stage of the modeling process. Then we mixed up into new groups to discuss how those processes fit together into a good overall solution to the challenge problem.    Google NotebookLM  This is a generative AI tool useful for interacting with documents, especially long ones (we're mathematicians; we read, but we also take productive shortcuts when it helps our learning goals).  We got used to the interface a little bit with the M3 handbook. The link to our notebook is on Blackboard.   Query: What are the six steps involved in mathematical modeling?    Response : Mathematical modeling is described in the sources as an iterative process rather than a strictly sequential checklist, meaning that steps are often revisited multiple times as the model is refined. While the guidebook highlights several key components, the six primary steps involved in the process are as follows:   Defining the Problem Statement  Real-world problems are typically broad, complex, and open-ended. The first step involves researching and brainstorming to refine a conceptual idea into a concise problem statement that clearly indicates what the model will predict or measure.    Making Assumptions  Because real-world situations often contain incomplete information, assumptions are necessary to simplify the problem and make it tractable. These assumptions help sharpen the focus by reducing the number of factors involved and establishing the specific conditions under which the model is considered valid.    Defining Variables  In this stage, the modeler identifies the primary factors influencing the phenomenon and defines them as quantifiable variables with specified units. This includes distinguishing between:  Independent variables: The model inputs.  Dependent variables: The model outputs or predictions.  Model parameters: Quantities that are held constant within the model      Building Solutions (Getting a Solution)  This step involves using mathematical techniques to generate answers to the defined problem. Depending on the modeler's background and the type of problem, solutions may be reached through hand calculations, algebraic manipulation, computer simulations, or software tools like Excel.    Analysis and Model Assessment  After obtaining a solution, the modeler must step back to assess its quality and determine if the results make sense. This involves identifying the model's strengths and weaknesses, as well as performing a sensitivity analysis to see how changes in input values or parameters impact the final output. If the results are unrealistic, the modeler may return to previous steps to adjust assumptions.    Reporting the Results  The final step is to explain the model and its implementation clearly so others can use it. This is typically done through a technical report that includes an abstract or executive summary, a clear list of assumptions, defined variables, and an honest assessment of the model's limitations.   Throughout these steps, modelers are encouraged to take careful notes and maintain a bibliography to ensure the process is transparent and repeatable.   Fact Check : We decided this was consistent with the guidebook. We can check again by clicking the links to the source material.     Query: What is the winning paper about?    Response : The winning paper, submitted by Team 1356 from Montgomery Blair High School for the 2013 Moody’s Mega Math (M3) Challenge, is titled \"Analysis of Plastic Waste Production and Recycling Methods\". The paper focuses on three main tasks requested by the Environmental Protection Agency (EPA) regarding plastic waste and recycling strategies.   There is more to see in the Notebook, but that seemed like enough of the response to start with!    Fact Check : We agreed this was a good summary, and we can use the links to the source material to check.     Query: Why is this a winning paper?   This one is a bit trickier because it is a subjective matter, and we do not have the capacity to ask How did you come to that conclusion? and expect an honest answer because LLMs are not capable of self-reflection. All that it can do is give a plausible text response to your question, based on the training data relevant to the question. That is, at best, it's parroting the words of self-reflection!  For comparison, consider a phrase like, That is a legitimately frustating experience, and I'm sorry you are feeling bad now. We (people) often use a phrase like this to convey our internal empathy to a listener, who then responds to the perceived internal empathy of the speaker. But I say these words to my toddler all the time, and sometimes I am only performing empathy when I don't actually feel it (like at 4 a.m. when he is mad that it's not possible to have a nonconvex triangle in the plane).     Investigate on your own.     Navigate to the shared notebook. You can ask questions via the chat!  Professor Gibbons created some Studio Output. What do you think of it?    Check out the flash cards. Are they useful?    Are there other outputs you would like the notebook to produce?    Are there questions you would be unlikely to ask the notebook? Why or why not?      This is just our first foray into using a generative AI tool to enhance our learning. We will develop more skills to interact with NotebookLM throughout the course.   "
+  "title": "Mathematical and Statistical Ideas - a Reference",
+  "body": " Mathematical and Statistical Ideas - a Reference   This course is about mathematics and how it is used in social contexts to model phenomena, manage processes, and automate parts of the world around us. To dig into these topics, you will need a certain level of comfort with topics from statistics, calculus, and linear algebra.    Statistics Ideas       Population  blah    Sample  blah    Statistic  blah    Data  blah    Feature  blah    Observation  blah    Measures of Spread and Central Tendency  blah       The U.S. Decennial Census  The U.S. Decennial Census aims for population-level data.   Some other Census product     Mathematical Moment  Grab a mathematical moment from AMS...     Calculus Review       Derivative  blah    Differential Equation  blah   Other stuff  Series, sequence, integrals        The differential equation is satisfied by functions where and is a constant. No other functions satisfy this equation.  This type of differential equation can be used to model a quantity or concentration that is growing ( ) or decaying ( ) over time. A common example is radiometric dating (using radioactive Carbon-14 or Uranium) using the known rate of decay of certain carbon isotopes.  Some fun short videos include:    Carbon Dating courtesy of Oxford      Radiometric Dating courtesy of Ars Technica     For a colorful description of atoms, isotopes, radioactive decay, heavy water, and more, see Star Talk comparing protons to the Real Housewives of New Jersey and making terrible puns.       Common Derviatives and Differential Equations    things      Integrals    stuff       Linear Algebra Review       Matrix  For positive integers and , a matrix is an array of real numbers with rows and columns. The entry refers to the entry in the -th row and -th column. A matrix is said to be square when .   Matrix Algebra   addition , etc, multiplication   Matrix Equation for a Linear System   , homogeneous    Augmented Matrix  Represents a linear system    Determinant        Eigen things    Adjacency Matrix    Covariance Matrix    Barycentric coordinates      Length, cross product, unit vector, projection of one vector onto another.    "
 },
 {
-  "id": "notes-class-01-5-4",
+  "id": "def-stats-basics",
   "level": "2",
-  "url": "notes-class-01.html#notes-class-01-5-4",
-  "type": "Example",
+  "url": "notes-background-math.html#def-stats-basics",
+  "type": "Definition",
   "number": "1",
-  "title": "Query: What are the six steps involved in mathematical modeling?",
-  "body": " Query: What are the six steps involved in mathematical modeling?    Response : Mathematical modeling is described in the sources as an iterative process rather than a strictly sequential checklist, meaning that steps are often revisited multiple times as the model is refined. While the guidebook highlights several key components, the six primary steps involved in the process are as follows:   Defining the Problem Statement  Real-world problems are typically broad, complex, and open-ended. The first step involves researching and brainstorming to refine a conceptual idea into a concise problem statement that clearly indicates what the model will predict or measure.    Making Assumptions  Because real-world situations often contain incomplete information, assumptions are necessary to simplify the problem and make it tractable. These assumptions help sharpen the focus by reducing the number of factors involved and establishing the specific conditions under which the model is considered valid.    Defining Variables  In this stage, the modeler identifies the primary factors influencing the phenomenon and defines them as quantifiable variables with specified units. This includes distinguishing between:  Independent variables: The model inputs.  Dependent variables: The model outputs or predictions.  Model parameters: Quantities that are held constant within the model      Building Solutions (Getting a Solution)  This step involves using mathematical techniques to generate answers to the defined problem. Depending on the modeler's background and the type of problem, solutions may be reached through hand calculations, algebraic manipulation, computer simulations, or software tools like Excel.    Analysis and Model Assessment  After obtaining a solution, the modeler must step back to assess its quality and determine if the results make sense. This involves identifying the model's strengths and weaknesses, as well as performing a sensitivity analysis to see how changes in input values or parameters impact the final output. If the results are unrealistic, the modeler may return to previous steps to adjust assumptions.    Reporting the Results  The final step is to explain the model and its implementation clearly so others can use it. This is typically done through a technical report that includes an abstract or executive summary, a clear list of assumptions, defined variables, and an honest assessment of the model's limitations.   Throughout these steps, modelers are encouraged to take careful notes and maintain a bibliography to ensure the process is transparent and repeatable.   Fact Check : We decided this was consistent with the guidebook. We can check again by clicking the links to the source material.   "
+  "title": "",
+  "body": "     Population  blah    Sample  blah    Statistic  blah    Data  blah    Feature  blah    Observation  blah    Measures of Spread and Central Tendency  blah      "
 },
 {
-  "id": "notes-class-01-5-5",
+  "id": "subsec-statistics-review-3",
   "level": "2",
-  "url": "notes-class-01.html#notes-class-01-5-5",
+  "url": "notes-background-math.html#subsec-statistics-review-3",
   "type": "Example",
   "number": "2",
-  "title": "Query: What is the winning paper about?",
-  "body": " Query: What is the winning paper about?    Response : The winning paper, submitted by Team 1356 from Montgomery Blair High School for the 2013 Moody’s Mega Math (M3) Challenge, is titled \"Analysis of Plastic Waste Production and Recycling Methods\". The paper focuses on three main tasks requested by the Environmental Protection Agency (EPA) regarding plastic waste and recycling strategies.   There is more to see in the Notebook, but that seemed like enough of the response to start with!    Fact Check : We agreed this was a good summary, and we can use the links to the source material to check.   "
+  "title": "The U.S. Decennial Census.",
+  "body": "The U.S. Decennial Census  The U.S. Decennial Census aims for population-level data.  "
 },
 {
-  "id": "notes-class-01-5-6",
+  "id": "subsec-statistics-review-4",
   "level": "2",
-  "url": "notes-class-01.html#notes-class-01-5-6",
+  "url": "notes-background-math.html#subsec-statistics-review-4",
   "type": "Example",
   "number": "3",
-  "title": "Query: Why is this a winning paper?",
-  "body": " Query: Why is this a winning paper?   This one is a bit trickier because it is a subjective matter, and we do not have the capacity to ask How did you come to that conclusion? and expect an honest answer because LLMs are not capable of self-reflection. All that it can do is give a plausible text response to your question, based on the training data relevant to the question. That is, at best, it's parroting the words of self-reflection!  For comparison, consider a phrase like, That is a legitimately frustating experience, and I'm sorry you are feeling bad now. We (people) often use a phrase like this to convey our internal empathy to a listener, who then responds to the perceived internal empathy of the speaker. But I say these words to my toddler all the time, and sometimes I am only performing empathy when I don't actually feel it (like at 4 a.m. when he is mad that it's not possible to have a nonconvex triangle in the plane).   "
+  "title": "Some other Census product.",
+  "body": "Some other Census product    "
 },
 {
-  "id": "notes-class-01-5-7",
+  "id": "subsec-statistics-review-5",
   "level": "2",
-  "url": "notes-class-01.html#notes-class-01-5-7",
-  "type": "Checkpoint",
+  "url": "notes-background-math.html#subsec-statistics-review-5",
+  "type": "Example",
   "number": "4",
-  "title": "Investigate on your own..",
-  "body": " Investigate on your own.     Navigate to the shared notebook. You can ask questions via the chat!  Professor Gibbons created some Studio Output. What do you think of it?    Check out the flash cards. Are they useful?    Are there other outputs you would like the notebook to produce?    Are there questions you would be unlikely to ask the notebook? Why or why not?     "
+  "title": "Mathematical Moment.",
+  "body": "Mathematical Moment  Grab a mathematical moment from AMS...  "
+},
+{
+  "id": "subsec-calculus-review-2",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-calculus-review-2",
+  "type": "Definition",
+  "number": "5",
+  "title": "",
+  "body": "     Derivative  blah    Differential Equation  blah   Other stuff  Series, sequence, integrals      "
+},
+{
+  "id": "subsec-calculus-review-3",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-calculus-review-3",
+  "type": "Example",
+  "number": "6",
+  "title": "",
+  "body": " The differential equation is satisfied by functions where and is a constant. No other functions satisfy this equation.  This type of differential equation can be used to model a quantity or concentration that is growing ( ) or decaying ( ) over time. A common example is radiometric dating (using radioactive Carbon-14 or Uranium) using the known rate of decay of certain carbon isotopes.  Some fun short videos include:    Carbon Dating courtesy of Oxford      Radiometric Dating courtesy of Ars Technica     For a colorful description of atoms, isotopes, radioactive decay, heavy water, and more, see Star Talk comparing protons to the Real Housewives of New Jersey and making terrible puns.     "
+},
+{
+  "id": "subsec-calculus-review-4",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-calculus-review-4",
+  "type": "Table",
+  "number": "7",
+  "title": "Common Derviatives and Differential Equations",
+  "body": " Common Derviatives and Differential Equations    things    "
+},
+{
+  "id": "subsec-calculus-review-5",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-calculus-review-5",
+  "type": "Table",
+  "number": "8",
+  "title": "Integrals",
+  "body": " Integrals    stuff    "
+},
+{
+  "id": "def-matrices-and-things",
+  "level": "2",
+  "url": "notes-background-math.html#def-matrices-and-things",
+  "type": "Definition",
+  "number": "9",
+  "title": "",
+  "body": "     Matrix  For positive integers and , a matrix is an array of real numbers with rows and columns. The entry refers to the entry in the -th row and -th column. A matrix is said to be square when .   Matrix Algebra   addition , etc, multiplication   Matrix Equation for a Linear System   , homogeneous    Augmented Matrix  Represents a linear system    Determinant      "
+},
+{
+  "id": "subsec-Linear-algebra-review-3",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-Linear-algebra-review-3",
+  "type": "Example",
+  "number": "10",
+  "title": "",
+  "body": " Eigen things  "
+},
+{
+  "id": "subsec-Linear-algebra-review-4",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-Linear-algebra-review-4",
+  "type": "Example",
+  "number": "11",
+  "title": "",
+  "body": " Adjacency Matrix  "
+},
+{
+  "id": "subsec-Linear-algebra-review-5",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-Linear-algebra-review-5",
+  "type": "Example",
+  "number": "12",
+  "title": "",
+  "body": " Covariance Matrix  "
+},
+{
+  "id": "subsec-Linear-algebra-review-6",
+  "level": "2",
+  "url": "notes-background-math.html#subsec-Linear-algebra-review-6",
+  "type": "Example",
+  "number": "13",
+  "title": "",
+  "body": " Barycentric coordinates  "
+},
+{
+  "id": "def-vector-stuff",
+  "level": "2",
+  "url": "notes-background-math.html#def-vector-stuff",
+  "type": "Definition",
+  "number": "14",
+  "title": "",
+  "body": "  Length, cross product, unit vector, projection of one vector onto another.   "
 },
 {
   "id": "course-notes-4",
@@ -61,7 +151,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Apportionment",
-  "body": " Apportionment   One of the first topics we'll study is apportionment .   Apportionment   The term apportionment refers to the mathematical process of distributing a fixed number of indistinguishable assets among different entities.  Each asset is indistinguishable from any other asset, and no asset can be subdivided.     Is it apportionment?   For example, suppose Courtney buys 45 boxes of coffee (from the orange and pink doughnut shop down the hill) for the math department to bring to their classes. The department has to come up with a way to decide how many boxes each professor gets, perhaps using the number of students each professor is teaching as the main relevant piece of data to make this decision.  Each professor has to decide how to share the coffee among their classes. This need not be an apportionment problem.  Based on the following table of data, determine how to divvy up the boxes of coffee in different ways. Each box serves 10. Assume every student (and professor) drinks coffee.   Professors and Enrollments, with boxes of coffee.    Prof  Total Students (plus one)     Ahmed  35     Bowman  60     Ceniceros  71     Cockburn  22     Dykstra  38     Gibbons  55     Kantrowitz  73     Kuruwita  45     LeMasurier  28     Tripp  58     Totals           Which method or methods seem fair ? Why?      Apportionment Terminology  One of the most famous apportionment problems is the apportionment of seats in the U.S. House of Representatives among the U.S. states. In fact, the terminology for apportionment problems comes from this application.   Apportionment Terms     Apportionment Problem  a scenario in which identical and indivisible items (the seats ) must be divided among entities (the states ) proportionately (using the populations )    States  the entities in the apportionment problem    Seats  the items being apportioned among the states    Apportionment Method  the algorithm determining how to apportion the seats to the states, guaranteeing exactly seats are distributed proporitionaly to each of the states based on their populations for .    Standard Divisor and Standard Quota , Lower Quota , Upper Quota   where is the total population;  , representing the fair share of seats for state if the seats could be subdivided;  , the largest integer less than or equal to the standard quota; , the smallest integer strictly greater than the standard quota. The definition of the floor function varies from setting to setting. Here we take it to include the possibility of equality.     Modified Divisor (and friends)  A value or other than the standard divisor, used to make the distribution of seats produced by rounding (based on a given convention) add up to . From each state gets a modified quota , lower quota , and upper quota .    Priority  An order by which extra seats are assigned to states. An example is using the fractional part of the quota to determine which states get their upper quota of seats by ranking from largest fracitonal part to smallest.       Revisiting Coffee   Taking each professor to be a state and each box of coffee to be a seat, we use the number of students each professor is teaching as the population (plus the professors themselves!). The standard divisor is .   Apportionment Computations    Name  Number of Students (plus one)  Standard Quota  Lower Quota  Upper Quota  Fractional Rank    Ahmed     ?      ?      ?     ?     Bowman     ?      ?      ?     ?     Ceniceros     ?      ?      ?     ?     Cockburn     ?      ?      ?     ?     Dykstra     ?      ?      ?     ?     Gibbons     ?      ?      ?     ?     Kantrowitz     ?      ?      ?     ?     Kuruwita     ?      ?      ?     ?     LeMasurier     ?      ?      ?     ?     Tripp     ?      ?      ?     ?         Standard Quotas    Name  Number of Students (plus one)  Standard Quota  Traditional Round Up or Down  Lower Quota  Upper Quota  Fractional Rank    A    3  3  4  7    B    6  5  6  4    Ce    7  6  7  3    Co    2  2  2  10    D    4  3  4  5    G    5  5  5  9    Ka    7  6  7  1    Ku    4  4  5  8    L    3  2  3  2    T    5  5  6  6    Total    46  41  51  N\/A       The first apportionment method we'll study is due to none other than Alexander Hamilton!   Hamilton's Method  Start by giving each state its lower quota. Then, in order of largest fractional part, distribute the remaining seats.    The winners are...   Determine which professors get their upper quota of boxes of coffee thanks to Alexander Hamilton.    The professors with fractional rank one through four.  Hamilton Apportionment     A  B  Ce  Co  D  G  Ka  Ku  L  T  Total                      A small tweak   What happens if Courtney only buys boxes of coffee?    Three additional methods involve changing the value of to come up with a modified divisor where some method (rounding conventionally, using the upper quota, or using the lower quota for each state) adds up to the number of seats. Respectively, these are Webster's method, Adams' Method, and Jefferson's Method.  But what if there were a different way to decide how to round up or down that always added up to the number of seats?   The Geometric Mean  The geometric mean of two distinct numbers and is given by . If , round up. If , round down.    Calculating the Geometric Mean   The geometric mean of 3 and 4 is , while the arithmetic mean is . The geometric mean of 5 and 6 is , while the arithmetic mean is . The geometric mean of 10 and 11 is , while the arithmetic mean is .      Prove that the geometric mean of two distinct positive numbers is always less than the arithmetic mean of those numbers.     Huntington–Hill Method (Equal Proportions)  The Huntington–Hill method is an apportionment method that assigns seats one at a time using priority values based on population and the geometric mean of consecutive seat numbers.  After each state receives one initial seat, additional seats are awarded sequentially to the state with the largest priority value , where is the state's population and is the number of seats the state currently holds.    The Huntington-Hill method is sometimes described using different divisors , which can be confusing at first. This happens because the method has two equivalent formulations.  In the priority formulation , seats are assigned one at a time using the priority value , where the divisor depends on the state's current number of seats.  In the rounding formulation , a single global divisor is used to compute quotas, and each quota is rounded up or down depending on whether it lies above or below the geometric mean . Here, the same expression appears as a rounding threshold rather than a priority denominator.  Although the divisors look different in these descriptions, both approaches implement the same rule: rounding is determined by the geometric mean, which balances relative over- and under-representation.    Cutoff points for Huntington-Hill rounding of quotas between 1 and 10    Quota is between  Cutoff point    1 and 2     2 and 3     3 and 4     4 and 5     5 and 6     6 and 7     7 and 8     8 and 9     9 and 10       Huntington-Hill and Paradoxes    Huntington-Hill method: Calculations standard divisor    State  Population  Standard quota  Cutoff point  Round quota to    A  34,800  3.48  3.464  4    B  104,800  10.48  10.488  10    C  64,800  6.48  6.481  6    D  140,800  14.08  14.491  14    E  54,800  5.48  5.477  6    Total  400,000  40   40      Huntington-Hill method: Calculations for with standard divisor and modified divisor    State  Population  Standard quota  Round quota to  Modified quota  Round quota to    A  34,800  3.48  4  3.47  4    B  105,100  10.51  11  10.479  10    C  65,100  6.51  7  6.491  7    D  140,200  14.02  14  13.978  14    E  54,800  5.48  6  5.464  5    Total  400,000  40  42   40       Huntington-Hill method: Calculations modified divisor    State  Population  Modified quota  Cutoff point  Round quota to    A  1,646,000  32.85  32.496  33    B  6,936,000  138.44  138.499  138    C  154,000  3.07  3.464  3    D  2,091,000  41.74  41.497  42    E  685,000  13.67  13.491  14    F  988,000  19.72  19.494  20    Total  12,500,000    250        Paradoxes    Quota paradox  This paradox occurs when a state is assigned a number of seats that lies outside its quota—that is, it receives fewer than its lower quota or more than its upper quota. A state's lower quota is the whole number part (floor) of its standard quota, and its upper quota is the next integer (ceiling). Any apportionment method that violates this rule is said to exhibit the quota paradox. While Hamilton's method always satisfies the quota rule, several divisor methods can, in certain situations, assign a state a number of seats outside its quota.    Alabama paradox  This paradox occurs when a state gets apportioned fewer seats simply because the total number of seats being apportioned has increased. Under Hamilton's method, increasing the house size can reshuffle the residues (fractional parts) of the standard quotas; some states can move ahead of others in the priority order for surplus seats, and a state can lose a seat it previously had. A famous historical instance arose in the 1880s when proposed U.S. House sizes led to Alabama receiving fewer seats when the House size increased by one.    Population paradox  This paradox occurs when a state gets apportioned fewer seats simply because its population has increased. More specifically, it describes situations in which state X loses a seat to state Y even though X grew in population at a higher rate than Y. Under Hamilton's method, changes in populations can change residues and the surplus-seat priority order in a way that produces this outcome.    New-states paradox  This paradox occurs when a state's apportionment is affected simply by virtue of the fact that a new state (together with its fair share of seats) has been added to the computation. Historically, when Oklahoma joined the Union in 1907, the House size was increased to accommodate Oklahoma's fair share, but the recalculated apportionment still shifted seats among existing states (for example, Maine gained a seat while New York lost one).      The Apportionment Problem, but Mathier   Formal Mathematical Variables  The problem can be defined using the following parameters:    A positive integer representing the total number of items to be distributed (for example, the total number of seats in a legislative body).   The number of entities receiving the items (for example, states or political parties).   An -dimensional real vector representing the size of each entity (such as population or vote counts).   The sum of all entries in , given by .   An integer vector where is the final number of units allocated to entity , satisfying and .     The Exact Quota  A central concept in apportionment is the exact quota , denoted , which represents the ideal fractional share of units an entity would receive if units were divisible. It is defined by   In an ideal mathematical world, we would have . However, because must be an integer and is typically a real number, an apportionment method is required to map the real vector of quotas to an integer vector of allocations.    Mathematical Constraints and Properties  For an apportionment method to be considered fair or valid, it is often expected to satisfy certain mathematical axioms:    Symmetry. The outcome should not depend on the order in which the entities are listed.   Homogeneity. If all input values are multiplied by the same positive constant, the resulting apportionment should remain unchanged.   The Quota Rule. A method satisfies this rule if each allocation is either or .   House Monotonicity. If the total number of units increases from to , no entity’s allocation should decrease. This property rules out paradoxes such as the Alabama Paradox.     Error Minimization  From a mathematical perspective, many apportionment methods can be viewed as attempting to minimize the error between the ideal proportions and the actual integer allocations . This is often modeled using a decomposable error function   where measures the severity of the error for entity . For example, the Sainte-Lague method can be characterized as minimizing an error function based on the squared difference between allocated units and exact quotas.     More  Why doesn't the size of the House change anymore? See how House would have to scale with the population over time at this interactive Census applet   Apportionment is rife with paradoxes. Let's dig in.   That's not fair!   In our CJ Coffee Distribution Scheme, there were some possibilities we didn't consider.  Hamilton Apportionment    Prof.  A  B  Ce  Co  D  G  Ka  Ku  L  T  Total    Pop  35  60  71  22  38  55  73  45  28  58  485    Q  3.25  5.57  6.59  2.04  3.53  5.10  6.77  4.18  2.60  5.38  485    Boxes               Boxes                    The Apportionment Problem, but Mathier   Formal Mathematical Variables  The problem can be defined using the following parameters:    A positive integer representing the total number of items to be distributed (for example, the total number of seats in a legislative body).   The number of entities receiving the items (for example, states or political parties).   An -dimensional real vector representing the size of each entity (such as population or vote counts).   The sum of all entries in , given by .   An integer vector where is the final number of units allocated to entity , satisfying and .     The (Exact) Quota  A central concept in apportionment is the exact quota , denoted , which represents the ideal fractional share of units an entity would receive if units were divisible. It is defined by   In an ideal mathematical world, we would have . However, because must be an integer and is typically a rational number that is not an integer, an apportionment method is required to map the real vector of quotas to an integer vector of allocations.    Apportionment Method: a function!  Fix a positive integer and an integer . Let denote the space of exact quota vectors, and let denote the set of feasible integer allocations.  An apportionment method is a function   that assigns to each exact quota vector a unique integer allocation .  The method induces a partition of into regions   called the apportionment polyhedra . Each polyhedron consists of all exact quota vectors that are mapped to the same integer allocation.    The positive orthant, , and with three states and five seats.        Apportionment Polyhedra  An apportionment polyhedron is a geometric region within the space of all possible exact quota vectors that a particular apportionment method maps to a single, fixed integer seat allocation . In mathematical terms, it consists of all fractional quota vectors that result in the same whole-number distribution of seats.   Geometric Representation  The concept is best understood by visualizing the space of exact quotas.    The set . This set contains all possible fractional distributions of items among entities. For example, if there are three parties and seats, the set forms an equilateral triangle in three-dimensional space with vertices at , , and .   Integer points. Within this geometric space, the possible integer seat allocations are represented by discrete lattice points corresponding to integer vectors .   Defining the polyhedra. A valid apportionment method partitions the larger region into smaller regions, or polyhedra, each associated with a single integer allocation. Any exact quota vector lying inside a given polyhedron is rounded or mapped to the integer allocation corresponding to that region.   The shape and size of apportionment polyhedra depend on the error function or rounding rule associated with the chosen apportionment method.    Mapping. A desirable property of an apportionment method is that any exact quota vector that is already an integer vector is mapped to itself.   Borders. The boundaries between apportionment polyhedra correspond to tie situations, where an exact quota vector may be equally compatible with two or more integer seat allocations. In such cases, the method must include a rule for resolving ties along these boundaries.   To find apportionment polyhedra given an apportionment function, it is useful to introduce barycentric coordinates . Given a value , a barycentric -tuple satisfies the property that for each coordinate and . We can imagine each tuple with an in one spot and zeros elsewhere to be sitting at the corner of an -dimensional simplex, which results from treating the tuple like the end of a vector with tail at the original in . Given a coordinate , the face opposite its is the set of all barycentric coordinates with a zero in position .   Moving around the triangle where the barycentric coordinates sum to five. The barycentric tuple lies on the line (and the line , and the line ).        Mathematical Constraints and Properties  For an apportionment method to be considered fair or valid, it is often expected to satisfy certain mathematical axioms:    Symmetry. The outcome should not depend on the order in which the entities are listed.   Homogeneity. If all input values are multiplied by the same positive constant, the resulting apportionment should remain unchanged.   The Quota Rule. A method satisfies this rule if each allocation is either or .   House Monotonicity. If the total number of units increases from to , no entity's allocation should decrease. This property rules out paradoxes such as the Alabama Paradox.   The Balinski-Young Theorem essentially says that there is no apportionment rule that satisfies all of these criteria all the time!    Hamilton's Method as an Apportionment Function  Fix seats and entities. Given an exact quota vector , Hamilton's method proceeds as follows:   Assign each entity its lower quota .  Distribute the remaining seats, one at a time, to the entities with the largest fractional remainders .   This defines an apportionment method , since every quota vector is mapped to a unique integer allocation.  Geometrically, the apportionment polyhedra for Hamilton's method are regions determined by inequalities comparing fractional parts of the quotas. The boundaries between polyhedra occur where two or more remainders are equal, leading to ties in the final seat assignment.  Because these boundaries depend on global comparisons of remainders, the resulting polyhedra need not arise from minimizing a single global error function. This explains why Hamilton's method can satisfy the Quota Rule while still exhibiting paradoxes such as the Alabama Paradox.   The Hamilton Polyhedron for an example.  Suppose we have boxes of coffee to distribute among three people (Ahmed, Gibbons, and Tripp) in proportion to their need scores  .  The total is , so the exact quotas are .   Exact quotas and remainders for 15 boxes         Person     Remainder    Ahmed        Gibbons        Tripp         Using Hamilton's (largest remainder) method, we first assign lower quotas: , which totals boxes, leaving boxes to distribute. The two largest remainders are Tripp's and Gibbons's, so each receives one additional box.  The final allocation is   Consider Hamilton’s method on the quota simplex . We describe the region of quota vectors that Hamilton maps to the allocation .  For Hamilton’s method to output , the lower-quota step must first produce  Two seats left: , , or ;  One seat left: , , or ;  No seats left: .    In our example, we have the scenario that the lower quotas produce , and the remainders satisfy , :   Write the remainders as , , and . To award the two remaining seats to Gibbons and Tripp (and not to Ahmed), we need the two inequalities   Equivalently, these are linear conditions on the quotas:   Therefore, part of the (open) Hamilton region mapping to is   The boundary of this region consists of tie situations, such as or , together with the grid oundaries where a quota crosses an integer and a lower quota changes (for example, ). A complete closed polyhedron requires a specified tie-breaking rule on these boundary sets.      Apportionment Polyhedra  An apportionment polyhedron is a geometric region within the space of all possible exact quota vectors that a particular apportionment method maps to a single, fixed integer seat allocation . In mathematical terms, it consists of all fractional quota vectors that result in the same whole-number distribution of seats.   Geometric Representation  The concept is best understood by visualizing the space of exact quotas.    The set . This set contains all possible fractional distributions of items among entities. For example, if there are three parties and seats, the set forms an equilateral triangle in three-dimensional space with vertices at , , and .   Integer points. Within this geometric space, the possible integer seat allocations are represented by discrete lattice points corresponding to integer vectors .   Defining the polyhedra. A valid apportionment method partitions the larger region into smaller regions, or polyhedra, each associated with a single integer allocation. Any exact quota vector lying inside a given polyhedron is rounded or mapped to the integer allocation corresponding to that region.     Function and Boundaries  The shape and size of apportionment polyhedra depend on the error function or rounding rule associated with the chosen apportionment method.    Mapping. A desirable property of an apportionment method is that any exact quota vector that is already an integer vector is mapped to itself.   Borders. The boundaries between apportionment polyhedra correspond to tie situations, where an exact quota vector may be equally compatible with two or more integer seat allocations. In such cases, the method must include a rule for resolving ties along these boundaries.      Using Apportionment Polyhedra to Assess Fairness  The apportionment polyhedron provides a geometric framework for assessing the fairness of an apportionment method by describing how the method rounds exact quotas—the ideal fractional shares of seats—into whole-number allocations. By analyzing the shapes and boundaries of these polyhedra, mathematicians and social scientists can determine which methods minimize rounding error and which are susceptible to representational paradoxes.   Visualizing Rounding and Error  Geometrically, the space of all possible exact quota vectors is partitioned into regions, or polyhedra, each associated with a single integer seat allocation.    Mapping fairness. A well-behaved apportionment method maps any exact quota vector lying inside a given polyhedron to the integer allocation at its center. Fairness can then be assessed by measuring the gravity of the error , defined as the distance or discrepancy between the ideal quota and the resulting integer allocation .   Defining boundaries. The boundaries between polyhedra correspond to tie situations, in which an exact quota vector may be equally compatible with more than one integer allocation. A fair method must resolve such ties using a consistent rule, rather than an arbitrary choice.     Comparing Methodological Justness  Different apportionment methods correspond to different error functions, and these choices lead to distinct polyhedral decompositions of the quota space. This geometric perspective allows for direct mathematical comparison between methods.    Sainte-Lague versus Hare. Different methods induce different polyhedral grids. The Sainte‑Laguë method is designed to minimize relative error and, in three-entity settings, produces a hexagonal tiling that is often regarded as neutral with respect to entity size. In contrast, rounding methods such as Hare’s method focus on greatest remainders and are frequently analyzed using -norms—such as Euclidean distance—to identify the integer point closest to a given exact quota.   Bias detection. Geometric analysis can reveal systematic biases in an apportionment method. For example, linear divisor methods may favor smaller entities or larger entities depending on the placement of their polyhedral boundaries, often parametrized by an initial divisor offset.     Identifying Paradoxes  Apportionment polyhedra are also a useful tool for determining whether a method satisfies common axioms of fairness.    The Quota Rule. Polyhedral analysis can be used to check whether allocations always lie between the floor and ceiling of the exact quotas.   House monotonicity. Examining how polyhedral boundaries change as the total number of seats increases helps determine whether a method avoids decreases in allocation when additional seats are added.   The Alabama Paradox. Poorly aligned polyhedral boundaries can lead to paradoxical outcomes in which increasing the total number of seats causes an entity to lose a seat, a phenomenon observed in historical legislative apportionments.   A contemporary illustration of these issues arose in the 2020 Iowa Democratic caucuses. The use of Hamilton's method, which satisfies the Quota Rule but is geometrically vulnerable to paradoxes, produced several aggregation anomalies in which the sum of local allocations failed to align with statewide totals.    "
+  "body": " Apportionment   One of the first topics we'll study is apportionment .   Apportionment   The term apportionment refers to the mathematical process of distributing a fixed number of indistinguishable assets among different entities.  Each asset is indistinguishable from any other asset, and no asset can be subdivided.     Is it apportionment?   For example, suppose Courtney buys 45 boxes of coffee (from the orange and pink doughnut shop down the hill) for the math department to bring to their classes. The department has to come up with a way to decide how many boxes each professor gets, perhaps using the number of students each professor is teaching as the main relevant piece of data to make this decision.  Each professor has to decide how to share the coffee among their classes. This need not be an apportionment problem.  Based on the following table of data, determine how to divvy up the boxes of coffee in different ways. Each box serves 10. Assume every student (and professor) drinks coffee.   Professors and Enrollments, with boxes of coffee.    Prof  Total Students (plus one)     Ahmed  35     Bowman  60     Ceniceros  71     Cockburn  22     Dykstra  38     Gibbons  55     Kantrowitz  73     Kuruwita  45     LeMasurier  28     Tripp  58     Totals           Which method or methods seem fair ? Why?      Apportionment Terminology  One of the most famous apportionment problems is the apportionment of seats in the U.S. House of Representatives among the U.S. states. In fact, the terminology for apportionment problems comes from this application.   Apportionment Terms     Apportionment Problem  a scenario in which identical and indivisible items (the seats ) must be divided among entities (the states ) proportionately (using the populations )    States  the entities in the apportionment problem    Seats  the items being apportioned among the states    Apportionment Method  the algorithm determining how to apportion the seats to the states, guaranteeing exactly seats are distributed proporitionaly to each of the states based on their populations for .    Standard Divisor and Standard Quota , Lower Quota , Upper Quota   where is the total population;  , representing the fair share of seats for state if the seats could be subdivided;  , the largest integer less than or equal to the standard quota; , the smallest integer strictly greater than the standard quota. The definition of the floor function varies from setting to setting. Here we take it to include the possibility of equality.     Modified Divisor (and friends)  A value or other than the standard divisor, used to make the distribution of seats produced by rounding (based on a given convention) add up to . From each state gets a modified quota , lower quota , and upper quota .    Priority  An order by which extra seats are assigned to states. An example is using the fractional part of the quota to determine which states get their upper quota of seats by ranking from largest fracitonal part to smallest.       Revisiting Coffee   Taking each professor to be a state and each box of coffee to be a seat, we use the number of students each professor is teaching as the population (plus the professors themselves!). The standard divisor is .   Apportionment Computations    Name  Number of Students (plus one)  Standard Quota  Lower Quota  Upper Quota  Fractional Rank    Ahmed     ?      ?      ?     ?     Bowman     ?      ?      ?     ?     Ceniceros     ?      ?      ?     ?     Cockburn     ?      ?      ?     ?     Dykstra     ?      ?      ?     ?     Gibbons     ?      ?      ?     ?     Kantrowitz     ?      ?      ?     ?     Kuruwita     ?      ?      ?     ?     LeMasurier     ?      ?      ?     ?     Tripp     ?      ?      ?     ?         Standard Quotas    Name  Number of Students (plus one)  Standard Quota  Traditional Round Up or Down  Lower Quota  Upper Quota  Fractional Rank    A    3  3  4  7    B    6  5  6  4    Ce    7  6  7  3    Co    2  2  2  10    D    4  3  4  5    G    5  5  5  9    Ka    7  6  7  1    Ku    4  4  5  8    L    3  2  3  2    T    5  5  6  6    Total    46  41  51  N\/A       The first apportionment method we'll study is due to none other than Alexander Hamilton!   Hamilton's Method  Start by giving each state its lower quota. Then, in order of largest fractional part, distribute the remaining seats.    The winners are...   Determine which professors get their upper quota of boxes of coffee thanks to Alexander Hamilton.    The professors with fractional rank one through four.  Hamilton Apportionment     A  B  Ce  Co  D  G  Ka  Ku  L  T  Total                      A small tweak   What happens if Courtney only buys boxes of coffee?    Three additional methods involve changing the value of to come up with a modified divisor where some method (rounding conventionally, using the upper quota, or using the lower quota for each state) adds up to the number of seats. Respectively, these are Webster's method, Adams' Method, and Jefferson's Method.  But what if there were a different way to decide how to round up or down that always added up to the number of seats?   The Geometric Mean  The geometric mean of two distinct numbers and is given by . If , round up. If , round down.    Calculating the Geometric Mean   The geometric mean of 3 and 4 is , while the arithmetic mean is . The geometric mean of 5 and 6 is , while the arithmetic mean is . The geometric mean of 10 and 11 is , while the arithmetic mean is .      Prove that the geometric mean of two distinct positive numbers is always less than the arithmetic mean of those numbers.     Huntington–Hill Method (Equal Proportions)  The Huntington–Hill method is an apportionment method that assigns seats one at a time using priority values based on population and the geometric mean of consecutive seat numbers.  After each state receives one initial seat, additional seats are awarded sequentially to the state with the largest priority value , where is the state's population and is the number of seats the state currently holds.    The Huntington-Hill method is sometimes described using different divisors , which can be confusing at first. This happens because the method has two equivalent formulations.  In the priority formulation , seats are assigned one at a time using the priority value , where the divisor depends on the state's current number of seats.  In the rounding formulation , a single global divisor is used to compute quotas, and each quota is rounded up or down depending on whether it lies above or below the geometric mean . Here, the same expression appears as a rounding threshold rather than a priority denominator.  Although the divisors look different in these descriptions, both approaches implement the same rule: rounding is determined by the geometric mean, which balances relative over- and under-representation.    Cutoff points for Huntington-Hill rounding of quotas between 1 and 10    Quota is between  Cutoff point    1 and 2     2 and 3     3 and 4     4 and 5     5 and 6     6 and 7     7 and 8     8 and 9     9 and 10       Huntington-Hill and Paradoxes    Huntington-Hill method: Calculations standard divisor    State  Population  Standard quota  Cutoff point  Round quota to    A  34,800  3.48  3.464  4    B  104,800  10.48  10.488  10    C  64,800  6.48  6.481  6    D  140,800  14.08  14.491  14    E  54,800  5.48  5.477  6    Total  400,000  40   40      Huntington-Hill method: Calculations for with standard divisor and modified divisor    State  Population  Standard quota  Round quota to  Modified quota  Round quota to    A  34,800  3.48  4  3.47  4    B  105,100  10.51  11  10.479  10    C  65,100  6.51  7  6.491  7    D  140,200  14.02  14  13.978  14    E  54,800  5.48  6  5.464  5    Total  400,000  40  42   40       Huntington-Hill method: Calculations modified divisor    State  Population  Modified quota  Cutoff point  Round quota to    A  1,646,000  32.85  32.496  33    B  6,936,000  138.44  138.499  138    C  154,000  3.07  3.464  3    D  2,091,000  41.74  41.497  42    E  685,000  13.67  13.491  14    F  988,000  19.72  19.494  20    Total  12,500,000    250        Paradoxes    Quota paradox  This paradox occurs when a state is assigned a number of seats that lies outside its quota—that is, it receives fewer than its lower quota or more than its upper quota. A state's lower quota is the whole number part (floor) of its standard quota, and its upper quota is the next integer (ceiling). Any apportionment method that violates this rule is said to exhibit the quota paradox. While Hamilton's method always satisfies the quota rule, several divisor methods can, in certain situations, assign a state a number of seats outside its quota.    Alabama paradox  This paradox occurs when a state gets apportioned fewer seats simply because the total number of seats being apportioned has increased. Under Hamilton's method, increasing the house size can reshuffle the residues (fractional parts) of the standard quotas; some states can move ahead of others in the priority order for surplus seats, and a state can lose a seat it previously had. A famous historical instance arose in the 1880s when proposed U.S. House sizes led to Alabama receiving fewer seats when the House size increased by one.    Population paradox  This paradox occurs when a state gets apportioned fewer seats simply because its population has increased. More specifically, it describes situations in which state X loses a seat to state Y even though X grew in population at a higher rate than Y. Under Hamilton's method, changes in populations can change residues and the surplus-seat priority order in a way that produces this outcome.    New-states paradox  This paradox occurs when a state's apportionment is affected simply by virtue of the fact that a new state (together with its fair share of seats) has been added to the computation. Historically, when Oklahoma joined the Union in 1907, the House size was increased to accommodate Oklahoma's fair share, but the recalculated apportionment still shifted seats among existing states (for example, Maine gained a seat while New York lost one).      The Apportionment Problem, but Mathier   Formal Mathematical Variables  The problem can be defined using the following parameters:    A positive integer representing the total number of items to be distributed (for example, the total number of seats in a legislative body).   The number of entities receiving the items (for example, states or political parties).   An -dimensional real vector representing the size of each entity (such as population or vote counts).   The sum of all entries in , given by .   An integer vector where is the final number of units allocated to entity , satisfying and .     The Exact Quota  A central concept in apportionment is the exact quota , denoted , which represents the ideal fractional share of units an entity would receive if units were divisible. It is defined by   In an ideal mathematical world, we would have . However, because must be an integer and is typically a real number, an apportionment method is required to map the real vector of quotas to an integer vector of allocations.    Mathematical Constraints and Properties  For an apportionment method to be considered fair or valid, it is often expected to satisfy certain mathematical axioms:    Symmetry. The outcome should not depend on the order in which the entities are listed.   Homogeneity. If all input values are multiplied by the same positive constant, the resulting apportionment should remain unchanged.   The Quota Rule. A method satisfies this rule if each allocation is either or .   House Monotonicity. If the total number of units increases from to , no entity’s allocation should decrease. This property rules out paradoxes such as the Alabama Paradox.     Error Minimization  From a mathematical perspective, many apportionment methods can be viewed as attempting to minimize the error between the ideal proportions and the actual integer allocations . This is often modeled using a decomposable error function   where measures the severity of the error for entity . For example, the Sainte-Lague method can be characterized as minimizing an error function based on the squared difference between allocated units and exact quotas.     More  Why doesn't the size of the House change anymore? See how House would have to scale with the population over time at this interactive Census applet   Apportionment is rife with paradoxes. Let's dig in.    That's not fair!   In our CJ Coffee Distribution Scheme, there were some possibilities we didn't consider.  Hamilton Apportionment    Prof.  A  B  Ce  Co  D  G  Ka  Ku  L  T  Total    Pop  35  60  71  22  38  55  73  45  28  58  485    Q  3.25  5.57  6.59  2.04  3.53  5.10  6.77  4.18  2.60  5.38  485    Boxes               Boxes                    The Apportionment Problem, but Mathier   Formal Mathematical Variables  The problem can be defined using the following parameters:    A positive integer representing the total number of items to be distributed (for example, the total number of seats in a legislative body).   The number of entities receiving the items (for example, states or political parties).   An -dimensional real vector representing the size of each entity (such as population or vote counts).   The sum of all entries in , given by .   An integer vector where is the final number of units allocated to entity , satisfying and .     The (Exact) Quota  A central concept in apportionment is the exact quota , denoted , which represents the ideal fractional share of units an entity would receive if units were divisible. It is defined by   In an ideal mathematical world, we would have . However, because must be an integer and is typically a rational number that is not an integer, an apportionment method is required to map the real vector of quotas to an integer vector of allocations.    Apportionment Method: a function!  Fix a positive integer and an integer . Let denote the space of exact quota vectors, and let denote the set of feasible integer allocations.  An apportionment method is a function   that assigns to each exact quota vector a unique integer allocation .  The method induces a partition of into regions   called the apportionment polyhedra . Each polyhedron consists of all exact quota vectors that are mapped to the same integer allocation.     The positive orthant, , and  with three states and five seats.        Apportionment Polyhedra  An apportionment polyhedron is a geometric region within the space of all possible exact quota vectors that a particular apportionment method maps to a single, fixed integer seat allocation . In mathematical terms, it consists of all fractional quota vectors that result in the same whole-number distribution of seats.   Geometric Representation  The concept is best understood by visualizing the space of exact quotas.    The set . This set contains all possible fractional distributions of items among entities. For example, if there are three parties and seats, the set forms an equilateral triangle in three-dimensional space with vertices at , , and .   Integer points. Within this geometric space, the possible integer seat allocations are represented by discrete lattice points corresponding to integer vectors .   Defining the polyhedra. A valid apportionment method partitions the larger region into smaller regions, or polyhedra, each associated with a single integer allocation. Any exact quota vector lying inside a given polyhedron is rounded or mapped to the integer allocation corresponding to that region.   The shape and size of apportionment polyhedra depend on the error function or rounding rule associated with the chosen apportionment method.    Mapping. A desirable property of an apportionment method is that any exact quota vector that is already an integer vector is mapped to itself.   Borders. The boundaries between apportionment polyhedra correspond to tie situations, where an exact quota vector may be equally compatible with two or more integer seat allocations. In such cases, the method must include a rule for resolving ties along these boundaries.   To find apportionment polyhedra given an apportionment function, it is useful to introduce barycentric coordinates . Given a value , a barycentric -tuple satisfies the property that for each coordinate and . We can imagine each tuple with an in one spot and zeros elsewhere to be sitting at the corner of an -dimensional simplex, which results from treating the tuple like the end of a vector with tail at the original in . Given a coordinate , the face opposite its is the set of all barycentric coordinates with a zero in position .    Moving around the triangle where the barycentric coordinates sum to five. The barycentric tuple lies on the line (and the line , and the line ).         Mathematical Constraints and Properties  For an apportionment method to be considered fair or valid, it is often expected to satisfy certain mathematical axioms:    Symmetry. The outcome should not depend on the order in which the entities are listed.   Homogeneity. If all input values are multiplied by the same positive constant, the resulting apportionment should remain unchanged.   The Quota Rule. A method satisfies this rule if each allocation is either or .   House Monotonicity. If the total number of units increases from to , no entity's allocation should decrease. This property rules out paradoxes such as the Alabama Paradox.   The Balinski-Young Theorem essentially says that there is no apportionment rule that satisfies all of these criteria all the time!    Hamilton's Method as an Apportionment Function  Fix seats and entities. Given an exact quota vector , Hamilton's method proceeds as follows:   Assign each entity its lower quota .  Distribute the remaining seats, one at a time, to the entities with the largest fractional remainders .   This defines an apportionment method , since every quota vector is mapped to a unique integer allocation.  Geometrically, the apportionment polyhedra for Hamilton's method are regions determined by inequalities comparing fractional parts of the quotas. The boundaries between polyhedra occur where two or more remainders are equal, leading to ties in the final seat assignment.  Because these boundaries depend on global comparisons of remainders, the resulting polyhedra need not arise from minimizing a single global error function. This explains why Hamilton's method can satisfy the Quota Rule while still exhibiting paradoxes such as the Alabama Paradox.   The Hamilton Polyhedron for an example.  Suppose we have boxes of coffee to distribute among three people (Ahmed, Gibbons, and Tripp) in proportion to their need scores  .  The total is , so the exact quotas are .   Exact quotas and remainders for 15 boxes         Person     Remainder    Ahmed        Gibbons        Tripp         Using Hamilton's (largest remainder) method, we first assign lower quotas: , which totals boxes, leaving boxes to distribute. The two largest remainders are Tripp's and Gibbons's, so each receives one additional box.  The final allocation is   Consider Hamilton’s method on the quota simplex . We describe the region of quota vectors that Hamilton maps to the allocation .  For Hamilton’s method to output , the lower-quota step must first produce  Two seats left: , , or ;  One seat left: , , or ;  No seats left: .    In our example, we have the scenario that the lower quotas produce , and the remainders satisfy , :   Write the remainders as , , and . To award the two remaining seats to Gibbons and Tripp (and not to Ahmed), we need the two inequalities   Equivalently, these are linear conditions on the quotas:   Therefore, part of the (open) Hamilton region mapping to is   The boundary of this region consists of tie situations, such as or , together with the grid oundaries where a quota crosses an integer and a lower quota changes (for example, ). A complete closed polyhedron requires a specified tie-breaking rule on these boundary sets.      Apportionment Polyhedra  An apportionment polyhedron is a geometric region within the space of all possible exact quota vectors that a particular apportionment method maps to a single, fixed integer seat allocation . In mathematical terms, it consists of all fractional quota vectors that result in the same whole-number distribution of seats.   Geometric Representation  The concept is best understood by visualizing the space of exact quotas.    The set . This set contains all possible fractional distributions of items among entities. For example, if there are three parties and seats, the set forms an equilateral triangle in three-dimensional space with vertices at , , and .   Integer points. Within this geometric space, the possible integer seat allocations are represented by discrete lattice points corresponding to integer vectors .   Defining the polyhedra. A valid apportionment method partitions the larger region into smaller regions, or polyhedra, each associated with a single integer allocation. Any exact quota vector lying inside a given polyhedron is rounded or mapped to the integer allocation corresponding to that region.     Function and Boundaries  The shape and size of apportionment polyhedra depend on the error function or rounding rule associated with the chosen apportionment method.    Mapping. A desirable property of an apportionment method is that any exact quota vector that is already an integer vector is mapped to itself.   Borders. The boundaries between apportionment polyhedra correspond to tie situations, where an exact quota vector may be equally compatible with two or more integer seat allocations. In such cases, the method must include a rule for resolving ties along these boundaries.      Using Apportionment Polyhedra to Assess Fairness  The apportionment polyhedron provides a geometric framework for assessing the fairness of an apportionment method by describing how the method rounds exact quotas—the ideal fractional shares of seats—into whole-number allocations. By analyzing the shapes and boundaries of these polyhedra, mathematicians and social scientists can determine which methods minimize rounding error and which are susceptible to representational paradoxes.   Visualizing Rounding and Error  Geometrically, the space of all possible exact quota vectors is partitioned into regions, or polyhedra, each associated with a single integer seat allocation.    Mapping fairness. A well-behaved apportionment method maps any exact quota vector lying inside a given polyhedron to the integer allocation at its center. Fairness can then be assessed by measuring the gravity of the error , defined as the distance or discrepancy between the ideal quota and the resulting integer allocation .   Defining boundaries. The boundaries between polyhedra correspond to tie situations, in which an exact quota vector may be equally compatible with more than one integer allocation. A fair method must resolve such ties using a consistent rule, rather than an arbitrary choice.     Comparing Methodological Justness  Different apportionment methods correspond to different error functions, and these choices lead to distinct polyhedral decompositions of the quota space. This geometric perspective allows for direct mathematical comparison between methods.    Sainte-Lague versus Hare. Different methods induce different polyhedral grids. The Sainte‑Laguë method is designed to minimize relative error and, in three-entity settings, produces a hexagonal tiling that is often regarded as neutral with respect to entity size. In contrast, rounding methods such as Hare’s method focus on greatest remainders and are frequently analyzed using -norms—such as Euclidean distance—to identify the integer point closest to a given exact quota.   Bias detection. Geometric analysis can reveal systematic biases in an apportionment method. For example, linear divisor methods may favor smaller entities or larger entities depending on the placement of their polyhedral boundaries, often parametrized by an initial divisor offset.     Identifying Paradoxes  Apportionment polyhedra are also a useful tool for determining whether a method satisfies common axioms of fairness.    The Quota Rule. Polyhedral analysis can be used to check whether allocations always lie between the floor and ceiling of the exact quotas.   House monotonicity. Examining how polyhedral boundaries change as the total number of seats increases helps determine whether a method avoids decreases in allocation when additional seats are added.   The Alabama Paradox. Poorly aligned polyhedral boundaries can lead to paradoxical outcomes in which increasing the total number of seats causes an entity to lose a seat, a phenomenon observed in historical legislative apportionments.   A contemporary illustration of these issues arose in the 2020 Iowa Democratic caucuses. The use of Hamilton's method, which satisfies the Quota Rule but is geometrically vulnerable to paradoxes, produced several aggregation anomalies in which the sum of local allocations failed to align with statewide totals.     Affine Sets, Simplices, and Barycentric Coordinates  These notes assume familiarity with vectors, matrices, linear independence, and basic multivariable geometry.  In linear algebra, a subspace must contain the origin and be closed under linear combinations. Many geometric objects we care about are shifted versions of subspaces.  This leads to the idea of an affine set .   Affine Combination  A vector of the form   is called an affine combination of if     Affine Hull  The affine hull of points is the set     Two distinct points determine a line, three noncollinear points determine a plane, and four noncoplanar points determine a three-dimensional affine space.    Affine Independence  Points are affinely independent if the vectors are linearly independent.    Convex Set  A set is convex if for any ,     Convex Combination  A convex combination is an affine combination where all coefficients are nonnegative:    A simplex is the higher-dimensional analogue of a triangle or tetrahedron.   Simplex  If are affinely independent points in , then the simplex they determine is       A line segment is a -simplex.    A triangle is a -simplex.    A tetrahedron is a -simplex.      Standard Simplex  The standard -simplex is    Barycentric coordinates express a point relative to the vertices of a simplex.   Barycentric Coordinates  Suppose are affinely independent. Every point in the affine hull can be written uniquely as   with   The numbers are called the barycentric coordinates of .   If all barycentric coordinates are positive, then the point lies in the interior of the simplex. If some coordinate is zero, then the point lies on a face of the simplex.   Let   Suppose   Then   Since the coefficients are nonnegative and sum to , the point lies inside the triangle.   To compute barycentric coordinates, solve the system   together with   A convenient matrix form is   Affine independence guarantees a unique solution.     Exercises    Determine whether each expression is an affine combination of the given vectors.                 Determine whether each expression is a convex combination.                 Determine whether the following points are affinely independent:       Let   Find barycentric coordinates for the point   Is the point inside the simplex?      Describe geometrically the standard simplices , , and .      Let   Find barycentric coordinates for   Write the corresponding augmented matrix system.       Barycentric-Compatible Functions  Barycentric coordinates are especially useful because they allow us to interpolate between objects. In many applications, we have two functions that assign points in a simplex, and we would like to move continuously between them.  Suppose   are functions whose outputs lie in a convex set, such as a simplex. For any parameter , define a new function   Since the coefficients and are nonnegative and sum to , the point is a convex combination of and .  Geometrically, for each fixed , the point travels along the line segment joining and .   Barycentric-Compatible Functions  Two functions   are called barycentrically compatible if for every and every ,   also lies in .  Equivalently, the line segment joining and remains entirely inside the simplex.    Because simplices are convex sets, any two functions whose values lie in the same simplex are automatically barycentrically compatible.    Probability Distribution Example  Let   A point in can be interpreted as a probability distribution on three outcomes.  Suppose   Then   This point is still in the simplex because its coordinates remain nonnegative and sum to .    Paths Inside a Simplex  Let . For each input value , the interpolation   determines a path inside the simplex connecting the two images.  As varies from to , the point moves continuously from to .     Let   Compute   Verify that the result lies in .      Explain why the line segment between any two points in a simplex remains entirely inside the simplex.      Suppose two probability distributions are given by   Compute the halfway distribution   Interpret the result geometrically inside the simplex.      A Practical Guide to Solving Systems of Linear Functionals  Suppose we have several linear functionals   A system of linear functionals asks us to find all vectors satisfying equations or inequalities involving these maps.  Geometrically, such systems describe intersections of hyperplanes and half-spaces.    Writing Functionals as Dot Products  Every linear functional on can be written as a dot product   for some vector .   The functional   corresponds to the coefficient vector   In matrix form,      Step 1: Convert to Matrix Form  Suppose we want to solve    where    Place the coefficient vectors into a matrix:   Then solve the matrix equation   where     Step 2: Row Reduce  Form the augmented matrix   Perform the row operation   This gives   The second equation becomes   Let . Then   Substitute into the first equation:   Solving for gives   The solution set is     Geometric Interpretation  Each equation   defines a hyperplane.    One equation in defines a plane.    Two independent equations typically intersect in a line.    Three independent equations typically intersect in a point.      Inequalities and Half-Spaces  Conditions such as   describe half-spaces.   The inequality   cuts space into two regions separated by the plane    Systems of inequalities therefore describe convex regions.    Systems Inside a Simplex  Suppose we work in the standard simplex   Now add the inequalities   Dividing by gives   These inequalities carve out a smaller region inside the simplex.      Strategy for Allocation Problems  In allocation problems, systems often involve:    The simplex equation     Nonnegativity conditions     Floor constraints     Remainder comparisons       Practical Workflow   Step A: Solve the Affine Constraints  Usually begin with the equation   This reduces the dimension by one.    Step B: Add Interval Constraints  Suppose an allocation requires   Dividing by gives   These inequalities define slabs bounded by parallel hyperplanes.    Step C: Add Remainder Comparisons  Compare the fractional parts of the quota coordinates.   Suppose   Then the inequality   becomes   Rearranging gives   Inside a fixed slab region, the floor functions become constants, so the boundaries become linear.    Systems of linear functionals partition space into regions bounded by hyperplanes.  Inside each region:    the inequalities are consistent,    the allocation rule is constant,    and the geometry is convex.    This viewpoint turns allocation methods into geometric partitions of simplices.   Exercises    Write each linear functional as a row vector.              Solve the system        Describe geometrically the set of points in satisfying       Let .  Rewrite the constraints   as inequalities involving only .      Suppose   Simplify the inequality       "
 },
 {
   "id": "course-notes-4-2-1",
@@ -77,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#course-notes-4-2-2",
   "type": "Definition",
-  "number": "5",
+  "number": "15",
   "title": "Apportionment.",
   "body": " Apportionment   The term apportionment refers to the mathematical process of distributing a fixed number of indistinguishable assets among different entities.  Each asset is indistinguishable from any other asset, and no asset can be subdivided.   "
 },
@@ -86,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#course-notes-4-2-3",
   "type": "Example",
-  "number": "6",
+  "number": "16",
   "title": "Is it apportionment?",
   "body": " Is it apportionment?   For example, suppose Courtney buys 45 boxes of coffee (from the orange and pink doughnut shop down the hill) for the math department to bring to their classes. The department has to come up with a way to decide how many boxes each professor gets, perhaps using the number of students each professor is teaching as the main relevant piece of data to make this decision.  Each professor has to decide how to share the coffee among their classes. This need not be an apportionment problem.  Based on the following table of data, determine how to divvy up the boxes of coffee in different ways. Each box serves 10. Assume every student (and professor) drinks coffee.   Professors and Enrollments, with boxes of coffee.    Prof  Total Students (plus one)     Ahmed  35     Bowman  60     Ceniceros  71     Cockburn  22     Dykstra  38     Gibbons  55     Kantrowitz  73     Kuruwita  45     LeMasurier  28     Tripp  58     Totals           Which method or methods seem fair ? Why?   "
 },
@@ -95,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-3",
   "type": "Definition",
-  "number": "8",
+  "number": "18",
   "title": "Apportionment Terms.",
   "body": " Apportionment Terms     Apportionment Problem  a scenario in which identical and indivisible items (the seats ) must be divided among entities (the states ) proportionately (using the populations )    States  the entities in the apportionment problem    Seats  the items being apportioned among the states    Apportionment Method  the algorithm determining how to apportion the seats to the states, guaranteeing exactly seats are distributed proporitionaly to each of the states based on their populations for .    Standard Divisor and Standard Quota , Lower Quota , Upper Quota   where is the total population;  , representing the fair share of seats for state if the seats could be subdivided;  , the largest integer less than or equal to the standard quota; , the smallest integer strictly greater than the standard quota. The definition of the floor function varies from setting to setting. Here we take it to include the possibility of equality.     Modified Divisor (and friends)  A value or other than the standard divisor, used to make the distribution of seats produced by rounding (based on a given convention) add up to . From each state gets a modified quota , lower quota , and upper quota .    Priority  An order by which extra seats are assigned to states. An example is using the fractional part of the quota to determine which states get their upper quota of seats by ranking from largest fracitonal part to smallest.     "
 },
@@ -104,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-4",
   "type": "Example",
-  "number": "9",
+  "number": "19",
   "title": "Revisiting Coffee.",
   "body": " Revisiting Coffee   Taking each professor to be a state and each box of coffee to be a seat, we use the number of students each professor is teaching as the population (plus the professors themselves!). The standard divisor is .   Apportionment Computations    Name  Number of Students (plus one)  Standard Quota  Lower Quota  Upper Quota  Fractional Rank    Ahmed     ?      ?      ?     ?     Bowman     ?      ?      ?     ?     Ceniceros     ?      ?      ?     ?     Cockburn     ?      ?      ?     ?     Dykstra     ?      ?      ?     ?     Gibbons     ?      ?      ?     ?     Kantrowitz     ?      ?      ?     ?     Kuruwita     ?      ?      ?     ?     LeMasurier     ?      ?      ?     ?     Tripp     ?      ?      ?     ?         Standard Quotas    Name  Number of Students (plus one)  Standard Quota  Traditional Round Up or Down  Lower Quota  Upper Quota  Fractional Rank    A    3  3  4  7    B    6  5  6  4    Ce    7  6  7  3    Co    2  2  2  10    D    4  3  4  5    G    5  5  5  9    Ka    7  6  7  1    Ku    4  4  5  8    L    3  2  3  2    T    5  5  6  6    Total    46  41  51  N\/A      "
 },
@@ -113,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-6",
   "type": "Definition",
-  "number": "12",
+  "number": "22",
   "title": "Hamilton’s Method.",
   "body": " Hamilton's Method  Start by giving each state its lower quota. Then, in order of largest fractional part, distribute the remaining seats.  "
 },
@@ -122,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-7",
   "type": "Checkpoint",
-  "number": "13",
+  "number": "23",
   "title": "The winners are....",
   "body": " The winners are...   Determine which professors get their upper quota of boxes of coffee thanks to Alexander Hamilton.    The professors with fractional rank one through four.  Hamilton Apportionment     A  B  Ce  Co  D  G  Ka  Ku  L  T  Total                    "
 },
@@ -131,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-8",
   "type": "Checkpoint",
-  "number": "15",
+  "number": "25",
   "title": "A small tweak.",
   "body": " A small tweak   What happens if Courtney only buys boxes of coffee?   "
 },
@@ -140,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-11",
   "type": "Definition",
-  "number": "16",
+  "number": "26",
   "title": "The Geometric Mean.",
   "body": " The Geometric Mean  The geometric mean of two distinct numbers and is given by . If , round up. If , round down.  "
 },
@@ -149,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-12",
   "type": "Example",
-  "number": "17",
+  "number": "27",
   "title": "Calculating the Geometric Mean.",
   "body": " Calculating the Geometric Mean   The geometric mean of 3 and 4 is , while the arithmetic mean is . The geometric mean of 5 and 6 is , while the arithmetic mean is . The geometric mean of 10 and 11 is , while the arithmetic mean is .   "
 },
@@ -158,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-13",
   "type": "Checkpoint",
-  "number": "18",
+  "number": "28",
   "title": "",
   "body": "  Prove that the geometric mean of two distinct positive numbers is always less than the arithmetic mean of those numbers.   "
 },
@@ -167,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-14",
   "type": "Definition",
-  "number": "19",
+  "number": "29",
   "title": "Huntington–Hill Method (Equal Proportions).",
   "body": " Huntington–Hill Method (Equal Proportions)  The Huntington–Hill method is an apportionment method that assigns seats one at a time using priority values based on population and the geometric mean of consecutive seat numbers.  After each state receives one initial seat, additional seats are awarded sequentially to the state with the largest priority value , where is the state's population and is the number of seats the state currently holds.  "
 },
@@ -176,7 +266,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-15",
   "type": "Remark",
-  "number": "20",
+  "number": "30",
   "title": "",
   "body": " The Huntington-Hill method is sometimes described using different divisors , which can be confusing at first. This happens because the method has two equivalent formulations.  In the priority formulation , seats are assigned one at a time using the priority value , where the divisor depends on the state's current number of seats.  In the rounding formulation , a single global divisor is used to compute quotas, and each quota is rounded up or down depending on whether it lies above or below the geometric mean . Here, the same expression appears as a rounding threshold rather than a priority denominator.  Although the divisors look different in these descriptions, both approaches implement the same rule: rounding is determined by the geometric mean, which balances relative over- and under-representation.  "
 },
@@ -185,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-16",
   "type": "Table",
-  "number": "21",
+  "number": "31",
   "title": "Cutoff points for Huntington-Hill rounding of quotas between 1 and 10",
   "body": " Cutoff points for Huntington-Hill rounding of quotas between 1 and 10    Quota is between  Cutoff point    1 and 2     2 and 3     3 and 4     4 and 5     5 and 6     6 and 7     7 and 8     8 and 9     9 and 10     "
 },
@@ -194,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#subsec-apportionment-terminology-17",
   "type": "Example",
-  "number": "22",
+  "number": "32",
   "title": "Huntington-Hill and Paradoxes.",
   "body": " Huntington-Hill and Paradoxes    Huntington-Hill method: Calculations standard divisor    State  Population  Standard quota  Cutoff point  Round quota to    A  34,800  3.48  3.464  4    B  104,800  10.48  10.488  10    C  64,800  6.48  6.481  6    D  140,800  14.08  14.491  14    E  54,800  5.48  5.477  6    Total  400,000  40   40      Huntington-Hill method: Calculations for with standard divisor and modified divisor    State  Population  Standard quota  Round quota to  Modified quota  Round quota to    A  34,800  3.48  4  3.47  4    B  105,100  10.51  11  10.479  10    C  65,100  6.51  7  6.491  7    D  140,200  14.02  14  13.978  14    E  54,800  5.48  6  5.464  5    Total  400,000  40  42   40       Huntington-Hill method: Calculations modified divisor    State  Population  Modified quota  Cutoff point  Round quota to    A  1,646,000  32.85  32.496  33    B  6,936,000  138.44  138.499  138    C  154,000  3.07  3.464  3    D  2,091,000  41.74  41.497  42    E  685,000  13.67  13.491  14    F  988,000  19.72  19.494  20    Total  12,500,000    250     "
 },
@@ -212,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#course-notes-4-7-2",
   "type": "Example",
-  "number": "26",
+  "number": "36",
   "title": "",
   "body": " In our CJ Coffee Distribution Scheme, there were some possibilities we didn't consider.  Hamilton Apportionment    Prof.  A  B  Ce  Co  D  G  Ka  Ku  L  T  Total    Pop  35  60  71  22  38  55  73  45  28  58  485    Q  3.25  5.57  6.59  2.04  3.53  5.10  6.77  4.18  2.60  5.38  485    Boxes               Boxes                 "
 },
@@ -230,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#definition-apportionment-method",
   "type": "Definition",
-  "number": "28",
+  "number": "38",
   "title": "Apportionment Method: a function!",
   "body": " Apportionment Method: a function!  Fix a positive integer and an integer . Let denote the space of exact quota vectors, and let denote the set of feasible integer allocations.  An apportionment method is a function   that assigns to each exact quota vector a unique integer allocation .  The method induces a partition of into regions   called the apportionment polyhedra . Each polyhedron consists of all exact quota vectors that are mapped to the same integer allocation.  "
 },
@@ -239,9 +329,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#apportionment-problem-again-5",
   "type": "Figure",
-  "number": "29",
+  "number": "39",
   "title": "",
-  "body": " The positive orthant, , and with three states and five seats.     "
+  "body": "  The positive orthant, , and  with three states and five seats.     "
 },
 {
   "id": "apportionment-polyhedra-2",
@@ -266,16 +356,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-notes-4.html#polyhedron-geometry-7",
   "type": "Figure",
-  "number": "30",
+  "number": "40",
   "title": "",
-  "body": " Moving around the triangle where the barycentric coordinates sum to five. The barycentric tuple lies on the line (and the line , and the line ).     "
+  "body": "  Moving around the triangle where the barycentric coordinates sum to five. The barycentric tuple lies on the line (and the line , and the line ).      "
 },
 {
   "id": "example-hamilton-polyhedron-coffee-3-6-6",
   "level": "2",
   "url": "course-notes-4.html#example-hamilton-polyhedron-coffee-3-6-6",
   "type": "Example",
-  "number": "31",
+  "number": "41",
   "title": "The Hamilton Polyhedron for an example..",
   "body": " The Hamilton Polyhedron for an example.  Suppose we have boxes of coffee to distribute among three people (Ahmed, Gibbons, and Tripp) in proportion to their need scores  .  The total is , so the exact quotas are .   Exact quotas and remainders for 15 boxes         Person     Remainder    Ahmed        Gibbons        Tripp         Using Hamilton's (largest remainder) method, we first assign lower quotas: , which totals boxes, leaving boxes to distribute. The two largest remainders are Tripp's and Gibbons's, so each receives one additional box.  The final allocation is   Consider Hamilton’s method on the quota simplex . We describe the region of quota vectors that Hamilton maps to the allocation .  For Hamilton’s method to output , the lower-quota step must first produce  Two seats left: , , or ;  One seat left: , , or ;  No seats left: .    In our example, we have the scenario that the lower quotas produce , and the remainders satisfy , :   Write the remainders as , , and . To award the two remaining seats to Gibbons and Tripp (and not to Ahmed), we need the two inequalities   Equivalently, these are linear conditions on the quotas:   Therefore, part of the (open) Hamilton region mapping to is   The boundary of this region consists of tie situations, such as or , together with the grid oundaries where a quota crosses an integer and a lower quota changes (for example, ). A complete closed polyhedron requires a specified tie-breaking rule on these boundary sets.  "
 },
@@ -298,6 +388,303 @@ var ptx_lunr_docs = [
   "body": "apportionment polyhedron "
 },
 {
+  "id": "affine-simplices-barycentric-4",
+  "level": "2",
+  "url": "course-notes-4.html#affine-simplices-barycentric-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "affine set "
+},
+{
+  "id": "affine-combination",
+  "level": "2",
+  "url": "course-notes-4.html#affine-combination",
+  "type": "Definition",
+  "number": "43",
+  "title": "Affine Combination.",
+  "body": " Affine Combination  A vector of the form   is called an affine combination of if   "
+},
+{
+  "id": "affine-hull",
+  "level": "2",
+  "url": "course-notes-4.html#affine-hull",
+  "type": "Definition",
+  "number": "44",
+  "title": "Affine Hull.",
+  "body": " Affine Hull  The affine hull of points is the set   "
+},
+{
+  "id": "affine-hull-example",
+  "level": "2",
+  "url": "course-notes-4.html#affine-hull-example",
+  "type": "Example",
+  "number": "45",
+  "title": "",
+  "body": " Two distinct points determine a line, three noncollinear points determine a plane, and four noncoplanar points determine a three-dimensional affine space.  "
+},
+{
+  "id": "affine-independence",
+  "level": "2",
+  "url": "course-notes-4.html#affine-independence",
+  "type": "Definition",
+  "number": "46",
+  "title": "Affine Independence.",
+  "body": " Affine Independence  Points are affinely independent if the vectors are linearly independent.  "
+},
+{
+  "id": "convex-set",
+  "level": "2",
+  "url": "course-notes-4.html#convex-set",
+  "type": "Definition",
+  "number": "47",
+  "title": "Convex Set.",
+  "body": " Convex Set  A set is convex if for any ,   "
+},
+{
+  "id": "convex-combination",
+  "level": "2",
+  "url": "course-notes-4.html#convex-combination",
+  "type": "Definition",
+  "number": "48",
+  "title": "Convex Combination.",
+  "body": " Convex Combination  A convex combination is an affine combination where all coefficients are nonnegative:   "
+},
+{
+  "id": "simplex-definition",
+  "level": "2",
+  "url": "course-notes-4.html#simplex-definition",
+  "type": "Definition",
+  "number": "49",
+  "title": "Simplex.",
+  "body": " Simplex  If are affinely independent points in , then the simplex they determine is   "
+},
+{
+  "id": "simplex-examples",
+  "level": "2",
+  "url": "course-notes-4.html#simplex-examples",
+  "type": "Example",
+  "number": "50",
+  "title": "",
+  "body": "   A line segment is a -simplex.    A triangle is a -simplex.    A tetrahedron is a -simplex.    "
+},
+{
+  "id": "standard-simplex",
+  "level": "2",
+  "url": "course-notes-4.html#standard-simplex",
+  "type": "Definition",
+  "number": "51",
+  "title": "Standard Simplex.",
+  "body": " Standard Simplex  The standard -simplex is   "
+},
+{
+  "id": "barycentric-definition",
+  "level": "2",
+  "url": "course-notes-4.html#barycentric-definition",
+  "type": "Definition",
+  "number": "52",
+  "title": "Barycentric Coordinates.",
+  "body": " Barycentric Coordinates  Suppose are affinely independent. Every point in the affine hull can be written uniquely as   with   The numbers are called the barycentric coordinates of .  "
+},
+{
+  "id": "barycentric-example",
+  "level": "2",
+  "url": "course-notes-4.html#barycentric-example",
+  "type": "Example",
+  "number": "53",
+  "title": "",
+  "body": " Let   Suppose   Then   Since the coefficients are nonnegative and sum to , the point lies inside the triangle.  "
+},
+{
+  "id": "affine-combination-check",
+  "level": "2",
+  "url": "course-notes-4.html#affine-combination-check",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Determine whether each expression is an affine combination of the given vectors.              "
+},
+{
+  "id": "convex-combination-check",
+  "level": "2",
+  "url": "course-notes-4.html#convex-combination-check",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Determine whether each expression is a convex combination.              "
+},
+{
+  "id": "affine-independence-check",
+  "level": "2",
+  "url": "course-notes-4.html#affine-independence-check",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Determine whether the following points are affinely independent:    "
+},
+{
+  "id": "triangle-barycentric",
+  "level": "2",
+  "url": "course-notes-4.html#triangle-barycentric",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Let   Find barycentric coordinates for the point   Is the point inside the simplex?   "
+},
+{
+  "id": "standard-simplex-exercise",
+  "level": "2",
+  "url": "course-notes-4.html#standard-simplex-exercise",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Describe geometrically the standard simplices , , and .   "
+},
+{
+  "id": "matrix-barycentric",
+  "level": "2",
+  "url": "course-notes-4.html#matrix-barycentric",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Let   Find barycentric coordinates for   Write the corresponding augmented matrix system.   "
+},
+{
+  "id": "barycentric-compatible-functions-def",
+  "level": "2",
+  "url": "course-notes-4.html#barycentric-compatible-functions-def",
+  "type": "Definition",
+  "number": "54",
+  "title": "Barycentric-Compatible Functions.",
+  "body": " Barycentric-Compatible Functions  Two functions   are called barycentrically compatible if for every and every ,   also lies in .  Equivalently, the line segment joining and remains entirely inside the simplex.  "
+},
+{
+  "id": "convexity-remark",
+  "level": "2",
+  "url": "course-notes-4.html#convexity-remark",
+  "type": "Remark",
+  "number": "55",
+  "title": "",
+  "body": " Because simplices are convex sets, any two functions whose values lie in the same simplex are automatically barycentrically compatible.  "
+},
+{
+  "id": "probability-example",
+  "level": "2",
+  "url": "course-notes-4.html#probability-example",
+  "type": "Example",
+  "number": "56",
+  "title": "Probability Distribution Example.",
+  "body": " Probability Distribution Example  Let   A point in can be interpreted as a probability distribution on three outcomes.  Suppose   Then   This point is still in the simplex because its coordinates remain nonnegative and sum to .  "
+},
+{
+  "id": "geometric-simplex-path",
+  "level": "2",
+  "url": "course-notes-4.html#geometric-simplex-path",
+  "type": "Example",
+  "number": "57",
+  "title": "Paths Inside a Simplex.",
+  "body": " Paths Inside a Simplex  Let . For each input value , the interpolation   determines a path inside the simplex connecting the two images.  As varies from to , the point moves continuously from to .  "
+},
+{
+  "id": "barycentric-interpolation-exercise",
+  "level": "2",
+  "url": "course-notes-4.html#barycentric-interpolation-exercise",
+  "type": "Checkpoint",
+  "number": "58",
+  "title": "",
+  "body": "  Let   Compute   Verify that the result lies in .   "
+},
+{
+  "id": "simplex-line-segment",
+  "level": "2",
+  "url": "course-notes-4.html#simplex-line-segment",
+  "type": "Checkpoint",
+  "number": "59",
+  "title": "",
+  "body": "  Explain why the line segment between any two points in a simplex remains entirely inside the simplex.   "
+},
+{
+  "id": "probability-interpolation",
+  "level": "2",
+  "url": "course-notes-4.html#probability-interpolation",
+  "type": "Checkpoint",
+  "number": "60",
+  "title": "",
+  "body": "  Suppose two probability distributions are given by   Compute the halfway distribution   Interpret the result geometrically inside the simplex.   "
+},
+{
+  "id": "dot-product-functional-example",
+  "level": "2",
+  "url": "course-notes-4.html#dot-product-functional-example",
+  "type": "Example",
+  "number": "61",
+  "title": "",
+  "body": " The functional   corresponds to the coefficient vector   In matrix form,   "
+},
+{
+  "id": "half-space-example",
+  "level": "2",
+  "url": "course-notes-4.html#half-space-example",
+  "type": "Example",
+  "number": "62",
+  "title": "",
+  "body": " The inequality   cuts space into two regions separated by the plane   "
+},
+{
+  "id": "remainder-linearization",
+  "level": "2",
+  "url": "course-notes-4.html#remainder-linearization",
+  "type": "Example",
+  "number": "63",
+  "title": "",
+  "body": " Suppose   Then the inequality   becomes   Rearranging gives   Inside a fixed slab region, the floor functions become constants, so the boundaries become linear.  "
+},
+{
+  "id": "convert-functional-exercise",
+  "level": "2",
+  "url": "course-notes-4.html#convert-functional-exercise",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Write each linear functional as a row vector.           "
+},
+{
+  "id": "solve-functional-system",
+  "level": "2",
+  "url": "course-notes-4.html#solve-functional-system",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Solve the system     "
+},
+{
+  "id": "simplex-region-exercise",
+  "level": "2",
+  "url": "course-notes-4.html#simplex-region-exercise",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Describe geometrically the set of points in satisfying    "
+},
+{
+  "id": "allocation-slabs-exercise",
+  "level": "2",
+  "url": "course-notes-4.html#allocation-slabs-exercise",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Let .  Rewrite the constraints   as inequalities involving only .   "
+},
+{
+  "id": "remainder-comparison-exercise",
+  "level": "2",
+  "url": "course-notes-4.html#remainder-comparison-exercise",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Suppose   Simplify the inequality    "
+},
+{
   "id": "sec-districting",
   "level": "1",
   "url": "sec-districting.html",
@@ -311,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#what-is-gerrymandering-2",
   "type": "Definition",
-  "number": "33",
+  "number": "64",
   "title": "",
   "body": " Gerrymander (verb)   To manipulate the boundaries of an electoral constituency so as to favor one party or class.   "
 },
@@ -320,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#what-is-gerrymandering-4",
   "type": "Example",
-  "number": "34",
+  "number": "65",
   "title": "A Tiny State Example.",
   "body": " A Tiny State Example   Suppose a state has 50 voters and 5 districts.    Tiny State         30 voters (60%) prefer Blue.  20 voters (40%) prefer Red.    Depending on how we draw district lines, we can get very different outcomes:  1 Blue, 4 Red ( Anything Goes )  3 Blue, 2 Red (Proportional Representation)  5 Blue, 0 Red (Blue Gerrymander)  2 Blue, 3 Red (Red Gerrymander)  Same voters. Same preferences. Different district lines lead to different outcomes.  Question: what should fair mean here?   "
 },
@@ -329,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#ham-sandwich",
   "type": "Theorem",
-  "number": "36",
+  "number": "67",
   "title": "Ham Sandwich Theorem (Planar Version).",
   "body": " Ham Sandwich Theorem (Planar Version)  Given two finite sets of points in the plane (blue and red), each with an even number of points and no three collinear, there exists a line that simultaneously bisects both sets.  "
 },
@@ -338,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#efficiency-gap-3",
   "type": "Definition",
-  "number": "37",
+  "number": "68",
   "title": "",
   "body": " Wasted Votes    All votes for the losing candidate.  All votes beyond 50% for the winning candidate.    "
 },
@@ -374,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-math-topic-compactness-3-2",
   "type": "Remark",
-  "number": "38",
+  "number": "69",
   "title": "",
   "body": "There are many different mathematical and geometric approaches for measuring the compactness of a shape. It is important to note that these measures are based entirely on district shapes and do not factor in geography, racial demographics, political party affiliation, or election results. While the shape of a district alone is not indicative of gerrymandering, it can be worthwhile to consider as one potential indicator. We examine a few measures here. "
 },
@@ -401,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-PPdef",
   "type": "Definition",
-  "number": "39",
+  "number": "70",
   "title": "",
   "body": "The Polsby-Popper score is a ratio that compares the area of a district to the area of a square with the same perimeter as the district. Thus we have . "
 },
@@ -410,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-math-topic-compactness-3-8",
   "type": "Example",
-  "number": "40",
+  "number": "71",
   "title": "",
   "body": "Find the Polsby-Popper score for the district above. Once you have the perimeter of the district (26), what dimensions would a square have with the same perimeter?      Omitting units and simply counting, we note the area of the district is and its perimeter is . Since all sides must be equal in length in a square, any square that has perimeter must have sides of length or . Therefore the area of this square would be . Now we find the ratio:    "
 },
@@ -428,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-Rdef",
   "type": "Definition",
-  "number": "41",
+  "number": "72",
   "title": "",
   "body": "The Reock score is a ratio that compares the district's shape to the minimum-bounding square, the smallest square that fully contains the district. We have . "
 },
@@ -437,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-math-topic-compactness-3-13",
   "type": "Example",
-  "number": "42",
+  "number": "73",
   "title": "",
   "body": "Find the Reock score for the district above. As noted above, the smallest square that contains the district is 6 units by 6 units. Find its area.      Omitting units and simply counting, we note the area of the district is and area of the smallest square that contains the district is . In this case, we have .   "
 },
@@ -455,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-CHdef",
   "type": "Definition",
-  "number": "43",
+  "number": "74",
   "title": "",
   "body": "The Convex Hull score is a ratio that compares the district's shape to its convex hull. It is defined as . "
 },
@@ -464,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-math-topic-compactness-3-18",
   "type": "Example",
-  "number": "44",
+  "number": "75",
   "title": "",
   "body": "Find the Convex Hull score for the district above. The convex hull around the district is outlined in a dashed line. Find the area of this region by combining the area of the enclosed squares with the areas of the triangular regions formed.   .   Omitting units and simply counting, we note the area of the district is . The area of the convex hull that contains the district is found in pieces, combining the area of the squares with the areas of the triangular regions formed. For area of the convex hull we get . This yields    "
 },
@@ -473,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#gerrymandering-math-topic-compactness-3-19",
   "type": "Remark",
-  "number": "45",
+  "number": "76",
   "title": "",
   "body": "The actual formulas for these scores (based in the real world rather than districts composed of squares) vary slightly from those we use here. In particular, the ideal compact shape used for comparison in the first two measures is a circle. In the Polsby-Popper ratio, the ideal shape is a circle with the same perimeter (circumference) as the district. In the Reock ratio, the ideal shape is the minimum-bounding circle, which is the smallest circle containing the district. Our definitions and compactness scores are consistent with the formal scores and allow for more straightforward computations. "
 },
@@ -482,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#subsec-districting-algorithms-2",
   "type": "Definition",
-  "number": "46",
+  "number": "77",
   "title": "",
   "body": " A graph  is pair of sets: (the vertex set ) and (the edge set ). A weighted graph has a numerical value associated to each vertex.  "
 },
@@ -491,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#subsec-districting-algorithms-3",
   "type": "Example",
-  "number": "47",
+  "number": "78",
   "title": "",
   "body": " an example of a graph goes here  "
 },
@@ -500,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#subsec-districting-algorithms-5",
   "type": "Example",
-  "number": "48",
+  "number": "79",
   "title": "",
   "body": " an example of the same graph drawn differently goes here  "
 },
@@ -509,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#subsec-districting-algorithms-6",
   "type": "Definition",
-  "number": "49",
+  "number": "80",
   "title": "",
   "body": " If , we say is incident to and and that and are adjacent . The degree of a vertex is the number of edges incident to it.  "
 },
@@ -518,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-districting.html#subsec-districting-algorithms-7",
   "type": "Definition",
-  "number": "50",
+  "number": "81",
   "title": "",
   "body": " A cycle is a... , a tree is a graph without cycles; a vertex of degree one in a tree is called a leaf , a path is a tree with only two leaves.  "
 },
@@ -545,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-4",
   "type": "Definition",
-  "number": "51",
+  "number": "82",
   "title": "",
   "body": "  When working with data, we are often interested in measures of central tendency and measures of spread. Informally, these measures help us answer the questions, Where is the middle of the data? and How spread out is the data? Let be data matrix where each column corresponds to a feature (or variable) and each row corresponds to an observation (or value). We refer to a column of as a feature vector, denoted . Some measures of central tendency include   The mean for a feature : .    The median for a feature : the value that splits the data into two equal halves.    The mode for a feature : the most frequently occurring value.    The midrange for a feature : the average of the minimum and maximum values.   Some measures of spread include   The variance for a feature : .    The standard deviation for a feature : .    The covariance of two features and : .   These measures of central tendency and spread are important for understanding the structure of a dataset and for performing dimensionality reduction techniques like PCA. Sometimes we do some preprocessing to make the data easier to work with. Two common transformations are centering and standardizing a feature. These transformations can be expressed in terms of the mean and standard deviation of a feature.    Centering a feature : replacing with for each .     Standardizing a feature : replacing with for each .      "
 },
@@ -554,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-5",
   "type": "Checkpoint",
-  "number": "52",
+  "number": "83",
   "title": "",
   "body": "  Prove that, for a centered data matrix , .   "
 },
@@ -563,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-6",
   "type": "Checkpoint",
-  "number": "53",
+  "number": "84",
   "title": "",
   "body": "  Consider a data matrix where the columns represent two features and the rows represent four observations.  We can interpret the rows of as points in the plane. The first column gives the -coordinates and the second column gives the -coordinates.   Plot the four points in the plane.  Determine if the data is centered. If not, center it.  Determine if the data is standardized. If not, standardize it.  Form the standardized and centered data matrix. Verify that the columns of this matrix have mean zero and standard deviation one.  Give a geometric description of the data after plotting it in the plane. Does it appear to have a preferred direction of variation?    "
 },
@@ -572,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-7",
   "type": "Checkpoint",
-  "number": "54",
+  "number": "85",
   "title": "",
   "body": "  Before doing any calculations, describe the meaning of each entry of the matrix This is called the covariance matrix of the dataset.  Confirm by hand that the covariance matrix is   What does this tell you about the relationship between the two variables?    "
 },
@@ -581,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-8",
   "type": "Checkpoint",
-  "number": "55",
+  "number": "86",
   "title": "",
   "body": "  Find the eigenvalues and eigenvectors of the covariance matrix.  The eigenspaces of the covariance matrix correspond to directions in which the data varies. The eigenvalues give the amount of variation in the direction(s) of the corresponding eigenvector(s). Recall that an eigenspace . For working with data, we often choose a basis of linearly independent normalized eigenvectors associated to the eigenvalue . (Normalized means that the eigenvectors satisfy .) Even though zero is never an eigenvector, we include it in the eigenspace to ensure the eigenspace is a vector space.  In this case, each eigenspace is one-dimensional, meaning that each eigenspace has a single eigenvector (up to scaling) that forms a basis for the eigenspace.   "
 },
@@ -590,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-9",
   "type": "Checkpoint",
-  "number": "56",
+  "number": "87",
   "title": "",
   "body": "  The largest eigenvalue corresponds to the direction of greatest variation in the data. This is called the first principal component .  It accounts for of the total variation.  The first principal component term is and the first principal component direction (with unit length) is   Project each data point onto this direction by computing the dot product of each data point with the first principal component direction. This gives a new dataset consisting of one number for each data point, which is the coordinate of the data point in the direction of the first principal component.    Compute for each data point in and draw the projected points on a number line.  What structure do you observe in the projected dataset?  Explain how PCA has reduced the dataset from two dimensions to one.     "
 },
@@ -599,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-14",
   "type": "Checkpoint",
-  "number": "57",
+  "number": "88",
   "title": "",
   "body": "  Now consider five points on a number line:   We will approximate how t-SNE measures similarity between nearby points.   "
 },
@@ -608,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-15",
   "type": "Checkpoint",
-  "number": "58",
+  "number": "89",
   "title": "",
   "body": "  Compute the squared distances from point to each of the other points.  Record:    "
 },
@@ -617,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-16",
   "type": "Checkpoint",
-  "number": "59",
+  "number": "90",
   "title": "",
   "body": "  In t-SNE, similarities are converted into probabilities using the formula    Compute approximate values for and .  Explain why and are approximately zero.    "
 },
@@ -626,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-17",
   "type": "Checkpoint",
-  "number": "60",
+  "number": "91",
   "title": "",
   "body": "  Based on these probabilities, which points should appear close to in a -SNE plot?  Which points should appear far away?  Sketch a possible two-dimensional arrangement of the five points that preserves these neighbor relationships.   "
 },
@@ -635,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-4-18",
   "type": "Checkpoint",
-  "number": "61",
+  "number": "92",
   "title": "",
   "body": "  Compare what PCA preserved in the first example with what t-SNE preserved in the second example.   What geometric structure did PCA identify?  What similarity structure did -SNE identify?  When might PCA be preferable to -SNE?  When might -SNE be preferable to PCA?    "
 },
@@ -1193,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "homework-2.html#homework-2-11",
   "type": "Remark",
-  "number": "63",
+  "number": "94",
   "title": "Links of Interest.",
   "body": " Links of Interest     About Congressional Apportionment from the U.S. Census Bureau.     Computing Apportionment from the U.S. Census Bureau.    Note that the public availability of U.S. Census data is important for anyone who wants to see how different apportionment methods would work out!  "
 },
@@ -1204,7 +1591,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Homework 01",
-  "body": " Homework 01    Instructions: Complete all the exercises below and submit your work by the due date. Information about the drug Effexor XR and its half-life can be found in the DE Crash Course notes. The websites and provide details about dosing schedules and half-life.      The medication Effexor XR (extended-release venlafaxine) is commonly prescribed and is known to have a relatively short half-life. For this problem, we model how the concentration of the drug changes after a patient stops taking it.  Suppose the concentration (in arbitrary units) satisfies the differential equation   The half-life of Effexor XR is approximately hours.  Assume that withdrawal symptoms begin when the concentration falls below a threshold .      Find the value of in terms of the half-life, and compute its numerical value (in units of hours -1 ).    Solve the differential equation with initial condition .    Show that the time at which the concentration falls below satisfies     Solve this inequality for . Your answer should be expressed using logarithms.    Suppose a patient has (arbitrary units) and the threshold is .  Compute the time at which withdrawal symptoms begin.    Interpret your answer. How many half-lives have passed when the concentration reaches of its original value?    In practice, patients often take Effexor XR once per day. Explain why missing even one dose might lead to noticeable changes in concentration. Your answer should refer to the half-life and the exponential decay model.    Now suppose a patient takes their medication once every 24 hours. Compare two scenarios:   The patient takes the medication at 8:00 AM each day.  The patient takes the medication at 8:00 PM each day.   In both cases, assume the concentration immediately after a dose is . Use the exponential model to determine the concentration just before the next dose (24 hours later).  Then consider the following situation: the patient forgets one dose. Compare how long it takes for the concentration to fall below the threshold in each scenario.  Explain why the timing of doses (morning vs evening) might affect when symptoms are experienced, even if the total daily dosage is the same.          Use the Sage cell below to explore a simplified model of daily Effexor XR dosing with one missed dose. The model assumes exponential decay between doses and an upward jump each time a dose is taken.   Use the sliders to compare a morning dose and an evening dose. What changes about the time of day when the concentration falls below the threshold ?  Explain why the total daily dose is not the only relevant quantity in this model. Your answer should refer to half-life, exponential decay, and the timing of the missed dose.     "
+  "body": " Homework 01    Instructions: Complete all the exercises below and submit your work by the due date. Information about the drug Effexor XR and its half-life can be found in the DE Crash Course notes. The websites NIGMS Fact Sheets and Effexor XR Fact Sheet provide details about dosing schedules and half-life.      The medication Effexor XR (extended-release venlafaxine) is commonly prescribed and is known to have a relatively short half-life. For this problem, we model how the concentration of the drug changes after a patient stops taking it.  Suppose the concentration (in arbitrary units) satisfies the differential equation   The half-life of Effexor XR is approximately hours.  Assume that withdrawal symptoms begin when the concentration falls below a threshold .      Find the value of in terms of the half-life, and compute its numerical value (in units of hours -1 ).    Solve the differential equation with initial condition .    Show that the time at which the concentration falls below satisfies     Solve this inequality for . Your answer should be expressed using logarithms.    Suppose a patient has (arbitrary units) and the threshold is .  Compute the time at which withdrawal symptoms begin.    Interpret your answer. How many half-lives have passed when the concentration reaches of its original value?    In practice, patients often take Effexor XR once per day. Explain why missing even one dose might lead to noticeable changes in concentration. Your answer should refer to the half-life and the exponential decay model.    Now suppose a patient takes their medication once every 24 hours. Compare two scenarios:   The patient takes the medication at 8:00 AM each day.  The patient takes the medication at 8:00 PM each day.   In both cases, assume the concentration immediately after a dose is . Use the exponential model to determine the concentration just before the next dose (24 hours later).  Then consider the following situation: the patient forgets one dose. Compare how long it takes for the concentration to fall below the threshold in each scenario.  Explain why the timing of doses (morning vs evening) might affect when symptoms are experienced, even if the total daily dosage is the same.          Use the Sage cell below to explore a simplified model of daily Effexor XR dosing with one missed dose. The model assumes exponential decay between doses and an upward jump each time a dose is taken.   Use the sliders to compare a missed morning dose and an evening dose. What changes about the time of day when the concentration falls below the threshold ?  Explain why the total daily dose is not the only relevant quantity in this model. Your answer should refer to half-life, exponential decay, and the timing of the missed dose.     "
 },
 {
   "id": "effexor-withdrawal-model",
@@ -1222,7 +1609,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Use the Sage cell below to explore a simplified model of daily Effexor XR dosing with one missed dose. The model assumes exponential decay between doses and an upward jump each time a dose is taken.   Use the sliders to compare a morning dose and an evening dose. What changes about the time of day when the concentration falls below the threshold ?  Explain why the total daily dose is not the only relevant quantity in this model. Your answer should refer to half-life, exponential decay, and the timing of the missed dose.   "
+  "body": "  Use the Sage cell below to explore a simplified model of daily Effexor XR dosing with one missed dose. The model assumes exponential decay between doses and an upward jump each time a dose is taken.   Use the sliders to compare a missed morning dose and an evening dose. What changes about the time of day when the concentration falls below the threshold ?  Explain why the total daily dose is not the only relevant quantity in this model. Your answer should refer to half-life, exponential decay, and the timing of the missed dose.   "
 }
 ]
 
